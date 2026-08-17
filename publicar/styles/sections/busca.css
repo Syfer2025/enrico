@@ -53,8 +53,9 @@
 .busca__limpar {
   display: grid;
   place-items: center;
-  inline-size: 30px;
-  block-size: 30px;
+
+  inline-size: var(--tap-min);
+  block-size: var(--tap-min);
   flex: none;
   padding: 0;
   border: 0;

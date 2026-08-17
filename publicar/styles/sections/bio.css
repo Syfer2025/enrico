@@ -98,6 +98,12 @@
   box-shadow: 0 24px 60px rgb(4 5 7 / 0.6), 0 0 80px rgb(255 178 50 / 0.14);
 }
 
+@media (width < 700px) {
+  .bio__portrait-caption {
+    font-size: var(--text-footnote-size);
+  }
+}
+
 .bio__portrait-caption {
   margin-top: var(--space-3);
   font-family: var(--font-mono);

@@ -221,7 +221,7 @@ def mosaico():
 
 def pilulas():
     itens = [
-        '          <li><a class="ep-jump__link" href="#todas">Todas</a></li>'
+        '          <li><a class="ep-jump__link" href="#todas">todas</a></li>'
     ]
     titulos = dict(TEMPORADAS)
     for temporada in ORDEM_TEMPORADAS:
@@ -317,7 +317,7 @@ def pagina():
             </a>
             <a class="btn btn--glass" href="{SHOW_SPOTIFY}" target="_blank" rel="noopener">
               <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.339-2.58-12.24-1.42-.42.18-1.02-.24-.9-.72.12-.48.48-.72.9-.84 4.5-1.32 10.08-.66 13.8 1.56.421.24.54.78.3 1.14l.002-.02zm.12-3.42C15.24 8.4 9.6 7.8 5.999 8.94c-.48.18-1.02-.18-1.2-.66-.18-.48.18-1.02.66-1.2C9.24 5.64 15.6 6.3 19.68 8.94c.48.3.6.96.3 1.44-.3.36-.84.48-1.2.18l-.002.001z" /></svg>
-              <span class="btn__label">Show no Spotify</span>
+              <span class="btn__label">show no Spotify</span>
             </a>
           </div>
         </div>
@@ -340,7 +340,7 @@ def pagina():
             <span class="ep-audio__logo ep-audio__logo--spotify" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.339-2.58-12.24-1.42-.42.18-1.02-.24-.9-.72.12-.48.48-.72.9-.84 4.5-1.32 10.08-.66 13.8 1.56.421.24.54.78.3 1.14l.002-.02zm.12-3.42C15.24 8.4 9.6 7.8 5.999 8.94c-.48.18-1.02-.18-1.2-.66-.18-.48.18-1.02.66-1.2C9.24 5.64 15.6 6.3 19.68 8.94c.48.3.6.96.3 1.44-.3.36-.84.48-1.2.18l-.002.001z" /></svg>
             </span>
-            <h2 class="t-title-2 ep-audio__title" id="ep-audio-titulo">Ouvir em áudio</h2>
+            <h2 class="t-title-2 ep-audio__title" id="ep-audio-titulo">ouvir em áudio</h2>
             <p class="t-body ep-audio__text">
               o catálogo em áudio toca aqui mesmo, direto do spotify — a lista
               abaixo é a do próprio show e sempre traz o episódio mais novo.
@@ -388,7 +388,7 @@ def pagina():
             <h2 class="t-largetitle ep-archive__title" id="ep-archive-titulo">assistir em vídeo</h2>
             <p class="t-body ep-archive__text">
               {total} episódios completos no canal <a class="ep-archive__handle" href="{CANAL}" target="_blank" rel="noopener">@abcPod</a>,
-              em {temporadas} temporadas. cada card abre o episódio no youtube.
+              em {temporadas} temporadas.
             </p>
           </header>
 
@@ -405,7 +405,7 @@ def pagina():
 
         <div class="container">
           <a class="ep-archive__top" href="#conteudo">
-            <span>Voltar ao topo</span>
+            <span>voltar ao topo</span>
             <svg
               viewBox="0 0 16 16"
               fill="none"
