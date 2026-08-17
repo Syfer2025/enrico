@@ -258,3 +258,11 @@ a {
   transition: opacity var(--duration-base) var(--ease-out),
     translate var(--duration-base) var(--ease-out);
 }
+
+.esc-card__title,
+.esc-row__title,
+.esc-item__leitura-titulo,
+.writing-post__title,
+.busca-item__titulo {
+  text-transform: lowercase;
+}

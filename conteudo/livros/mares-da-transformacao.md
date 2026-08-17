@@ -1,6 +1,6 @@
 ---
-titulo: "Marés da Transformação"
-subtitulo: "Superação e Autodescoberta"
+titulo: "marés da transformação"
+subtitulo: "superação e autodescoberta"
 ordem: 4
 asin: "B0DT7TFQXJ"
 url: "https://www.amazon.com.br/dp/B0DT7TFQXJ"

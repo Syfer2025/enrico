@@ -308,8 +308,43 @@ body[data-dev="true"] .section-slot {
 }
 
 .social-link:hover {
-  color: var(--label-primary);
   background-color: var(--fill-quaternary);
+}
+
+.social-link[href*="instagram.com"] {
+  color: #e1306c;
+}
+
+.social-link[href*="youtube.com"] {
+  color: #ff0000;
+}
+
+.social-link[href*="spotify.com"] {
+  color: #1db954;
+}
+
+.social-link[href*="tiktok.com"] {
+  color: #25f4ee;
+}
+
+.social-link[href*="facebook.com"] {
+  color: #1877f2;
+}
+
+.social-link[href*="amazon.com"] {
+  color: #ff9900;
+}
+
+.social-link:hover svg {
+  filter: brightness(1.15);
+}
+
+.site-footer__nota {
+  max-width: 46ch;
+  margin-inline: auto;
+  text-align: center;
+  color: var(--label-tertiary);
+  opacity: 0.75;
 }
 
 .site-footer__divider {

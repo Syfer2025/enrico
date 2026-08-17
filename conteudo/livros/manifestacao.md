@@ -1,6 +1,6 @@
 ---
-titulo: "Manifestação e Lei da Atração"
-subtitulo: "Um Guia Prático para Transformar Intenção em Realidade"
+titulo: "manifestação e lei da atração"
+subtitulo: "um guia prático para transformar intenção em realidade"
 ordem: 9
 asin: "B0GWXWDJLX"
 url: "https://www.amazon.com.br/dp/B0GWXWDJLX"

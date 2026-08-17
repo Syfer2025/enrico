@@ -1,6 +1,6 @@
 ---
-titulo: "As Ondas do Meu Ser"
-subtitulo: "Reflexões para Reencontrar a Luz"
+titulo: "ondas do meu ser"
+subtitulo: "reflexões para reencontrar a luz"
 ordem: 3
 asin: "B0DT4TZT89"
 url: "https://www.amazon.com.br/dp/B0DT4TZT89"

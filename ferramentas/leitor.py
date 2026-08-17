@@ -21,7 +21,7 @@ MARCACAO = """\
               <p class="t-eyebrow esc-leitor__cat" data-leitor="categoria"></p>
               <time class="t-footnote esc-leitor__data tabular" data-leitor="data"></time>
             </div>
-            <button class="esc-leitor__fechar" type="button" data-leitor="fechar" aria-label="Fechar leitura">
+            <button class="esc-leitor__fechar" type="button" data-leitor="fechar" aria-label="fechar leitura">
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9"
                    stroke-linecap="round" aria-hidden="true">
                 <path d="M4 4l8 8M12 4l-8 8" />
@@ -35,7 +35,7 @@ MARCACAO = """\
           </div>
 
           <footer class="esc-leitor__share">
-            <p class="t-footnote esc-leitor__share-label">Compartilhar</p>
+            <p class="t-footnote esc-leitor__share-label">compartilhar</p>
             <div class="esc-leitor__share-row">
               <!-- Botão nativo: só aparece onde o navegador tem navigator.share
                    (o JS revela). É o único caminho para Instagram e Stories —
@@ -47,7 +47,7 @@ MARCACAO = """\
                   <path d="M12 16V3.5M8 7l4-3.5L16 7" />
                   <path d="M4.5 13v6a1.5 1.5 0 0 0 1.5 1.5h12a1.5 1.5 0 0 0 1.5-1.5v-6" />
                 </svg>
-                <span>Compartilhar</span>
+                <span>compartilhar</span>
               </button>
 
               <a class="esc-share esc-share--whatsapp" data-leitor="whatsapp" href="#" target="_blank" rel="noopener">
@@ -71,7 +71,7 @@ MARCACAO = """\
                   <rect x="9" y="9" width="11" height="11" rx="2.5" />
                   <path d="M15 5.5A2.5 2.5 0 0 0 12.5 3h-7A2.5 2.5 0 0 0 3 5.5v7A2.5 2.5 0 0 0 5.5 15" />
                 </svg>
-                <span data-leitor="copiar-rotulo">Copiar link</span>
+                <span data-leitor="copiar-rotulo">copiar link</span>
               </button>
             </div>
 

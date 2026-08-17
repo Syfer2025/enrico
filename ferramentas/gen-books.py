@@ -78,7 +78,7 @@ def card(slug, asin, titulo, sub, nota, av, sinopse, larg, alt):
     else:
         avaliacao = '''
               <p class="book-rating">
-                <span class="book-badge">Em Lançamento</span>
+                <span class="book-badge">em lançamento</span>
               </p>'''
 
     return f'''          <li class="book-card">
@@ -111,7 +111,7 @@ def card(slug, asin, titulo, sub, nota, av, sinopse, larg, alt):
               <p class="t-footnote book-card__desc">{html.escape(sinopse)}</p>
               <a class="book-card__cta"
                  href="https://www.amazon.com.br/dp/{asin}" target="_blank" rel="noopener">
-                Ver na Amazon<svg class="book-card__cta-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.25 10.75 8 6 12.75" /></svg>
+                ver na Amazon<svg class="book-card__cta-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.25 10.75 8 6 12.75" /></svg>
                 <span class="visually-hidden">— {html.escape(titulo)}</span>
               </a>
             </div>
@@ -124,7 +124,7 @@ def bloco_carrossel():
       <section class="book-carousel" data-module="book-carousel" aria-labelledby="livros-titulo">
         <div class="book-carousel__head">
           <div class="book-carousel__heading">
-            <h2 class="book-carousel__title" id="livros-titulo">Livros</h2>
+            <h2 class="book-carousel__title" id="livros-titulo">livros</h2>
             <p class="t-footnote book-carousel__count">{len(LIVROS)} títulos</p>
           </div>
           <div class="book-carousel__nav">

@@ -26,8 +26,17 @@ id_ed25519*
 # cache do importador de textos do WordPress
 bastidores/.cache-escrita.json
 
-# imagens de IA usadas durante o projeto: não geram o site nem vão para o ar
-bastidores/imagens-ia/
+# imagens de apoio usadas durante o projeto: não geram o site nem vão para o ar
+bastidores/imagens-geradas/
 
 # saída temporária
 tmp/
+
+# ---------------------------------------------------- documentação interna --
+# A documentação do projeto fica só na máquina de quem trabalha nele. Ela conta
+# como cada decisão foi tomada, em que ordem, e o que deu errado no caminho —
+# é útil para quem mantém o site e desnecessária para quem visita o
+# repositório. O site funciona sem ela: quem gera as páginas são os
+# ferramentas/, e o painel se explica na própria tela.
+LEIA-ME.md
+bastidores/documentacao/

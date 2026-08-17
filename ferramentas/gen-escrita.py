@@ -239,7 +239,7 @@ def bloco(total, recentes):
                data-module="esc-leitor" data-src="assets/data/textos">
         <div class="container">
           <div class="writing__head">
-            <p class="t-eyebrow writing__eyebrow">Escrita</p>
+            <p class="t-eyebrow writing__eyebrow">escrita</p>
             <h2 class="t-display-2 writing__title" id="escrita-titulo">
               os últimos textos
             </h2>
@@ -255,7 +255,7 @@ def bloco(total, recentes):
           </ul>
 
           <a class="writing__all" href="escrita.html">
-            <span>Ver todas as {total} publicações</span>
+            <span>ver todas as {total} publicações</span>
             {SETA}
           </a>
         </div>

@@ -8,16 +8,11 @@ import re
 import sys
 from pathlib import Path
 
+import moldura
 from conteudo import ler_json
 
 PROJETO = Path(__file__).resolve().parent.parent
 SITE = PROJETO / "publicar"
-
-def pedaco(s: str, inicio: str, fim: str) -> str:
-    i = s.index(inicio)
-    f = s.index(fim) + len(fim)
-    return s[i:f]
-
 
 CANAIS = [
     {
@@ -55,9 +50,9 @@ def bloco_do_email(email: str) -> str:
     if email:
         e = html.escape(email)
         return f"""          <div class="contato__email">
-            <p class="t-eyebrow contato__email-rotulo">E-mail</p>
+            <p class="t-eyebrow contato__email-rotulo">e-mail</p>
             <a class="contato__email-endereco" href="mailto:{e}">{e}</a>
-            <p class="t-footnote contato__email-nota">Resposta em até dois dias úteis.</p>
+            <p class="t-footnote contato__email-nota">resposta em até dois dias úteis.</p>
           </div>"""
     return """          <p class="contato__pendente" role="status">
             <strong>Falta o e-mail de contato.</strong> Preencha
@@ -71,10 +66,8 @@ def main() -> int:
     cfg = ler_json("site.json")
     email = (cfg.get("email_contato") or "").strip()
 
-    origem = (SITE / "index.html").read_text(encoding="utf-8")
-    cabecalho = pedaco(origem, '<header class="site-header"', "</header>")
-    rodape = pedaco(origem, '<footer class="site-footer"', "</footer>")
-    cabecalho = cabecalho.replace(' aria-current="page"', "")
+    cabecalho = moldura.cabecalho("contato.html")
+    rodape = moldura.rodape()
 
     canais = "\n".join(
         f"""          <li class="contato-canal">
@@ -108,7 +101,7 @@ def main() -> int:
     <script type="module" src="scripts/main.js"></script>
   </head>
   <body>
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <a class="skip-link" href="#conteudo">pular para o conteúdo</a>
 
     {cabecalho}
 
@@ -117,7 +110,7 @@ def main() -> int:
         <div class="container contato__inner">
           <div class="contato__topo">
             <div class="contato__abertura">
-              <p class="t-eyebrow contato__eyebrow">Contato</p>
+              <p class="t-eyebrow contato__eyebrow">contato</p>
               <h1 class="t-display-2" id="contato-titulo">como falar com o enrico</h1>
               <p class="t-body contato__intro">
                 Para imprensa, eventos, palestras e parcerias, o
@@ -133,7 +126,7 @@ def main() -> int:
           </ul>
 
           <div class="contato__redes">
-            <h2 class="t-title-3">Nas redes</h2>
+            <h2 class="t-title-3">nas redes</h2>
             <ul class="contato__redes-lista">
 {redes}
             </ul>

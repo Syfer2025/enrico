@@ -9,9 +9,9 @@ name: publicar
 on:
   push:
     branches: [main]
-    # Mexer só no LEIA-ME não precisa republicar o site.
+    # Mexer só nos bastidores não precisa republicar o site: nada de lá é
+    # servido, são as fontes das imagens e o histórico da importação.
     paths-ignore:
-      - "LEIA-ME.md"
       - "bastidores/**"
   # Permite disparar à mão pela aba Actions, sem precisar alterar nada.
   workflow_dispatch:

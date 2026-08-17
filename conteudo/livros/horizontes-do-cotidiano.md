@@ -1,6 +1,6 @@
 ---
-titulo: "Horizontes do Cotidiano"
-subtitulo: "Reflexões para Inspirar e Transformar"
+titulo: "horizontes do cotidiano"
+subtitulo: "reflexões para inspirar e transformar"
 ordem: 5
 asin: "B0DTJ97F62"
 url: "https://www.amazon.com.br/dp/B0DTJ97F62"

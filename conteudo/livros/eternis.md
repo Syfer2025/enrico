@@ -1,6 +1,6 @@
 ---
-titulo: "Eternis"
-subtitulo: "O Preço da Imortalidade"
+titulo: "eternis"
+subtitulo: "o preço da imortalidade"
 ordem: 6
 asin: "B0F4JD1MG2"
 url: "https://www.amazon.com.br/dp/B0F4JD1MG2"

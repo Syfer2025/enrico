@@ -1,6 +1,6 @@
 ---
-titulo: "40 Poemas escolhidos pelo autor"
-subtitulo: "Vol. VII"
+titulo: "40 poemas escolhidos pelo autor"
+subtitulo: "vol. vii"
 ordem: 10
 asin: "B0DS2XS8XY"
 url: "https://www.amazon.com.br/dp/B0DS2XS8XY"

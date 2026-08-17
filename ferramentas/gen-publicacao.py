@@ -256,10 +256,10 @@ def pagina_404(cfg: dict) -> Path:
       </p>
       <div class="erro__acoes">
         <a class="btn btn--accent" href="{prefixo}/">
-          <span class="btn__label">Ir para a página inicial</span>
+          <span class="btn__label">ir para a página inicial</span>
         </a>
         <a class="btn" href="{prefixo}/escrita.html">
-          <span class="btn__label">Ver todos os textos</span>
+          <span class="btn__label">ver todos os textos</span>
         </a>
       </div>
     </main>
