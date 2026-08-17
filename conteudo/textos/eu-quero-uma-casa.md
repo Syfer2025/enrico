@@ -1,0 +1,28 @@
+---
+titulo: "eu quero uma casa."
+data: "2023-05-08"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/20230506-1232465951293884881637375-7bd56619.webp"
+url_original: "http://enricopierro.com.br/2023/05/08/eu-quero-uma-casa/"
+---
+
+eu quero uma casa. grande e aconchegante. uma decoração minimalista, sem muitas cores. um lugar onde eu possa me esconder do mundo. mas não a ponto de desaparecer de mim mesmo.
+
+quero uma piscina. nem tão grande a ponto de me sentir sozinho e nem tão pequena que não possa receber os amigos pra um domingo enrolarado.
+
+quero uma biblioteca. uma sala cheia de livros e de conhecimento. não decorativa, quero olhar com a sede de quem vaga pelo deserto ao olhar as lombadas e capas. quero um canto de leitura confortável pra me perder entre letras e histórias. na verdade quero vários cantos. livros espalhados pela casa, poltronas grandes e macias, janelas com almofadas e tapetes. quero tropeçar em conhecimento enquanto ando.
+
+quero uma cozinha farta. não precisa grandes mármores, nem granitos. quero a mesa posta e a refeição demorada. de quem sabe reconhecer o privilégio de ter, e aprecia cada garfada. ainda que eu não saiba nem fritar um ovo e provavelmente se não tiver alguém pra cozinhar, eu morra de fome ou viva de laméns prontos hiper calóricos. 
+
+quero uma sala grande, cheia de sofás, pufes, mesas de apoio, tapetes. onde meus amigos possam se esparramar e serem quem eles quiserem. fazerem o que quiserem, enquanto rimos e aproveitamos a vida, antes de poder reclamar que ela passou rápido demais. fugaz demais. 
+
+quero um quarto espaçoso, daqueles com sofá, escritório, e tudo o que eu precisar pra poder me recolher quando a rotina e as pessoas me sufocarem demais. janelas grandes para que eu veja o mundo. uma TV para que eu me afaste da realidade ou me afoge em alguma que não seja a minha. e que tenha uma sacada, com poltronas onde eu possa ver o dia passando devagar enquanto me isolo em mim mesmo.
+
+quero uma sala de tv. não precisa ser grande, precisa ser aconchegante. com um sofá daqueles que eu possa afundar quando quiser tirar um cochilo preguiçoso no final da tarde. e que me perca por horas assistindo qualquer coisa que me der na telha. 
+
+que essa casa tenha muitas janelas, mas também cortinas. que tenha sacadas espalhadas para que eu sinta o vento soprar os problemas e as angústias. que ela tenha tudo aquilo que a minha vida não tem. que ela seja tudo o que eu nunca fui. que seja o refúgio e a segurança. que seja o abraço e o sorriso. 
+
+ah, um dia eu quero uma casa grande.
+
+c.e.

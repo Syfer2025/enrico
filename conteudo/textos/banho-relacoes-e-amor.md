@@ -1,0 +1,32 @@
+---
+titulo: "banho, relações e amor."
+data: "2011-10-14"
+categoria: "textos"
+publicado: true
+capa: ""
+url_original: "http://enricopierro.com.br/2011/10/14/banho-relacoes-e-amor/"
+---
+
+A maioria dos meus pensamentos começam sempre no banho. de preferência com música, porque é quando tenho uns 10 minutos para pensar.
+
+Hoje em dia, percebe-se nitidamente a dificuldade na comunicação. Essas relações entre pessoas assumem graus realmente interessantes e caóticos.
+
+     Estava escutando antolojía da Shakira e bem, o resultado foi que assim como ela diz na música, para amar uma pessoa, devem haver razões. Claro, as razões podem ser puramente banais no começo, como o sorriso, o toque e coisas efémeras. Mas e com o tempo? Como ficam essas relações?
+
+     Amar alguém é saber apreciar também os defeitos, achar alguns até bobos e passar completamente por cima. A indiferença com relação aos defeitos de alguém demonstra um sinal de amor e afeto. Mas para amar, precisamos também de trocas, contínuas. Assim como a minha tatuagem que revela que duas pessoas necessitam ser perfeitas (no sentido de elas mesmas serem auto-suficientes na vida e terem resolvido boas partes dos problemas psicológicos que as atrasavam) antes de se associarem a qualquer outra pessoa (que também deve ser perfeita, no mesmos parâmetros da explicação anterior), acredito que devemos saber porque gostamos de outra pessoa.
+
+     O amor não é um sentimento que nasce sozinho. Ele é feito através de uma construção. E toda construção exige muito preparo e muito material, antes da conclusão e posterior utilização em sua total plenitude. Mas chamo a atenção a um fato: até que ponto estamos preparados para essa construção? Será que dispomos do material? Tempo? Vontade?
+
+     Me peguei em questões super simples como estas. Às vezes infelizmente temos em vista poucas áreas de atuação conjunta. Deve haver antes de mais nada um crescimento. Eu particularmente acredito muito no crescimento espiritual. Mas há outros. Muito da vida se baseia também em conhecimento, e ele é em sua maioria adquirido ao longo da vida. As aptidões sim, podem provir de existências anteriores e serem inatas ao indivíduo, mas o saber de questões que envolvem a existência atual, devem vir da aquisição delas. O estudo é fundamental, mas mais do que isso, o interesse é o caminho de maior importância quando estamos falando em uma troca.
+
+     Na relação amorosa, cada um deve dar aquilo que tem. E nisso cabe lembrar e alertar que muitas vezes nós esperamos certas atitudes, como quando você manda uma mensagem desejando uma ótima tarde para uma pessoa e ela não responde nada. Isso não quer dizer necessariamente que ela não quer que você tenha uma ótima tarde também, mas o silêncio é o que ela tem para te dar. E isso por mais que empurre qualquer pessoa pro lado oposto, deve ser visto como um gás natural que te impulsiona para frente, para fazer ainda mais e continuar sereno. Nunca saberemos em que ponto essa pessoa terá algo para oferecer em troca, mas pra isso precisamos dar algo também. E nos resignar, todos os dias da nossa existência. Lembre-se, nas tuas atitudes aparentemente não correspondidas, estão as sementes que você está plantando nesse relacionamento. Nunca esqueça de plantar, ou então não cobre a colheita depois.
+
+     Se relacionar é crescer junto, aprender junto, caminhar junto. É ter os seus próprios planos, mas com reservas para duas pessoas. É estar com uma pessoa que tem planos próprios e reserva para duas pessoas também! É a vida conjunta e o presente único de casamento para um casal de amigos.
+
+     Se relacionar é confiar na pessoa intelectualmente e por uma questão de amor, confiança e doçura, sempre partir que o ponto dela, é o válido. E dali sim, acender a discussão para juntos tentar enxergar novos e com isso você vai se impondo e mostrando a sua opinião. Quando você fala de algo e a frase começa com um ‘não’, desestimula qualquer diálogo, pois não abre a margem para duas pessoas chegarem numa resposta em conjunto. Em uma resposta feita por dois cérebros.
+
+     A hostilidade nas conversas pode afastar e fazer uma pessoa se sentir acuada e sem motivação. E quando alguém perde a motivação, se prepare, pois só ela mesma pode se motivar novamente e não importa o que você faça.
+
+     Em um relacionamento, ser dóceis é saber conversar sem agredir. É saber quais os pontos fortes e fracos das pessoas e saber aproveitá-los ao máximo. Se você não está aberto ao novo em diversas áreas da vida, nunca estará aberto o suficiente para uma nova pessoa. Namorar é reformular todos os conceitos e ideias. É adquirir um estado civil e um cérebro para trabalhar em conjunto. E se não houver esse trabalho, há apenas amor, e só amor, nunca é o suficiente.
+
+mas nunca desista de amar. e sempre seja o melhor que você pode. primeiro para você e depois com o outro. e abra-se pelo menos 3x durante a sua vida. e nunca diga que não tentou o teu máximo. seja paciente, complacente e cuidado: radicalismo além de emburrecer, afasta qualquer pessoa.

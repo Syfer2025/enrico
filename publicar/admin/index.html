@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Painel — Enrico Pierro</title>
+
+    <!-- O painel nunca deve aparecer em busca. -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23FFB232'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <!--
+      Sveltia CMS — o painel inteiro é este único arquivo. Não há servidor nem
+      banco: ele conversa direto com o repositório no GitHub, e é por isso que
+      não tem mensalidade.
+
+      O ARQUIVO É LOCAL, DE PROPÓSITO. A instalação padrão carrega o script de
+      um CDN, num endereço sem versão, que entrega sempre a mais recente. Só que
+      este script roda numa página que carrega a credencial de escrita no
+      repositório: se o pacote fosse adulterado lá fora, o painel passaria a
+      rodar outro código com esse poder, sem ninguém perceber e sem nada ter
+      mudado aqui dentro.
+
+      Servindo do próprio repositório, o que roda é exatamente o que foi
+      revisado e commitado. Trocar de versão vira uma alteração visível no
+      histórico, não um efeito colateral de um terça-feira qualquer.
+
+      Versão: 0.191.1
+      sha256: 7b6b9ee5b1fd838a82690e7433940924716461b8b91d3c833f7ce3341c203bdf
+
+      Para atualizar: python3 ferramentas/atualizar-painel.py
+
+      Para testar aqui na máquina, sem criar conta nenhuma: abra
+      http://localhost:4322/admin/ no Chrome, Edge ou Brave e escolha
+      "Trabalhar com Repositório Local", apontando para a pasta do projeto.
+      O modo local usa a API de arquivos do navegador, que só existe nesses
+      navegadores — no Safari e no Firefox ele não abre.
+    -->
+    <script src="vendor/sveltia-cms-0.191.1.js"></script>
+
+    <!--
+      O tema vem DEPOIS do script de propósito. O Sveltia injeta o CSS dele em
+      tempo de execução; uma folha carregada antes disso perderia a disputa e o
+      painel voltaria ao cinza de fábrica.
+    -->
+    <link rel="stylesheet" href="tema-enrico.css" />
+
+    <!-- Põe o "?" de ajuda nos campos que o Sveltia desenha sozinho e que
+         por isso não têm como receber explicação pela configuração. -->
+    <script src="ajuda.js"></script>
+
+    <!-- Mostra ao vivo como a capa sai recortada na lista e no cartão,
+         ao lado do campo que escolhe o enquadramento. -->
+    <script src="previa-capa.js"></script>
+
+    <!-- Quando o login é o nosso (e-mail e senha), o botão de entrada deixa de
+         dizer "Entrar com GitHub", que mandaria procurar conta que não existe. -->
+    <script src="entrada.js"></script>
+  </body>
+</html>

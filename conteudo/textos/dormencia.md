@@ -1,0 +1,20 @@
+---
+titulo: "dormência."
+data: "2023-02-10"
+categoria: "outros"
+publicado: true
+capa: "/assets/img/acervo/img-5891-15244766.webp"
+url_original: "http://enricopierro.com.br/2023/02/10/dormencia/"
+---
+
+eu diria que é uma sensação de dormência, quase existencial. é como se meu corpo não conseguisse mais reagir aos estímulos do mundo. ou pelo menos parece estar reagindo diferente. quase letárgico. 
+
+eu não sei como começou. acho que acordei assim. ontem? hoje? essa letargia toda me causa uma certa dificuldade de pensar. meu raciocínio parece, não apenas prejudicado, mas… lento. e então vejo as coisas passarem por mim quase em câmera lenta. onde eu sou o espectador, sentado em uma enorme sala de cinema. vazia. e tudo vai passando naquela tela imensa à minha frente. eu não posso tocar. eu não posso “sentir”. vou apenas observando enquanto tudo passa lentamente. é como em sonho (ou filme) que vamos esticar o braço para tocar alguma coisa e ela some.
+os problemas chegam até mim, como sempre e são como agulhas sendo espetadas em um algodão. nada me atinge. nada me comove. todos os sentidos parecem descansar em algum lugar vazio da mente. vou resolvendo tudo quase como na inércia de um corpo sem vida, mas que o coração ainda bate, apesar de parece até ele mais lento do que o normal.
+
+eu sinto uma névoa em frente aos meus olhos. não é que estou enxergando menos. ou mal. mas há uma cortina quase censurante me impedindo de observar tudo com a clareza com que estava acostumado. tudo se encaixa. mas não posso tocar em nada. eu sei que os problemas existem e estão ali, eu posso até vê-los através dessa névoa mas não consigo sentir. sabe quando vc se sente no automático? você só vai balançando a cabeça para sinalizar pequenas concordâncias ou discordâncias, mas que se depois de algumas horas te perguntarem, você já não sabe mais nem responder quais foram as perguntas.
+
+eu sinto os meus pés. mas na maioria do tempo eu nem mesmo sinto o chão. caminho como se estivesse sobre as águas ou nuvens. apesar de eu nunca ter caminhado sobre nenhum dos dois, acredito que a sensação deve ser algo parecido. eu vejo o caminho mas mas não sei pra onde me levam. bom, não sei qual o destino dessa estrada mas eu ainda sei para onde estou indo, pelo menos.
+
+amanhã é um novo dia, eu sei, todos os dias são sempre novos, de forma ou outra. quem sabe essa sensação, essa letargia não vá embora de uma vez. espero amanhã acordar e ver e sentir tudo a minha volta novamente como sempre. se fosse pra escolher uma palavra, hoje, seria esperança.
+c.e.

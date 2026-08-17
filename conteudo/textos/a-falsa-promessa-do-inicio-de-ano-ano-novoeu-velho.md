@@ -1,0 +1,24 @@
+---
+titulo: "a falsa promessa do ínicio de ano (´´ano novo,eu velho)."
+data: "2026-01-13"
+categoria: "coluna"
+publicado: true
+capa: "/assets/img/acervo/whatsapp-image-2026-01-05-at-15-38-45-7b869f6c.webp"
+url_original: "http://enricopierro.com.br/2026/01/13/a-falsa-promessa-do-inicio-de-ano-ano-novoeu-velho/"
+---
+
+todo ano é a mesma coisa: janeiro chega com aquela energia de vendedor de curso motivacional. promete mudança, prosperidade, paz interior e um corpo definido que, convenhamos, só aparece na montagem mental que a gente faz. eu sempre caio no golpe. sempre. começo acreditando que, por algum motivo místico, espiritual ou simplesmente teimoso (eu sou taurino, né?), tudo vai virar do avesso pra melhor. como se a vida falasse: “parabéns, você sobreviveu, toma aqui uma versão atualizada de você mesmo”.
+
+mas aí vem a verdade: ano novo, eu velho. com os mesmos hábitos, os mesmos dramas, os mesmos boletos, só que agora numerados com outro ano, o que não melhora absolutamente nada.
+
+o pior é que janeiro tem essa mania irritante de se achar especial. ele chega como quem diz “vamos recomeçar?”, só que ele esquece que pra recomeçar precisa ter parado em algum momento. e eu não parei. eu só fui empurrado de dezembro pra cá igual carrinho de supermercado com a roda torta: vai indo, mas tropeçando no próprio eixo e andando em zigue-zague.
+
+claro que eu tento fazer a minha parte. escrevo metas, apago metas, refaço metas de um jeito mais realista. tipo trocar “mudar de vida” por “tentar não surtar no primeiro semestre”. evolução, né?
+
+aí eu olho em volta: o mundo continua bagunçado, eu continuo cansado, e janeiro continua insistindo que “tudo é possível”. possível até é. provável? já não garanto.
+
+mas, quer saber? talvez a graça esteja justamente nisso. nessa ilusão coletiva, nesse otimismo meio bobo, nessa fé meio teimosa que faz a gente continuar acreditando que, sei lá… vai que esse ano a vida resolve colaborar um pouquinho.
+
+porque no fundo, mesmo velho, mesmo repetindo padrões, mesmo carregando os mesmos medos e a mesma preguiça crônica, eu sempre começo o ano achando que dessa vez pode surpreender. e se não surpreender, a gente improvisa. segue. reinventa. tropeça com estilo.
+
+afinal, ano novo, eu velho, mas ainda aqui. e isso, considerando o caos que foi sobreviver até dezembro, já é quase um milagre.

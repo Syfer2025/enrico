@@ -1,0 +1,17 @@
+---
+titulo: "dia 10"
+data: "2017-03-20"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/dia2b91-9512f041.webp"
+url_original: "http://enricopierro.com.br/2017/03/20/dia-10/"
+---
+
+Passo sempre as madrugadas acordado pensando que tudo poderia ser diferente se você estivesse aqui comigo agora do meu lado. Me dando beijos, me abraçando forte e fazendo carinho no meu cabelo, ouvindo sua voz suave dizendo: Amor eu te amo.
+—  UMA CARTA PARA O MEU AMOR ETERNO
+
+        E acho engraçado essa coisa de lembrar. Você sabe como minha memória é uma merda pra quase tudo. Mas aquele dia… eu lembro de cada detalhe. Lembro do local exato onde eu parei o carro pra ter certeza de que você queria me ver e colocar no GPS o teu endereço. Aliás meu carro já estava quase no modo automático pra ir até a sua casa, depois de um tempo. Acho que se eu entrasse nele e dissesse: vai!, ele iria parar na tua porta. Meu coração também. Acho que se ele tivesse vida própria estaria aí, de conchinha com vc. Esperando pra acordar em um domingo preguiçoso. Fazer sexo de manhã. Talvez mais algumas vezes ao longo do dia. Ir almoçar em algum restaurante pequeno com um teto de vidro. Talvez uma caminhada depois, ou um filme, dependendo do tempo. Um bar, se estiver calor. Só pra passar o tempo. Só pra ficar te olhando. Um domingo meio assim, com teu sorriso me dando bom dia, porque até hoje, se eu fecho meus olhos, eu lembro do primeiro sorriso que você deu pra mim. Do beijo que quase me fez pular pra fora do carro de susto. É, já fez um ano e eu continuo com essas memórias. Mas pelo menos eu sei que pro futuro só existem duas opções: ou você vai ser a história que eu vou contar pros nossos netos, ou vai continuar sendo o pensamento das madrugadas carentes.
+
+       Bom dia e bom domingo.
+
+c.e.

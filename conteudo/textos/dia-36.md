@@ -1,0 +1,18 @@
+---
+titulo: "dia 36"
+data: "2023-04-13"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/img-54438710017711497334401-0902ae18.webp"
+url_original: "http://enricopierro.com.br/2023/04/13/dia-36/"
+---
+
+e continuará a ser sempre um dia após o outro. carta após carta eu vou aprendendo a me reescrever. e tanta coisa foi ficando para trás junto com você. e fui me reinventando. entre um texto e outro muitas vezes passaram-se meses.
+
+o tempo nunca foi algo lógico, muito menos a minha história. você diria que a tua vida é lógica? o universo foi criado à partir do caos e há uma beleza imensurável nisso. sim, o caos é lindo e somos todos frutos disso. mas após todo esse tempo você virou a conversa de bar. a história daquele garoto que eu fiquei há um bom tempo atrás. você se resumiu a isso. o exemplo de quem me fez bem e de quem me fez mal. nada mais. não tem mais um sentimento latente e talvez não tenha ficado mais nada mal resolvido. acho que nessa busca eu tenha me resolvido sozinho.
+
+no abismo da vida você foi, olha que engraçado, o empurrão. só que ao invés de cair sem fim eu abri os braços pra descobrir que eu podia voar. clichê, eu sei, mas a vida é um imenso e maravilhoso clichê. mas hoje a carta é curta, a mensagem também. fazia tempo que não te escrevia mas fui obrigado a olhar pelo retrovisor em uma dessas conversas de bar e contar da última pessoa que realmente havia tido algum significado na minha vida, ainda que tão rápido.
+
+um dia eu volto a te escrever, quem sabe no próximo bar ou um próximo gole.
+
+c.e.

@@ -1,0 +1,5 @@
+# O site está num endereço temporário e ainda não deve ser
+# indexado. Quando o domínio apontar para cá, o
+# conteudo/site.json marca no_ar: true e este arquivo libera.
+User-agent: *
+Disallow: /

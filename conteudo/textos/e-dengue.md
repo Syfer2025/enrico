@@ -1,0 +1,18 @@
+---
+titulo: "é dengue?"
+data: "2024-12-05"
+categoria: "coluna"
+publicado: true
+capa: "/assets/img/acervo/saiu-9-b3888226.webp"
+url_original: "http://enricopierro.com.br/2024/12/05/e-dengue/"
+---
+
+acho que qualquer dor de cabeça ou dor no corpo, hoje em dia, vem acompanhada dessa pergunta: é dengue? eu posso me dizer sortudo, porque moro no meio do mato e constantemente sou quase carregado por pernilongos nervosos e agitados, mas passei ileso, até agora. bom, ou quase.
+
+esses dias eu acordei de madrugada, o que é normal já, inclusive quem acompanha minha coluna sabe da minha dificuldade de ter uma boa noite de sono. pois bem, acordei e decidi ir até a cozinha fazer um lanchinho, algo leve, sabe? tipo um brigadeiro que eu encontrei na geladeira e decidi aquecer por alguns segundos, só pra dar aquela impressão de que havia acabado de sair da panela. pode me julgar, mas eu amo esse gostinho de “vou ter uma dor de barriga”. então estou lá, na cozinha, comendo com uma colher de sobremesa pra dar aquela impressão de que eu estava comendo pouco. não que eu estivesse tentando enganar a mim mesmo, longe disso, mas acho que até funcionou.
+
+quando eu terminei, resolvi ir pra sala, e foi então quando eu percebi algo grave: aparentemente não era só eu que estava na cozinha, fazendo um lanchinho, porque eu percebi que havia tomado tanta picada na perna que, quando sentei no sofá, eu parecia o próprio abaporu da tarsila do amaral. as pernas estavam até inchadas. depois de certa perseguição, consegui pegar um no tapa, e quando olhei a minha mão, parecia que eu tinha decepado um dedo de tanto sangue. ele estava de barriga cheia.
+
+os safados me tiraram tanto sangue que eu juro que três deles estavam em cima da mesa sem conseguir levantar voo, de tão pesados. eles eram praticamente uma bolsa de sangue, e tudo aquilo era meu. fui pra cama, até desnorteado e me coçando como se tivesse com sarna, rezando pro meu corpo conseguir se recuperar daquele ataque quase terrorista e não precisar de uma transfusão de sangue no café da manhã.
+
+era dengue? bom, não sei. até agora eu estou bem, um pouco sem sangue, mas bem. te vejo na próxima semana.

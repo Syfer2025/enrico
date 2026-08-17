@@ -1,0 +1,18 @@
+{
+ "http://imgfave.lg1x8.simplecdn.net/image_cache/1247959367524826.jpeg": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+ "http://mfrost.typepad.com/cute_overload/images/2008/01/28/rpctgy.jpg": "HTTPError: HTTP Error 403: Forbidden",
+ "http://www.blogger.com/www.ericmarth.com/pictures/olympia.jpg": "HTTPError: HTTP Error 404: Not Found",
+ "http://www.hellogirlfriend.com/photo/images/2007/devinbunny_web.jpg": "HTTPError: HTTP Error 404: Not Found",
+ "https://i0.wp.com/cdn.decorpad.com/photos/2008/07/29/8c8ff27d6ce6.jpg": "HTTPError: HTTP Error 403: Forbidden",
+ "https://i0.wp.com/cdn.decorpad.com/photos/2008/07/29/8c8ff27d6ce6.jpg?w=160": "HTTPError: HTTP Error 403: Forbidden",
+ "https://i0.wp.com/cdn.decorpad.com/photos/2008/07/29/8c8ff27d6ce6.jpg?w=320": "HTTPError: HTTP Error 403: Forbidden",
+ "https://i0.wp.com/devagares.weblog.com.pt/dv-folhas%20secas.jpg": "HTTPError: HTTP Error 400: Bad Request",
+ "https://i0.wp.com/devagares.weblog.com.pt/dv-folhas%20secas.jpg?w=160": "HTTPError: HTTP Error 400: Bad Request",
+ "https://i0.wp.com/devagares.weblog.com.pt/dv-folhas%20secas.jpg?w=320": "HTTPError: HTTP Error 400: Bad Request",
+ "https://i0.wp.com/www.hellogirlfriend.com/photo/images/2007/devinbunny_web.jpg": "HTTPError: HTTP Error 400: Bad Request",
+ "https://i0.wp.com/www.hellogirlfriend.com/photo/images/2007/devinbunny_web.jpg?w=160": "HTTPError: HTTP Error 400: Bad Request",
+ "https://i0.wp.com/www.hellogirlfriend.com/photo/images/2007/devinbunny_web.jpg?w=320": "HTTPError: HTTP Error 400: Bad Request",
+ "https://i0.wp.com/www.lose-weight-feel-great.com/wp-content/uploads/2009/05/personal-hygiene-shower.png": "HTTPError: HTTP Error 400: Bad Request",
+ "https://i0.wp.com/www.lose-weight-feel-great.com/wp-content/uploads/2009/05/personal-hygiene-shower.png?w=160": "HTTPError: HTTP Error 400: Bad Request",
+ "https://i0.wp.com/www.lose-weight-feel-great.com/wp-content/uploads/2009/05/personal-hygiene-shower.png?w=320": "HTTPError: HTTP Error 400: Bad Request"
+}

@@ -1,0 +1,23 @@
+---
+titulo: "empurre"
+data: "2024-05-20"
+categoria: "outros"
+publicado: true
+capa: "/assets/img/acervo/frase-instagram-43c83f23.webp"
+url_original: "http://enricopierro.com.br/2024/05/20/empurre/"
+---
+
+fechou a porta. não bateu, nem usou a força. simplesmente a fechou, com calma, sem barulho. ainda que ele achasse que aquela porta, na verdade, tinha muitos significados na vida, aquele era um primeiro passo. fechar uma porta significava, entre tantas coisas, encerrar um ciclo. viciante e cíclico. ele se sentia preso em ações, sentimentos e situações que ficavam se repetindo sem parar na sua vida.
+
+ele ficou alguns minutos parado. pensando. olhando pro corredor que ele precisava atravessar, sem saber se aquilo lhe traria alívio ou desespero. terminar um relacionamento não era realmente uma das suas habilidades. ou ele precisava mentir, e muito, pra não falar os verdadeiros motivos, ou ele simplesmente os revelava sem nenhum tipo de preparo, de tato. ele era uma pessoa literal, sempre foi. e isso às vezes trazia muitos problemas pra ele.
+
+ deu 3 passos. curioso notar que não foram 2, 1 e nem 4. foram 3 passos, quase em linha reta. meio vacilante e devagar. parou de novo. não sabia direito ainda o que estava sentindo. se era algum tipo de alívio ou novamente, um desespero de quem encerrava uma história e não fazia a mínima ideia do que aconteceria a seguir. estar solteiro depois de tantos anos, era confuso. possibilidades demais a sua frente e ele, definitivamente, não era uma pessoa boa pra lidar com isso.
+
+ metódico. autista. quase desequilibrado na vida. mudança sempre o assustou. então imagina essa situação nova, em que ele não fazia ideia do que aconteceria a seguir. estar solteiro trazia uma liberdade que chegava a ser assustadora, pra ele naquele momento. não gostava de mudança. se virou e olhou de novo a porta daquele apartamento. será que deveria voltar e falar que tudo havia sido um engano? será que isso ainda era uma possibilidade? pensou bem e chegou à conclusão de que não era viável. não que ele tivesse sido muito duro ou falado muitas coisas que ele não poderia voltar atrás. ele sabia que aquela tinha sido a melhor decisão.
+
+ deu outro passo. o final do corredor ainda estava longe, mas talvez não tão longe quanto a sua mente naquele momento. parecia que tinha algo muito pesado em seus pés, não conseguia simplesmente sair andando. o peso das próprias decisões lhe pesava fisicamente como se ele tivesse criado raízes naquele lugar. respirou fundo, precisava criar coragem. não tinha outra saída, ele já havia feito o que precisava, agora ele tinha que continuar andando e sair dali. não havia mais nada pra ele naquele lugar. a história, assim como a porta havia sido fechada.
+
+ engoliu o orgulho, levantou a cabeça, e foi caminhando em passos decididos. a cada passo era como se ele andasse por uma linha do tempo e revisitasse tudo o que havia acontecido naquele relacionamento. novamente ele entendeu que não havia outra escolha, na verdade há muito tempo que já não havia mais nada a se fazer. era só o medo de ficar sozinho, ou, quem sabe, alguma ilusão de que ele dependia daquilo. dependia daquele relacionamento como se fosse oxigênio.
+
+ colocou a mão na porta que dava pra rua. puxou, ao invés de empurrar e riu da própria burrice. sentiu o vento que batia bem de leve no seu rosto. o frio cortante que lhe subia a espinha. procurou as chaves do carro e um cigarro. acendeu ainda um pouco trêmulo e apertou tão forte as chaves que sentiu que sua mão iria sangrar. continuou caminhando como quem está, não apenas na direção certa, mas em um rumo totalmente novo na vida. a porta fechou, mas o mundo, naquele momento, se abriu.
+c.e.

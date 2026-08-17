@@ -1,0 +1,16 @@
+---
+titulo: "fé &#8211; parte ii"
+data: "2024-01-30"
+categoria: "outros"
+publicado: true
+capa: "/assets/img/acervo/20240130-184111-00007329533317037250150-d0e15245.webp"
+url_original: "http://enricopierro.com.br/2024/01/30/fe-parte-ii/"
+---
+
+eu penso muito na minha relação com a fé, e por vezes eu acho até engraçado. como eu posso me considerar uma pessoa de fé, se eu mesmo vivo desesperado com as coisas? porque quando mais eu me desespero com uma situação, mais isso mostra como minha fé é instável e fraca. ou até mesmo que eu não tenho fé. não acho que o conceito da fé seja maleável. eu acho que é aquela coisa: ou você tem, ou você não tem. e bom, se eu duvido, se eu me desespero, se eu perco a minha própria estabilidade, então acho que eu não tenho fé.
+
+veja: se eu passo por uma dificuldade, deus sabe o porquê disso. tudo está nas mãos dele. e se eu olhar com atenção, vou perceber que ele nunca me abandonou. claro que passei por momentos sombrios ou até com falta de esperança. mas ele ainda estava ali. principalmente quando eu mesmo não o via e nem o sentia.
+
+acreditar ou mesmo ter fé, não é viver na inércia. não é sentar e esperar. é perseverar e continuar, mas acreditando que deus sempre cuidou de mim e vai seguir cuidando. acho que no fundo, a fé, é a antítese do desespero. é a serenidade em meio ao caos. é o alicerce na tempestade. é a calma inexplicável que faz com que você tenha a cabeça no lugar par conseguir resolver as coisas, por pior que elas sejam. fé é acreditar. em você, no futuro, na vida. fé é não desistir.
+
+talvez eu não seja tão digno assim das graças de deus, mas sei que ele nunca vai deixar um filho (sim, eu mesmo e todos vocês), desamparado. porque um pai ama um filho. e está na hora do filho também amar e confiar no pai. que esse ano a palavra, pra mim, seja fé. e pra você?

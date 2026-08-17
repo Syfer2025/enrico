@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Página não encontrada — Enrico Pierro</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="/enrico/favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="/enrico/styles/tokens.css" />
+    <link rel="stylesheet" href="/enrico/styles/base.css" />
+    <link rel="stylesheet" href="/enrico/styles/layout.css" />
+    <link rel="stylesheet" href="/enrico/styles/components.css" />
+    <style>
+      /* Uma tela só, centrada. Não vale puxar o CSS de seção nenhuma para isto. */
+      .erro {
+        display: grid;
+        place-content: center;
+        justify-items: center;
+        gap: var(--space-4);
+        min-height: 100svh;
+        padding: var(--space-6) var(--gutter);
+        text-align: center;
+      }
+      .erro__numero {
+        font-family: var(--font-display);
+        font-size: clamp(4rem, 18vw, 8rem);
+        line-height: 1;
+        font-weight: var(--weight-heavy);
+        letter-spacing: -0.03em;
+        color: var(--accent);
+      }
+      .erro__texto { max-width: 34ch; color: var(--label-secondary); }
+      .erro__acoes { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; }
+    </style>
+  </head>
+  <body>
+    <main class="erro">
+      <p class="erro__numero">404</p>
+      <h1 class="t-display-2">esta página não existe</h1>
+      <p class="t-body erro__texto">
+        O endereço pode ter mudado, ou o link que te trouxe até aqui pode estar
+        com um erro de digitação.
+      </p>
+      <div class="erro__acoes">
+        <a class="btn btn--accent" href="/enrico/">
+          <span class="btn__label">Ir para a página inicial</span>
+        </a>
+        <a class="btn" href="/enrico/escrita.html">
+          <span class="btn__label">Ver todos os textos</span>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>

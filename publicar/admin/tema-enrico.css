@@ -1,0 +1,279 @@
+:root,
+:root[data-theme="dark"] {
+
+  --sui-base-hue: 38 !important;
+  --sui-key-hue: 38 !important;
+
+  --sui-background-color-1-hsl: 225 20% 4% !important;
+  --sui-background-color-2-hsl: 223 17% 6% !important;
+  --sui-background-color-3-hsl: 223 16% 9% !important;
+  --sui-background-color-4-hsl: 223 14% 13% !important;
+  --sui-background-color-5-hsl: 223 12% 17% !important;
+
+  --sui-border-color-1-hsl: 225 8% 26% !important;
+  --sui-border-color-2-hsl: 225 8% 18% !important;
+  --sui-border-color-3-hsl: 225 8% 14% !important;
+
+  --sui-primary-accent-color: hsl(38 100% 60%) !important;
+  --sui-primary-accent-color-light: hsl(38 100% 68%) !important;
+  --sui-primary-accent-color-dark: hsl(38 82% 49%) !important;
+  --sui-primary-accent-color-text: hsl(38 100% 66%) !important;
+  --sui-primary-accent-color-inverted: #0a0b06 !important;
+  --sui-primary-accent-color-translucent: hsl(38 100% 60% / 55%) !important;
+  --sui-primary-accent-color-translucent-light: hsl(38 100% 60% / 32%) !important;
+
+  --sui-font-family-default: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "SF Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --sui-heading-font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "SF Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --sui-font-family-monospace: ui-monospace, "SF Mono", SFMono-Regular, Menlo,
+    monospace !important;
+
+  --sui-control-small-border-radius: 6px !important;
+  --sui-control-medium-border-radius: 10px !important;
+  --sui-control-large-border-radius: 14px !important;
+  --sui-button-small-border-radius: 6px !important;
+  --sui-button-medium-border-radius: 10px !important;
+  --sui-button-large-border-radius: 14px !important;
+  --sui-textbox-border-radius: 10px !important;
+  --sui-checkbox-border-radius: 6px !important;
+  --sui-dialog-border-radius: 20px !important;
+  --sui-popup-border-radius: 14px !important;
+
+  --sui-hover-background-color: hsl(38 40% 60% / 10%) !important;
+  --sui-active-background-color: hsl(38 60% 60% / 16%) !important;
+  --sui-selected-background-color: hsl(38 70% 60% / 18%) !important;
+  --sui-highlight-background-color: hsl(38 100% 60% / 22%) !important;
+}
+
+:root {
+  --sui-logo-height: 64px;
+}
+
+:root,
+:root[data-theme="dark"] {
+
+  --sui-textbox-font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "SF Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  --sui-textbox-font-size: 17px !important;
+  --sui-textbox-multiline-line-height: 1.75 !important;
+  --sui-textbox-multiline-padding: 28px 32px 40px !important;
+  --sui-textbox-background-color: hsl(223 16% 9%) !important;
+  --sui-textbox-border-color: hsl(225 8% 18%) !important;
+  --sui-textbox-border-radius: 14px !important;
+}
+
+[role="group"][data-mode] section[data-field-type]:not(section[data-field-type] section) {
+  max-width: 46rem !important;
+  margin-inline: auto !important;
+  box-sizing: border-box !important;
+}
+
+.text-editor {
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.lexical-root {
+  min-height: 58vh !important;
+}
+
+.lexical-root p {
+  margin-block: 1rem !important;
+}
+
+.lexical-root p:first-child {
+  margin-top: 0 !important;
+}
+
+.lexical-root blockquote {
+  margin-block: 1.25rem !important;
+  padding-inline-start: 1.125rem !important;
+  border-inline-start: 3px solid hsl(38 100% 60% / 65%) !important;
+  font-style: italic !important;
+}
+
+.lexical-root img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  margin-block: 1.25rem !important;
+  border: 1px solid hsl(225 8% 22%) !important;
+  border-radius: 10px !important;
+}
+
+.lexical-root a {
+  color: hsl(38 100% 66%) !important;
+  text-underline-offset: 2px !important;
+}
+
+.lexical-root :is(ul, ol) {
+  margin-block: 1rem !important;
+  padding-inline-start: 1.5rem !important;
+}
+
+.lexical-root li {
+  margin-block: 0.35rem !important;
+}
+
+[data-field-type="markdown"] {
+  min-height: 58vh;
+}
+
+.ajuda-enrico {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  inline-size: 17px;
+  block-size: 17px;
+  margin-inline-start: 7px;
+  padding: 0;
+  border: 1px solid hsl(38 100% 60% / 45%);
+  border-radius: 999px;
+  background: transparent;
+  color: hsl(38 100% 66%);
+  font: 600 11px/1 -apple-system, BlinkMacSystemFont, sans-serif;
+  cursor: help;
+  vertical-align: middle;
+
+  flex: none;
+}
+
+.ajuda-enrico:hover,
+.ajuda-enrico:focus-visible,
+.ajuda-enrico[data-aberto="sim"] {
+  background: hsl(38 100% 60%);
+  border-color: hsl(38 100% 60%);
+  color: #0a0b06;
+  outline: none;
+}
+
+.ajuda-enrico__balao {
+  position: fixed;
+  z-index: 2147483000;
+  inline-size: max-content;
+  max-inline-size: min(21rem, calc(100dvw - 20px));
+  padding: 9px 12px;
+  border: 1px solid hsl(225 8% 30%);
+  border-radius: 10px;
+  background: hsl(223 16% 14%);
+  box-shadow: 0 10px 30px hsl(225 40% 1% / 0.7);
+  color: hsl(0 0% 100% / 0.9);
+  font: 400 13px/1.45 -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align: start;
+  white-space: normal;
+  pointer-events: none;
+}
+
+.ajuda-enrico__balao[hidden] {
+  display: none;
+}
+
+[data-field-type="markdown"] .component {
+  border-color: hsl(225 8% 20%) !important;
+  border-radius: 12px !important;
+  background-color: hsl(223 17% 7%) !important;
+}
+
+[data-field-type="markdown"] .preview {
+  display: block !important;
+  border: 0 !important;
+  padding: 0 !important;
+  inline-size: auto !important;
+  block-size: auto !important;
+}
+
+[data-field-type="markdown"] .preview img,
+[data-field-type="markdown"] .component img {
+  inline-size: 100% !important;
+  max-inline-size: 22rem !important;
+  block-size: auto !important;
+  max-block-size: none !important;
+  border-radius: 10px !important;
+  border: 1px solid hsl(225 8% 20%) !important;
+  object-fit: contain !important;
+}
+
+.previa-capa {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.previa-capa[data-vazia="sim"] .previa-capa__moldura {
+  border-style: dashed;
+}
+
+.previa-capa__recado {
+  align-self: center;
+  max-inline-size: 19rem;
+  margin: 0;
+  color: hsl(0 0% 100% / 0.55);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.previa-capa__recado b {
+  color: hsl(0 0% 100% / 0.8);
+  font-weight: 600;
+}
+
+.previa-capa__icone {
+  font-size: 15px;
+  line-height: 1;
+  vertical-align: -3px;
+  color: hsl(0 0% 100% / 0.75);
+}
+
+.previa-capa:not([data-vazia="sim"]) .previa-capa__recado {
+  display: none;
+}
+
+.previa-capa__caixa {
+  margin: 0;
+  display: grid;
+  gap: 5px;
+  justify-items: start;
+}
+
+.previa-capa__caixa figcaption {
+  color: hsl(0 0% 100% / 0.5);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.previa-capa__moldura {
+  overflow: hidden;
+  border: 1px solid hsl(225 8% 22%);
+  border-radius: 10px;
+  background-color: hsl(223 16% 12%);
+}
+
+.previa-capa__moldura--quadrado {
+  inline-size: 72px;
+  aspect-ratio: 1;
+}
+
+.previa-capa__moldura--cartao {
+  inline-size: 108px;
+  aspect-ratio: 3 / 2;
+}
+
+.previa-capa__moldura img {
+  inline-size: 100%;
+  block-size: 100%;
+
+  object-fit: cover;
+  display: block;
+  transition: object-position 160ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .previa-capa__moldura img {
+    transition: none;
+  }
+}

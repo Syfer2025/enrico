@@ -1,0 +1,14 @@
+---
+titulo: "dia 37"
+data: "2023-04-19"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/img-20230419-wa00946279162134976951330-ec3abc5d.webp"
+url_original: "http://enricopierro.com.br/2023/04/19/dia-37/"
+---
+
+não esqueci. até achei que tivesse conseguido, mas quem controla esse tipo de coisa. cheguei até a conhecer alguém que me deu uma balançada. até ver uma foto de alguém que se parece com você. uma voz que tem o mesmo timbre. sempre tem um fantasma teu me assombrando sorrateiramente. daí me peguei travando um diálogo com você. sobre aquele garoto que ficamos, quase na mesma época. será que você sabia? no meu diálogo não. daí eu percebi aquela ingenuidade singular que você tem, ainda que tente ser controlador e manipulador, algo típico do teu signo, mas no fundo você é ingênuo. e um pouco abusivo, confesso. nessa sua tentativa de controlar tudo e sempre estar por cima, eu acho que no final das contas quem mais sofre é você. engraçado chegar a essa conclusão, mas eu tenho certeza que sob essa couraça de quem controla e nunca é controlado, você é mais sofre com tudo isso. não por mim, mas por cada uma das pessoas que passam pela tua vida e que você não consegue manter, ainda que você se esforce à tua maneira.
+
+acho que preciso trocar um pouco o meu círculo social. sabe, não me faz tão bem saber que dividimos as mesmas pessoas, quase simultaneamente e isso já aconteceu mais de uma vez. daí eu volto aqui, escrevo de novo seguidas linhas de um novo dia, que já nem é tão novo assim. é como chover em algo que já está há muito molhado. não faz muito sentido, né? nós também nunca fizemos. você procurava desculpas para achar que éramos diferentes demais para dar certo, quando na verdade, talvez fôssemos parecidos demais. em algum momento você percebeu isso. e te incomodou tanto que você parou de me seguir em todas as redes sociais possíveis. claro, eu também teria feito o mesmo, mas isso te entregou. eu incomodava demais, né? era demais me ver sendo feliz por aí, me divertindo sem você e indo aos lugares que sempre falávamos de ir juntos, mas que nas fotos não era com você que eu estava. eu sei. eu passei por isso também e já tive vontade de arrancar cada um dos teus dentes na pedrada, só de te ver sorrindo para outro alguém. mas passou. não sobrou nem 1/3 daquele sentimento sublime que havia aqui. te reciclei. te virei do avesso dentro da minha mente. e aos poucos ela mesmo vai te apagando. até uma nova foto de alguém parecido, um som de uma voz parecida. até um próximo trago ou um próximo gole.
+
+c.e.

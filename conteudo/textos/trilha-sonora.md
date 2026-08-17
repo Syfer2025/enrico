@@ -1,0 +1,20 @@
+---
+titulo: "trilha sonora."
+data: "2016-11-30"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/trilha-sonora-96342aa5.webp"
+url_original: "http://enricopierro.com.br/2016/11/30/trilha-sonora/"
+---
+
+Acho que tô inundada por dentro. Submersa em lágrimas que não chorei.
+
+—  Desencontrou.
+
+Sempre fui uma pessoa musical, do tipo que a vida tem trilha sonora. Estou sempre escutando algo, seja no trabalho, em casa ou no carro, e adoro descobrir coisas novas. Acho que o mundo tem muita música boa que a gente passa batido. E nessa conexão tão forte entre músicas e eu, algumas traduzem exatamente coisas que sinto, em determinados momentos da vida e isso faz com que sejam extremamente marcantes. Eu poderia cobrir meu corpo de tatuagens só com frases de música que fizeram ou ainda fazem sentido. A cada dia uma nova música aparece, um novo significado. Chamo isso de ***conforto musical***, porque é como se a pessoa que tivesse escrito aquilo, pudesse ter previsto exatamente algo que eu iria passar. Tenho certeza que isso acontece com muitas pessoas, além de mim. Às vezes são apenas frases soltas, em outras é a música inteira. A batida certa pode mudar completamente meu humor, seja levantando ele até os céus ou me derrubando até chegar no pré-sal, tudo varia. A vida não é algo tão constante e meu gosto musical acompanha exatamente isso. Você pode entrar no meu carro e passar o caminho todo escutando músicas com palmas, animadas, felizes e em outros dias você vai ficar ali, se perguntando como sair do buraco que aquelas músicas estão te enfiando.
+
+       Todos nós temos altos e baixos e minhas músicas traduzem muito isso. Quer saber meu humor? Só olhar o que eu estou escutando no Spotify. Aliás, eu acho que as pessoas, se quisessem, conseguiriam saber muito sobre a minha vida, apenas lendo as entrelinhas. Você consegue, com as músicas, saber onde estou, o que eu estou fazendo, meu humor e etc. Mas é aquela coisa, já falam que eu sou transparente demais. Fácil demais de ser lido e interpretado. E por mais que eu tente guardar algum mistério ou surpreender, parece que tudo cai em um grande cliché existencial. Há pessoas que eu nem preciso dizer nada para saberem metade do que está acontecendo na minha vida. Nem sempre é bom, às vezes eu não quero falar sobre determinados assuntos, problemas, paranoias ou inseguranças. E como forma de proteção, há momentos em que eu me fecho dentro de mim mesmo. Evito sair, evito contato com as pessoas, me escondo das redes sociais. Já cheguei a apagar aquele aplicativo de mensagens, deletei o facebook incontáveis vezes (mas ele sempre reativa quando eu abro um aplicativo sincronizado, já até desisti de apagá-lo), e já passei horas com o celular no modo avião para conseguir ter um pouco de paz, olhar direito pra dentro e avaliar as coisas que estão acontecendo. Nem tudo é de fácil digestão e meu raciocínio consegue ser mais rápido do que as palavras que saem da minha boca ou através dos meus dedos em textos. Mas as músicas? Ah, as músicas, essas nunca me abandonam, estão sempre ao meu lado e caminhando comigo, dando o tom da minha existência e traduzindo meus sentimentos que ecoam em um quarto vazio, preenchido apenas pelos pensamentos que vão jorrando do meu cérebro.
+
+       Agora eu estou aguardando um outro significado para essas canções. Nos últimos anos, acredito que em 4 ou 5 anos, eu consegui chorar 2 ou 3 vezes, aquele choro que realmente alivia e te tira um peso, mas nas últimas três semanas, sem motivo aparente (ou talvez tenha sim e eu só não queira compartilhar), algumas músicas têm feito meus olhos marejarem. Uma lágrima discreta já caiu, meio no canto do olho, como quem não queria sair da toca. Vou continuar dando play, nas músicas e na vida e deixar com que as coisas aconteçam, com que o barco siga a correnteza do rio ou flutue lentamente em alguma direção qualquer, enquanto alguém canta baixinho nos meus fones, deitado em algum lugar, em paz comigo mesmo, até essa represa abrir suas portas e tudo ser leve novamente.
+
+c.e.

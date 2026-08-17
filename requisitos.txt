@@ -1,0 +1,8 @@
+# O que os geradores precisam além do Python. Instalar com:
+#     python3 -m pip install -r requisitos.txt
+#
+# Só duas, de propósito: o resto usa biblioteca padrão, para o site continuar
+# gerável numa máquina limpa daqui a alguns anos.
+
+pillow    # medir e redimensionar as imagens
+markdown  # transformar o texto do painel em HTML

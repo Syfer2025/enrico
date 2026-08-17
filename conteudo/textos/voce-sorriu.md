@@ -1,0 +1,12 @@
+---
+titulo: "você sorriu."
+data: "2013-09-07"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/98f90-tumblr-mhf1zk53wf1rqh6wgo1-500-dd636bf3.webp"
+url_original: "http://enricopierro.com.br/2013/09/07/voce-sorriu/"
+---
+
+ando um pouco sem inspiração para escrever, mas vi essa imagem na internet e lembrei de uma coisa. lembro de quando saíamos para jantar e eu ficava parado, olhando pra você. era como se você fosse o cara mais bonito do mundo, ou o último ser humano da terra. era impossível não te olhar. ficaria daquele jeito por horas. você ficava vermelho, olhava pra baixo, sorria. eu achava isso tão lindo em você que olhava ainda mais. tinha vontade de passar por cima da mesa e te engolir. era fofo demais. lindo demais. apaixonante demais. e meu coração parava um pouco de bater e depois parecia que dava cambalhotas no meu peito. e por incrível que pareça, esse foi um dos motivos que você terminou comigo. porque eu te encarava demais.
+
+c.e.

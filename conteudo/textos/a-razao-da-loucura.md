@@ -1,0 +1,26 @@
+---
+titulo: "a razão da loucura."
+data: "2024-06-24"
+categoria: "outros"
+publicado: true
+capa: "/assets/img/acervo/cc3b3piadefraseinstagram281080x1080px29281080x10-0b97c798.webp"
+url_original: "http://enricopierro.com.br/2024/06/24/a-razao-da-loucura/"
+---
+
+fico oscilando em uma encruzilhada onde se sou bom, se aproveitam. se sou ruim, me condenam. será que existe um meio termo entre toda essa razão e loucura?
+
+ dizem que o mundo é dos espertos. não sei. talvez o mundo seja mesmo dos canalhas, psicopatas e egoístas. de todos os que sempre parecem ganhar. será que ganham mesmo?
+
+   entre o abismo e o céu estrelado há tanto espaço que eu diria que tua vã filosofia nunca será capaz de imaginar. tantas nuances e meios-termos. será que não somos a primeira fase do purgatório? vai ver ainda há algo entre nós e o céu que segue oculto.
+
+      não posso ficar remando contra a maré do meu próprio ser. se sou o que sou, não cabem mais as meias palavras. esse sobe e desce do caráter é uma roupa que nunca me serviu bem. quem sabe Deus não é um alfaiate e eu sou o modelo com as medidas erradas.
+
+     mas sou quem sou. com todas as dores, mágoas, arrependimentos, tristezas, alegrias, conquistas. é um grande liquidificador de sentimentos compactado em 1,70 de altura. nem bom, nem ruim. eu.
+
+    aquele que pra ser sincero nem sabe ainda tudo o que é. tenho ideia só do que posso vir a ser.
+
+      e você? já parou pra se conhecer? entender teu papel nessa confusão com nome curto chamada vida? pare na frente do espelho e tente ver o que está atrás da tua imagem. eu já fiz tanto isso, que decorei até as imperfeições do meu rosto, mas ainda parece ter algo que me impede de ver muito além. quem sabe você não consegue?
+
+        mas se você já sabe quem é, ponto pra você! já está centenas de passos a frente de todos nós aqui atrás. Cambaleante, ilusórios perdidos em sonhos, às vezes até inúteis. te admiro. não te invejo, mas te admiro por estar já tão longe. nas sombras da vida você pode ter aprendido a virar luz.
+
+         vou seguir procurando no escuro tudo aquilo que já não posso mais tropeçar e seguir essa baderna do bom e mau. mas nunca quis ser o lobo, acho que sou mais chapeuzinho na vida. é, em breve encontrarei essas respostas. e quem sabe no fim do trilho não possamos comemorar todos juntos, as delícias e angústias de ser quem somos.

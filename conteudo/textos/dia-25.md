@@ -1,0 +1,18 @@
+---
+titulo: "dia 25"
+data: "2018-08-29"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/dia2b241-8f42c88c.webp"
+url_original: "http://enricopierro.com.br/2018/08/29/dia-25/"
+---
+
+Three simple rules in life. 1. If you do not go after what you want, you’ll never have it. 2. If you do not ask, the answer will always be no. 3. If you do not step forward, you will always be in the same place.
+
+—  (via [nyu-](http://nyu-tah.tumblr.com/)tá)
+
+Veja só, você chega no domingo à noite e já começa aquela depressão de começo de semana. Bem, não adianta colocar toda a culpa na segunda-feira, ela não é o problema. Na verdade ela nem é o primeiro dia, na realidade é o domingo, o que explica o nome “segunda”. Mas mesmo assim você fica aí, reclamando que tem que acordar cedo e etc. Já parou pra pensar que talvez o problema realmente não seja o dia, a segunda-feira não tem culpa se você é insatisfeito com a tua vida, infeliz com o teu trabalho e por aí vai. É só mais um dia como qualquer outro. O problema está em você e no que você está fazendo da sua vida. Uma pessoa satisfeita não tem problemas com segundas-feiras, nem terças, nem quartas, nem nenhum outro dia. Seja mais produtivo e procure o que te faz feliz. Perseguir sonhos não é idiotice, mesmo quando a gente escuta das pessoas próximas que é. Não se deixe abater por causa da rotina se ela não te agrada, mude-a e procure ser feliz. Se você não der um passo, você nunca vai sair do lugar. Ah, e não esquece que uma das cosias mais importantes da vida não é o destino, esse é inevitável, é a viagem. Então comece a se movimentar e curta a paisagem. Você pode chegar em lugares que nunca imaginou. E quem sabe nessas andanças você não acaba tropeçando em mim? Você sabe, eu estou por aí também, meio perdido, amaldiçoando uma segunda ou outra. Afinal de contas, acho que está todo mundo meio perdido mesmo, né? Então que tal a gente começar a mudar? De dentro pra fora. Fazer aquela reforma íntima igual a que a gente nunca tem coragem de fazer em casa. E lembre-se, se precisar de uma companhia, é só estender a mão, eu vou com você e você sabe disso.
+ 
+Boa segunda-feira. 
+ 
+c.e.

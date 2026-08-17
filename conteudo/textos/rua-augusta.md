@@ -1,0 +1,20 @@
+---
+titulo: "rua augusta."
+data: "2011-02-05"
+categoria: "textos"
+publicado: true
+capa: ""
+url_original: "http://enricopierro.com.br/2011/02/05/rua-augusta/"
+---
+
+Era como andar do lado errado da calçada. Desprotegido e indefeso.
+
+Primeiro um susto totalmente desnecessário quando eu senti que o chão tremia e eu não sabia onde começava a ilusão e onde terminava a realidade. Era assustador não saber se estava sendo agarrado e levado para longe, se o chão estava se abrindo… nessa hora eu não sabia dizer nem mesmo onde eu estava.
+
+Houve motivos mil para uma alegria instantânea. Flertes e olhadas indiscretas disparadas na minha direção. Algo não estava bem encaixado. Eu estava fora da minha própria órbita. Não haviam planetas à minha volta e tudo era tão escuro como um céu sem estrelas.
+
+Pessoas me assustam. Pessoas me olhando conseguem me assustar muito muito mais. Eu estava petrificado. Tudo era estranho e desconhecido. Eu estava completamente exposto como se estivesse nu em meio a todos aqueles carros e pessoas. Eu congelei por alguns segundos. Perdi o fôlego e a voz.
+
+Retomei o caminho rezando para que tudo aquilo passasse o mais rápido que pudesse. Em partes passou mas depois de todas essas sensações que reforçam o meu gosto pelo conhecido, pela minha casa e por quatro paredes, todas as coisas começaram a andar de trás pra frente. Inclusive eu. Tudo me irritou. O mundo se fechou à minha volta e eu tinha certeza que era hora de voltar para casa.
+
+c.e.

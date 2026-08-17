@@ -1,0 +1,18 @@
+---
+titulo: "na minha terra tem palmeiras onde canta o sabiá."
+data: "2025-01-02"
+categoria: "outros"
+publicado: true
+capa: "/assets/img/acervo/whatsapp-image-2024-12-09-at-17-49-41-1-386575b2.webp"
+url_original: "http://enricopierro.com.br/2025/01/02/na-minha-terra-tem-palmeiras-onde-canta-o-sabia/"
+---
+
+ele passava os dedos na água do mar imaginando o que teria do outro lado daquele oceano que lhe parecia infinito. imaginava as palmeiras balançando com o vento e os sonhos servidos com cocos gelados em praias de areia branca. será que estaria enganado? será que tudo era uma ilusão?
+
+diversos amigos já haviam partido para a terra prometida. não a bíblica, árida e seca. mas uma nova fértil e com tantos recursos e colheitas quanto se podia imaginar. árvores com frutos a se perder de vista e pastos dos mais verdes a engordar a criação. será que tudo era alegria?
+
+olhava as mãos ainda calejadas de um trabalho cada dia mais escasso, imaginando o quanto estava disposto a ver novamente o sangue da enxada entre as uvas amassadas pelos próprios pés. será que aquela terra daria uvas? quem se importava? com tantas frutas e abundância, não faltariam opções de grãos e esperanças. crianças de barriga cheia brincando nos montes e correndo pelo gramado recém-cortado da casa tão sonhada.
+
+bateu com a mão na água como se pudesse dissipar os próprios pensamentos. o navio estava próximo de partir. a mala jogada no ombro era leve, não havia muito o que levar, a não ser a memória da escassez e da luta. a saudade já lhe doía, travando uma luta de esgrima contra a fé de um sol que parecia brilhar diferente. os desafios não seriam nada com tanto desejo por dias melhores.
+
+sentiu um puxão na camisa e lembrou de todos os motivos ali alinhados a sua volta. seus 3 filhos a lhe chamar, ansiosos pela aventura de um novo e inédito passeio que lhes esperavam a alguns metros a sua frente. o imenso navio a vapor visto agora tão de perto, para aqueles que haviam saído de tão modesto interior. tudo lhes parecia tão imenso quas antes se juntaram a um canto, e em um abraço caloroso e apertado, choraram, ele beijou o chão deixando os pequenos e a esposa em silêncio e agradeceu a deus. era o primeiro dia de uma nova vida. o sonho estava começando.

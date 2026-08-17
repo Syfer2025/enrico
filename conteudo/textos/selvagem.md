@@ -1,0 +1,20 @@
+---
+titulo: "selvagem."
+data: "2016-11-16"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/0-7c73a06e.webp"
+url_original: "http://enricopierro.com.br/2016/11/16/selvagem/"
+---
+
+*Apaixona-te pela tua existência.*
+
+*—  Jack Kerouac *
+
+Passei alguns dias na companhia de uma grande amiga de outro estado. Fizemos mil programações de inúmeros lugares a se visitar, mas claro que não conseguimos riscar nem metade da lista. Acontece. Mas ontem foi um dia incrível. Fomos a duas festas. Eu que não costumo ir nem a uma única, acabei emendando uma em outra. Mas o que aconteceu antes mesmo de eu ir para a festa, talvez tenha sido tão marcante quanto.
+
+Estou solteiro, já há algum tempo, e uma grande amiga de infância ficou também solteira recentemente. Estávamos ao telefone (eu sou old school, eu gosto de ligar para as pessoas) e eu mencionei a festa que iria. Ela ainda estava meio assim de ir, acabado de voltar de viagem e etc. Foi então que algumas coisas me vieram à cabeça e eu disse: acho que está na hora de realmente aproveitar as coisas que nos fazem bem, sem ficar na espera de que alguém nos leve ou faça isso por nós. Eu aprendi a valorizar diversas coisas que nunca foram do meu interesse, aproveitar festas que eu jamais me veria indo, simplesmente pela companhia, que me deu a oportunidade descobrir mundos novos. Mas essa pessoa se foi. Não no sentido literal, ela está bem viva, por aí, vivendo e aproveitando. E porquê eu não deveria estar fazendo o mesmo? Não por elx estar fazendo isso, mas porque é o momento em que nós temos que fazer isso por nós. Aproveitar as oportunidades que surgem a todo momento em uma cidade tão ímpar quanto São Paulo. Ficar na expectativa de que alguém vá te acompanhar, te levar, te convencer, precisa ficar no passado. Quando você chega no ponto em que aprende o que te faz bem, feliz e realizado, é hora de tomar as rédeas e controlar os cavalos. Se os dias de cão acabaram, que venham os cavalos! E que saibamos domá-los e direcioná-los na direção da nossa própria felicidade. Sem precisar depender do outro, a não ser da nossa própria vontade de ser feliz.
+
+No final das contas ela nem foi, fomos eu e minha amiga de fora, e eu encontrei pessoas que nem imaginava que veria, e, sem filtros, aproveitei como se o dia fosse acabar naquela noite. Imagina se acaba?
+
+c.e.

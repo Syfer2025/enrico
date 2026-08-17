@@ -1,0 +1,16 @@
+---
+titulo: "régua."
+data: "2024-06-18"
+categoria: "outros"
+publicado: true
+capa: "/assets/img/acervo/cc3b3piadefraseinstagram281080x1080px29281080x10-f5eaebf8.webp"
+url_original: "http://enricopierro.com.br/2024/06/18/regua/"
+---
+
+sabe a vida perfeita das redes sociais? ela não existe!
+
+desculpa te jogar esse balde de água fria. é claro que nós compartilhamos aquilo que achamos legal, que é mais importante, e o que é mais bonito na nossa vida, e isso é perfeitamente normal. só não fique acreditando demais que isso é a regra, porque na verdade é a exceção. ninguém posta coisas do tipo: “hoje eu acordei com dor de barriga”, ou uma foto descabelada na cama sem maquiagem. não! queremos mostrar a parte boa da vida, e só. e precisamos ter muito cuidado ao medir a vida das pessoas com a mesma régua da nossa vida, ainda mais se isso for através das redes sociais. você nunca sabe o que tem por trás do sorriso nas fotos, acredite.
+
+viver na base da comparação só vai te empurrar pra um precipício, acreditando em coisas que são totalmente falsas. claro que existe gente feliz, realizada e tudo o mais, mas você realmente acha que ninguém no mundo tem problemas? claro que tem. todo mundo tem. só que a maioria das pessoas não fica desabafando nas redes sociais. você só vai ver a parte que as pessoas querem mostrar e isso não chega a 10% da vida de alguém. você posta tudo o que te acontece? pensa bem.
+
+então meu conselho pra você é: seja você mesmo, não importa quem ou como você seja! não fique se comparando com os outros. você é singular! aprende isso, ninguém é igual a você e isso que é o mais legal de ser quem você é.

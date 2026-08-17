@@ -1,0 +1,20 @@
+---
+titulo: "afastamento."
+data: "2010-03-31"
+categoria: "textos"
+publicado: true
+capa: ""
+url_original: "http://enricopierro.com.br/2010/03/31/afastamento/"
+---
+
+eu me afastei. não sei exatamente o quando eu consegui fazer isso. faz tão pouco tempo e já me sinto longe como em uma praia deserta. e eu sei que as pegadas na areia ainda estão tão frescas que nem mesmo a última onda conseguiu apagar. eu continuo olhando pra frente como se eu fosse uma águia, mas isso são metas e definições minhas e que eu não quero compartilhar. não quero que saibam. nada. quero viver o vazio e o buraco deixado e ir preenchendo ele todo comigo mesmo. eu quero ser preenchido por mim e não por outra pessoa. quero me curtir. olhar pra dentro de mim e ver o meu melhor.
+
+uma vez eu dei um cartão de presente, não era nenhuma data especial. eu dizia que se eu pudesse eu gostaria de um dia poder olhar para trás e ver só as coisas boas. deixar de lado as coisas ruins que aconteceram. no cartão dizia: “e se um dia você precisar olhar para trás para me ver, que você possa ver apenas as coisas boas. porque durante todo o tempo a única coisa que eu tentei foi ser o meu melhor pra você”. eu esqueci de ser o melhor pra mim. e me deixei de lado um pouco.
+
+eu nunca me arrependo das coisas que eu faço. eu posso analisar muito bem e ter claro para mim mesmo que não tomei a melhor das decisões, mas isso não quer dizer que eu gostaria de voltar atrás e refazer todas elas. eu sou do tipo que acredita (bem clichê) que nada é por acaso e as coisas acontecem no tempo certo. ok. aconteceram. duraram. acabaram. e existe um novo ciclo até para a mesma situação. o fato de você atravessar algo não te exclui de atravessá-la novamente no futuro. isso serve para qualquer situação na vida.
+
+vou continuar caminhando e olhando pra frente. eu sei das aflições e sentimentos que eu carrego dentro de mim mesmo e não pretendo abandonar nada. nem uma única fagulha desse incêndio. não vou xingar ninguém nem mudar minha essência. eu sei quem sou. eu sei o que eu represento para quem importa e bem, muitos dos meus amigos podem não acreditar mas eu não vou procurar. não vou olhar rastros e vestígios. não vou ver uma folha amassada no chão e tentar descobrir a altura da pessoa que passou por ali ou quanto ela calça. eu vou simplesmente continuar meu caminho e deixar que o meu próprio livre arbítrio me direcione. seguindo meu coração sempre, eu quero descobrir em que praia eu vou ancorar de novo.
+
+e que assim seja.
+
+originalmente escrito em 19/3/2010

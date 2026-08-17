@@ -1,0 +1,28 @@
+---
+titulo: "a vida é uma porta."
+data: "2016-04-08"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/5c49d-porta-entreaberta-paula-0bcd917c.webp"
+url_original: "http://enricopierro.com.br/2016/04/08/a-vida-e-uma-porta/"
+---
+
+***
+
+“Se a vida te fechar uma porta, abra-a de novo. É uma porta. É assim q elas funcionam!”***
+
+     Começou assim, despretensiosamente. Era uma porta e ela estava ali, ao lado de tantas outras nesse corredor infinito que a gente costuma chamar de vida. Eu poderia ter batido antes de entrar, mas acredito que eu a tenha chutado. E chutei com tanta violência que ela quase voltou e me acertou. Mas no final das contas eu acabei entrando. Eu sabia que ela estava fechada há algum tempo, porque, honestamente, eu que havia fechado por falta de maturidade.
+
+        Os anos passam, a gente cresce e aprende. Eu cresci e você também. Ambos aprendemos com a vida sobre a forma de lidar com as pessoas e também com nós mesmos. Aprendemos a nos conhecer. Você ainda guarda na lembrança aquele garoto que parecia metido, esnobe, às vezes até grosseiro. E eu via um garoto alto, com traços bonitos, mas estava envolvido com outras pessoas. Talvez as pessoas erradas, nunca vamos saber. E envolvido demais para poder te notar. Uma pena né? Porque os anos passam e as oportunidades também. Mas é a história da porta, às vezes ela fecha, às vezes ela abre. Hoje todas elas estão entreabertas.
+
+         Aprendi na vida que amar alguém pode muito bem ser como viver com uma andorinha. Ela é livre com suas asas, e pode voar longe, mas sempre sabe onde é a casa, e sempre volta. Talvez nem volte. Ou talvez nunca tenha vindo para ter alguma coisa para retornar. Mas ah, é assim que a vida funciona, não? Existem amores sublimes, daqueles que a gente carrega pra vida inteira sem nem se dar conta. São aquelas pessoas que fazem você abrir um sorriso até encabulado quando recebe um bom dia. Eu provavelmente estaria olhando para baixo se estivesse te dizendo tudo isso cara-a-cara.
+
+       Mas você não consegue acreditar nas coisas que eu te digo. A Terra é redonda e não é à toa.  Tudo dá voltas, muda, se recicla, e a gente aprende. Talvez você não tenha encontrado alguém que te faça acreditar em tudo isso, mesmo eu sabendo que estás muito bem acompanhado. E torço para que continue assim, sempre, feliz, com esse sorriso meio de lado. Um dia, quem sabe, ele aprenda a te ver como eu consigo te ver, ou eu quebre a cara e veja que, no fundo, você nem é tudo isso. Mas me faz bem acreditar que sim. É aquela paz que a gente sente quando senta no topo de uma montanha e fica olhando o mundo de cima. É sublime, sempre foi.
+
+          Eu já torci muito para que os nossos caminhos se cruzassem como se fossem dois trens no mesmo trilho. Como se a terceira Lei de Newton pudesse ser aplicada através dos meus pensamentos e, com isso, fazer com que você trombasse diretamente de encontro a mim. Mas isso já ficou para trás. A realidade sempre bate à porta e eu sei que nossos trilhos por mais próximos que um dia possam ser, estão destinados a serem paralelos. Se no final, os paralelos se encontram, acredito que isso seria em outra vida ou no final do universo. Do nosso universo paralelo.
+
+            Eu conheço os teus medos. Você sempre me diz que é muito fácil me ler, como se eu fosse um copo com água potável, translúcida, parado em uma mesa e você pudesse ver através dele. E tenho certeza que vê, nunca tive pudores com relação a você. De todas as pessoas, você é a que mais me viu nu. Não fisicamente. É uma coisa de alma e entrega. Eu sou a única coisa que posso te oferecer, então que seja inteiro, real, honesto e verdadeiro. Tantas palavras pra designar o mesmo. 
+
+            E sabe de uma coisa? Eu também magoo as pessoas, talvez tanto quanto você. Isso é uma das coisas que secretamente você sabe a meu respeito. Não é por mal, não é mesmo? Simplesmente acontece. Talvez seja esse nosso jeito de querer ser atencioso, agradar ao mesmo tempo sendo sincero sem pudores quando a verdade precisa ser jogada na cara, como se fosse uma pedra, ou porque não, uma porta. E essa decepção que você insiste que um dia eu terei, eu lamento. Lamento porque não tem como eu esfregar na tua cara quem você é. Só posso torcer para que algum dia, alguém, consiga te mostrar a pessoa que você é e que nem você mesmo consegue ver. Mas se um dia estiver de frente a mim, por favor, olhe bem nos meus olhos e veja teu reflexo. Veja como você se reflete em mim. Seja no meu olho, no meu corpo e na minha alma. Verás que és único no mundo, como aquela rosa, do velho conto que eu tanto amo. Existem mil de ti, mas és único para mim. 
+
+           Que um dia eu possa entregar essa carta pra ti, ou dizer cada uma dessas palavras segurando a tua mão e acariciando os teus cabelos. Mas por hora, nessa vida, acho que isso tudo já é o suficiente. Que você tenha toda a felicidade do mundo e se precisar a gente pega a felicidade de outros mundos, só pra ti. Obrigado por caminhar ao meu lado nessa vida de aprendizagem. Você sabe o quão importante é e sempre será para mim, nas minhas decisões e conquistas. Nunca se esqueça disso. Eu sou e sempre serei aquele amigo que você pode contar. Seja para uma risada ou uma lágrima. Seja para escutar ou falar algumas verdades. Seja para sempre poder te fazer feliz. Obrigado!

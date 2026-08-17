@@ -1,0 +1,20 @@
+---
+titulo: "ela é mãe. ponto."
+data: "2025-10-10"
+categoria: "coluna"
+publicado: true
+capa: "/assets/img/acervo/dia-das-maes-5d597d59.webp"
+url_original: "http://enricopierro.com.br/2025/10/10/ela-e-mae-ponto/"
+---
+
+ela é mãe. ponto. e isso já diz tanto que dispensa explicações. é quem segura o mundo enquanto tudo desaba. quem tem sempre uma resposta, ou, quando não tem, inventa uma que nos acalma. quem percebe no olhar o que a gente nem consegue dizer. quem sente antes. quem pressente. quem ama, mesmo quando a gente esquece de merecer.
+
+mãe é essa figura que carrega na bolsa de tudo: documento, remédio, solução. carrega na memória o nosso tipo sanguíneo, na agenda os horários dos nossos remédios, e no coração, tudo o que somos, mesmo quando não somos fáceis. e vamos combinar: a gente nem sempre é.
+
+tem mãe que grita, que manda áudio gritando, que exagera no conselho. tem mãe que fala manso, que prefere um olhar demorado em vez de um sermão. tem mãe que é puro colo. e tem mãe que é empurrão, daqueles que fazem a gente voar mais longe do que imaginava. todas elas têm em comum uma força que não dá pra explicar. um tipo de heroísmo silencioso que aparece no dia a dia, nas pequenas coisas, nos detalhes que ninguém vê.
+
+a verdade é que ser mãe não é sobre perfeição. é sobre presença. é sobre fazer o possível, e, tantas vezes, o impossível também. é sobre amar mesmo cansada, mesmo com medo, mesmo sem ter sido ensinada a amar assim. é sobre se reinventar. todos os dias.
+
+então hoje, mais do que flores, mais do que presentes ou mensagens prontas, a gente deseja que toda mãe se veja. se reconheça. se abrace com orgulho. porque o que vocês fazem, o que vocês são… é grande demais pra caber em palavras.
+
+feliz dia das mães. vocês são o coração do mundo.

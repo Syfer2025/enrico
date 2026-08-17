@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "sobrelinha": "ESCRITOR & COMUNICADOR",
+    "titulo": "enrico pierro",
+    "descricao": "autor de *as marés do meu ser*, *as ondas do meu ser* e *amores que tropeçam*, e apresentador do [abcpod](#mural)."
+  },
+  "abcpod": {
+    "marca": "abcpod",
+    "subtitulo": "O PODCAST",
+    "chamada": "as conversas completas do abcpod — encontros, diálogos e reflexões sobre a vida e a cultura, apresentados por enrico pierro.",
+    "botao": "Ver os episódios"
+  },
+  "quem_e": {
+    "nome": "Enrico Pierro",
+    "linha_fina": "textos em minúsculas que traduzem o cotidiano em sentimentos",
+    "paragrafos": [
+      "enrico pierro é escritor, colunista e comunicador. autor de livros como *as marés do meu ser*, *as ondas do meu ser* e *amores que tropeçam*, vem consolidando uma trajetória marcada por uma escrita intimista, reflexiva e ao mesmo tempo acessível, que dialoga com milhares de leitores em todo o brasil.",
+      "semanalmente, assina uma coluna publicada em **mais de 40 jornais e portais** do país, onde traduz sentimentos cotidianos em palavras que tocam o público de diferentes gerações. seu estilo único, escrito sempre em minúsculas, já se tornou sua marca registrada, carregando uma identidade literária que busca simplicidade sem perder profundidade.",
+      "além da literatura, enrico também é apresentador do podcast abcpod, espaço em que entrevista nomes relevantes da cultura e do cotidiano, sempre com olhar humano e curioso. sua atuação se estende ainda ao empreendedorismo, à frente da fábrica fundada por sua família, conciliando o universo criativo com a gestão empresarial.",
+      "reconhecido como uma das vozes mais promissoras da nova geração de escritores brasileiros, enrico carrega uma missão clara: traduzir sentimentos em palavras, permitindo que cada pessoa se veja refletida em suas próprias histórias."
+    ],
+    "legenda_retrato": "no estúdio do abcpod"
+  },
+  "reconhecimento": [
+    {
+      "titulo": "Prêmios internacionais e nacionais",
+      "itens": [
+        {
+          "nome": "Prix Parisian de Littérature et des Arts",
+          "detalhe": "Paris, 2024",
+          "tabular": true
+        },
+        {
+          "nome": "Prêmio Personalidade do Ano 2024",
+          "detalhe": "Lisboa · Editora Mágico de Oz",
+          "tabular": false
+        },
+        {
+          "nome": "Prêmio Personalidade do Ano 2024, categoria Escritor",
+          "detalhe": "Brasil · Editora Mágico de Oz",
+          "tabular": false
+        },
+        {
+          "nome": "Prêmio Carioca de Excelência",
+          "detalhe": "2024 · destaque na FLIP",
+          "tabular": true
+        },
+        {
+          "nome": "100 Melhores Poetas da Língua Portuguesa",
+          "detalhe": "2024, FLIP Paraty · concedido pelo Núcleo Acadêmico de Letras e Artes de Portugal (NALAP) em parceria com a Editora Mágico de Oz",
+          "tabular": false
+        }
+      ]
+    },
+    {
+      "titulo": "Antologias e participações",
+      "itens": [
+        {
+          "nome": "*Raízes — Brasil e Angola*",
+          "detalhe": "2024 · Luanda, Angola",
+          "tabular": true
+        },
+        {
+          "nome": "*Dante Alighieri*",
+          "detalhe": "2025 · Florença, Itália",
+          "tabular": true
+        },
+        {
+          "nome": "*William Shakespeare e Convidados*",
+          "detalhe": "2025 · Rio de Janeiro",
+          "tabular": true
+        },
+        {
+          "nome": "*40 Poemas Escolhidos pelo Autor*",
+          "detalhe": "2024",
+          "tabular": true
+        }
+      ]
+    }
+  ]
+}

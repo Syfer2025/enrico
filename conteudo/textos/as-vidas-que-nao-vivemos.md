@@ -1,0 +1,20 @@
+---
+titulo: "as vidas que não vivemos."
+data: "2025-05-21"
+categoria: "coluna"
+publicado: true
+capa: "/assets/img/acervo/as-vidas-que-nao-vivemos-feed-a293d959.webp"
+url_original: "http://enricopierro.com.br/2025/05/21/as-vidas-que-nao-vivemos/"
+---
+
+todo mundo carrega uma mala invisível cheia de versões de si. vidas que não aconteceram, escolhas que não foram feitas, caminhos que ficaram só no quase. a gente segue, mas de vez em quando olha pra trás e se pergunta: e se eu tivesse dito sim? e se eu tivesse ficado? e se eu tivesse ido?
+
+não é arrependimento, é curiosidade. é a sensação de que, em algum lugar do tempo, existe uma versão nossa vivendo outra história. e essa versão às vezes aparece em sonhos, em pensamentos aleatórios, em noites em que o sono não vem.
+
+tem uma vida que você não viveu porque teve medo. outra que não viveu porque era o certo abrir mão. e tem aquela que você nem sabia que queria, até perceber que era tarde demais. cada escolha nossa é também uma renúncia. e cada renúncia, uma vida que se desfaz antes mesmo de começar.
+
+mas isso não precisa ser motivo de tristeza. as vidas que a gente não viveu ajudam a moldar a pessoa que a gente se tornou. é como se cada “não” que dissemos desenhasse, com precisão, o caminho que era pra ser nosso. e, se a gente olhar com cuidado, talvez perceba que nenhuma vida seria melhor, só diferente.
+
+no fim, somos feitos tanto do que vivemos quanto do que deixamos de viver. e isso também é bonito. porque significa que, mesmo com os “e se”, ainda temos a chance de fazer valer a vida que escolhemos. ou, quem sabe, recomeçar uma nova, enquanto ainda há tempo.
+
+@enricopierroofc

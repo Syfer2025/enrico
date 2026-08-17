@@ -1,0 +1,20 @@
+---
+titulo: "risco perfeito."
+data: "2024-08-12"
+categoria: "coluna"
+publicado: true
+capa: "/assets/img/acervo/risco-perfeito-f7c2c9ce.webp"
+url_original: "http://enricopierro.com.br/2024/08/12/risco-perfeito/"
+---
+
+você já pensou quantas vezes você ficou esperando o momento perfeito, pra fazer alguma coisa, e esse momento nunca veio? foi nisso que eu fiquei pensando essa semana.
+
+muitas coisas acontecem na nossa vida sem o menor aviso. nos pegam de surpresa, sem termos a menor ideia do que estava prestes a acontecer. bom, eu confesso que na maioria das vezes essas surpresas são incríveis. talvez não exatamente quando acontecem, mas sabe aquela frase de que com o tempo a gente percebe que algumas coisas foram as melhores que já se passaram na nossa vida? estou pensando nisso.
+
+quantas vezes já não fiquei esperando o melhor momento para fazer várias coisas, seja viajar, ir a um lugar que eu queria, assistir um filme, e a lista segue quase interminável. mas você já parou pra pensar que, talvez, o momento perfeito não existe nem nunca existiu? e a gente ficou lá, parado, esperando ele chegar igual tontos?
+
+se a gente fica preso demais no plano das ideias, a gente esquece do plano das ações. ficamos planejando e pensando demais, ao invés de simplesmente irmos e fazermos. precisamos aprender que a hora em que tudo conspira a favor, pode nunca chegar. cabe a nós fazermos o momento perfeito. a vida é tão cheia de altos e baixos e nunca sabemos com exatidão o dia de amanhã. e vamos combinar que alguns dias são uma verdadeira loucura.
+
+o ideal, para todos nós, seria simplesmente fazermos. claro, não vá enfiar os pés pelas mãos ou ser totalmente irresponsável, mas está com vontade de ir a algum lugar? não precisa esperar o tempo estar perfeito. quer provar algo novo? prove! se tiver vontade de ir ao cinema, vá. ou mudar de emprego, ou de cidade, de personalidade, de vida, tanto faz.
+
+lembrem-se: se não fosse para correr riscos, nem estaríamos vivos. viver é um risco, então faça esse risco valer a pena!

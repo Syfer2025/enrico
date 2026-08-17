@@ -1,0 +1,20 @@
+---
+titulo: "dia 20"
+data: "2017-09-05"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/dia2b191-60b2bc5d.webp"
+url_original: "http://enricopierro.com.br/2017/09/05/dia-20/"
+---
+
+Life is a balance of holding on and letting go.
+
+—  (via wstdxo)
+
+Parei um pouco de pensar, afinal de contas eu sempre fui muito *overthinking* e isso obviamente mais me atrapalha que ajuda. Mas dessa vez eu resolvi ficar flutuando e deixar que a correnteza vá me levando, lentamente. Não é algo ruim, muito pelo contrário, é mais válido você deixar a vida acontecer naturalmente do que ficar insistindo em remar contra a maré. Existem causas que são perdidas muito antes de terem começado. Você foi uma delas e eu deveria ter tido a noção disso, bem antes do nosso primeiro encontro.
+
+Mas a vida tem dessas e algumas vezes a surpresa nem é agradável ou a gente aposta todas as fichas no incerto. A vida é uma grande roleta de cassino. Você nunca sabe qual o número que vai acertar. Você pode ter um leve palpite, uma intuição. Eu tive e ignorei com força. Mas agora que eu decidi que essas cartas serão só minhas e que você não vai mais ter notícias, a coisa mudou. Eu virei o dono do meu próprio destino ao invés de depositá-lo nas mãos de outra pessoa. E convenhamos, você tá um pouco longe de ser uma pessoa que valeria à pena, pra mim.
+
+Então bola pra frente. Vou aproveitar essa água calma, essa correnteza vagarosa e ir aproveitando a paisagem. Uma vez eu escutei falar que o mais importante da vida não é o destino, mas a viagem. Então vou aproveitar a viagem, sem pensar, sem me sobrecarregar com os mesmos velhos pensamentos, e quem sabe eu te vejo por aí em alguma curva torta de rio.
+
+c.e.

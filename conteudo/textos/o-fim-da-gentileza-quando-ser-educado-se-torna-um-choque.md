@@ -1,0 +1,18 @@
+---
+titulo: "o fim da gentileza: quando ser educado se torna um choque."
+data: "2025-02-06"
+categoria: "coluna"
+publicado: true
+capa: "/assets/img/acervo/whatsapp-image-2025-02-03-at-13-19-32-7ecbbc5c.webp"
+url_original: "http://enricopierro.com.br/2025/02/06/o-fim-da-gentileza-quando-ser-educado-se-torna-um-choque/"
+---
+
+ser gentil virou um ato revolucionário. em um mundo cada vez mais individualista, a educação assusta. mas em que momento exatamente isso aconteceu? eu me pergunto quando nos desacostumamos com isso. atitudes simples, que deveriam ser regra, viraram exceção. parece que ninguém se importa com nada além de si mesmo. e isso é triste
+
+no trânsito, então, nem se fala! o pisca-alerta virou enfeite, e a pressa atropela qualquer vestígio de respeito. cortes bruscos, fechadas e xingamentos viraram o novo normal.
+
+acreditei, ingenuamente, que depois da pandemia do covid as pessoas sairiam mais humanas. meses de isolamento pareciam ter nos ensinado sobre empatia. mas, ao invés disso, vejo um mundo ainda mais egoísta, onde o outro virou um detalhe irrelevante.
+
+mas eu sigo tentando ser a minha melhor versão. sigo ajudando quem eu posso, parando nas faixas de pedestre, dando bom dia para todo mundo, sendo gentil nas palavras e nas atitudes o máximo que eu consigo, respeitando também meu tempo e até minhas oscilações de humor.
+
+e se a gente espalhasse gentileza na mesma velocidade de um vírus? eu tento fazer a minha parte. faço questão de dar bom dia, de parar para deixar o pedestre passar, de lembrar que educação não deveria ser um luxo. e você?

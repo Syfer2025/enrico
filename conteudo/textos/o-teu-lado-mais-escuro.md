@@ -1,0 +1,19 @@
+---
+titulo: "o teu lado mais escuro."
+data: "2016-12-06"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/o-teu-lado-mais-escuro-55cd7065.webp"
+url_original: "http://enricopierro.com.br/2016/12/06/o-teu-lado-mais-escuro/"
+---
+
+*i want to be in your darkest everything.*
+
+*– Frida Kahlo*
+     Eu não estou aqui esperando que você me entregue a perfeição ou teu melhor lado, você nem deve ter descoberto ele direito, ainda. Nem eu. Quero que você venha por inteiro, com todos os teus lados. Acho que somos mais do que hexágonos enquanto seres humanos. Te querer tanto me faz querer ficar cada vez mais, só que cada vez você parece se afastar. Então eu me afasto e vou observando meio de longe. Eu não sei se isso faz você ficar sem saber exatamente o que fazer e você vai se afastando também. Mas eu não quero que você seja um vestígio que ficou na areia da praia no último passeio porque, quando eu olhei para trás, a onda já havia apagado tudo. Eu não quero que você seja tão efêmero a ponto de uma borracha qualquer, meio gasta, apagar o teu nome do livro da história da minha vida. Eu ainda estou na página 30 e tem tantas páginas pela frente que você não faz nem ideia. Mas você parece que quer ser apenas um capítulo, um trecho, algumas linhas mal escritas enquanto eu quero fazer de você minha contra capa, minha dedicatória de vida, a edição de colecionador.
+
+      Fica difícil lidar com essa tua indecisão velada. Essa coisa de achar que amor a gente só recebe se merece. Tem uma frase incrível que diz que “ninguém perde por dar amor, perde é quem não sabe receber”. Percebe? A gente aceita o amor que acha que merece, mas ninguém é tão ruim que não mereça ser amado. E se as pessoas que passaram pela tua vida não souberam te mostrar isso, deixa que eu te mostre, mas fique. Se for pra ser com você, você vai ficar, assim como eu estou aqui, permanecendo naquela tentativa bacana de ter uma conversa agradável com você, enquanto você desaparece por aí, volta como se nada tivesse acontecido, se fecha dentro das tuas próprias inseguranças. Eu não quero só a luz do teu sorriso, eu quero a melancolia dos teus olhos, o lado escuro do teu ser. Vem inteiro que eu te abraço. E te carrego quando você estiver cansado se você me prometer fazer o mesmo. Cansei de ficar brigando com paredes mudas, socando azulejos no banheiro até a mão sangrar. Ninguém aguenta isso muito tempo. Daí eu fico aqui, quieto, esperando uma mensagem, um sinal, um email. E ele chega, uma hora outra, com intervalos tão longos que me faz questionar se você existe de verdade, ou se é apenas um alarme programado para tentar me agradar a cada 3 horas, como se fosse aquela dieta que você faz sem nem saber se quer emagrecer ou engordar. Eu não sou o teu lanche da tarde, nem a ceia depois da meia-noite, se for pra ser, que eu seja o teu prato predileto, aquele que você pede várias vezes e nunca cansa.
+
+     Não esquece, se ele for realmente o escolhido, ele não vai embora. Então não vá. Prove que todas as outras pessoas estavam erradas ao partir, porque eu vou te confessar, no final, com o passar dos anos, elas se arrependem. Cuidado quando achar que não merece o meu amor, porque quem está perdendo não sou eu. Não se menospreze a esse ponto, nem se rebaixe. Eu nunca te olhei de cima, eu te olho de frente que é pra você ver que não há diferenças entre nós, não importa a idade ou as experiências, somos todos seres únicos. Nesse sistema solar da nossa vida, ninguém é a Terra, somos todos o Sol. Orbitamos uns aos outros como um redemoinho de banheira sendo esvaziada. Mas não esvazie, me encha. E se você achar que eu já estou cheio, completo, então vem e me transborda. E deixa eu fazer o mesmo por ti. Seja na calmaria ou na tempestade, na parte mais escura da tua alma, seja na luz do teu sorriso ou na melancolia dos teus olhos, pode vir com todos os segredos e angústias, paranoias e desilusões, eu também as tenho. Vem que eu aguento.
+
+c.e.

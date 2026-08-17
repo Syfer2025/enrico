@@ -1,0 +1,22 @@
+---
+titulo: "dia 32"
+data: "2023-03-06"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/tumblr-ofvvbdvfeh1u5mdq1o1-5401-c8634a45.webp"
+url_original: "http://enricopierro.com.br/2023/03/06/dia-32/"
+---
+
+*“uma hora muda, cai, cresce, aprende. dá com a cara na porta até atravessar pro outro lado à força.”*
+
+*– Carlo Enrico*
+
+Alguns dias e se passaram e algumas dores de cabeça também. Eu não sou linear, porque nossas cartas deveriam ser? Nossa historia nunca foi. Mas hoje tocou uma música que tanto já te dediquei, e que está no meio de alguma das cartas perdidas desses 32 dias não lineares. Acho que se paramos para pensar que o conceito de tempo é apenas um somatório de fatores entre translação, rotação e um pouco de gravidade, conseguiríamos perceber o quanto somos atemporais. E talvez nossa história também.
+
+Existem uma teoria (e nessa hora você diria: lá vem o Enrico e suas teorias malucas), que fala sobre multiversos. Ela explica que assim como existe o nosso Universo, existem inúmeros outros, só que paralelos. O genial dessa teoria é que ela explica que a cada decisão que você toma na vida, abre-se um novo paralelo onde você tomou a decisão oposta, ou apenas diferente. Agora imagina a quantidade de vezes, ao longo de um único dia, que tomamos decisões, muitas vezes simples, como atravessar uma rua em um determinado ponto ao invés de caminhar um pouco mais. Você para e pensa: ok, vou atravessar aqui mesmo. E de repente abre-se todo um universo onde você decidiu atravessar um pouco mais à frente. Isso é incrível se você parar para pensar. Imagina a quantidade de Universos que não criamos em nossa curta história? Cada vez que você ignorava uma mensagem ou que eu, em um impulso ia te ver, abria-se um novo paralelo. Em alguns, acredito, ainda estejamos juntos, felizes e em outros podemos nunca nem ao menos termos nos conhecido. Maluco, não? Mas é apenas uma teoria, a nossa realidade é essa aqui, a matriz, a Matrix. É aqui que estamos tomando as nossas decisões, diariamente, de nos mantermos afastados. Não é algo totalmente unilateral, veja bem, eu nunca mais te mandei uma única mensagem. Nem ao menos essas cartas eu te te envio. Mas há um paralelo onde elas estão chegando, diariamente, e outro onde eu nunca nem parei para escrevê-las. Mas é nessa aqui, nessa realidade meio distorcida que a nossa história começou. E acabou.
+
+     Eu continuo, não mais preso a isso tudo. A cada dia que passa, a cada pessoa que passa, você vai se tornando apenas uma experiência de vida. Mas eu tentei, né? E veja bem, quando eu tento eu realmente dou o meu melhor. E olha que o meu melhor não é pouco. Mas sempre chega um determinado momento em que a gente começa a se questionar se fez a coisa certa ou não. A vida é feita de escolhas e desses multiversos, e eu tenho certeza que a gente faz uma série de escolhas erradas, todos os dias. Talvez você não tenha sido a melhor das escolhas, nem a pior. Foi só aquela que a gente aposta tudo que vai dar certo, que sente uma conexão incrível e depois vê que na verdade era uma tomada que não funcionava. Não havia conexão. Era aquele wifi que conecta mas você não consegue navegar.
+
+Bola pra frente, né?
+
+c.e.

@@ -1,0 +1,117 @@
+{
+  "fonte": "Amazon.com.br — loja do autor, busca e páginas de produto",
+  "capturado_em": "2026-08-04",
+  "aviso": "nota e avaliacoes envelhecem; sinopses sao recortes verbatim da Amazon",
+  "livros": [
+    {
+      "slug": "amores-que-tropecam",
+      "asin": "B0DYPFP8FN",
+      "titulo": "Amores Que Tropeçam",
+      "subtitulo": null,
+      "nota": "4,6",
+      "avaliacoes": 94,
+      "sinopse": "a vida nem sempre segue roteiros previsíveis. às vezes, é no tropeço mais inesperado que encontramos o que menos procurávamos.",
+      "url": "https://www.amazon.com.br/dp/B0DYPFP8FN",
+      "capa": "assets/img/books/amores-que-tropecam-640.jpg"
+    },
+    {
+      "slug": "as-mares-do-meu-ser",
+      "asin": "B0D7KTNJ9V",
+      "titulo": "As marés do meu ser",
+      "subtitulo": null,
+      "nota": "5,0",
+      "avaliacoes": 1,
+      "sinopse": "destravei a porta e senti o ar gelado daquela noite no meu rosto. as lágrimas secaram na hora e eu podia sentir o caminho que elas tinham percorrido.",
+      "url": "https://www.amazon.com.br/dp/B0D7KTNJ9V",
+      "capa": "assets/img/books/as-mares-do-meu-ser-640.jpg"
+    },
+    {
+      "slug": "as-ondas-do-meu-ser",
+      "asin": "B0DT4TZT89",
+      "titulo": "As Ondas do Meu Ser",
+      "subtitulo": "Reflexões para Reencontrar a Luz",
+      "nota": "5,0",
+      "avaliacoes": 1,
+      "sinopse": "Você já se sentiu à deriva, como se estivesse navegando em um oceano de incertezas?",
+      "url": "https://www.amazon.com.br/dp/B0DT4TZT89",
+      "capa": "assets/img/books/as-ondas-do-meu-ser-640.jpg"
+    },
+    {
+      "slug": "mares-da-transformacao",
+      "asin": "B0DT7TFQXJ",
+      "titulo": "Marés da Transformação",
+      "subtitulo": "Superação e Autodescoberta",
+      "nota": "5,0",
+      "avaliacoes": 1,
+      "sinopse": "A vida é um oceano de desafios e descobertas, com suas calmarias e tempestades.",
+      "url": "https://www.amazon.com.br/dp/B0DT7TFQXJ",
+      "capa": "assets/img/books/mares-da-transformacao-640.jpg"
+    },
+    {
+      "slug": "horizontes-do-cotidiano",
+      "asin": "B0DTJ97F62",
+      "titulo": "Horizontes do Cotidiano",
+      "subtitulo": "Reflexões para Inspirar e Transformar",
+      "nota": "5,0",
+      "avaliacoes": 1,
+      "sinopse": "O cotidiano é repleto de momentos que, à primeira vista, podem parecer comuns, mas que carregam em si a essência de grandes lições.",
+      "url": "https://www.amazon.com.br/dp/B0DTJ97F62",
+      "capa": "assets/img/books/horizontes-do-cotidiano-640.jpg"
+    },
+    {
+      "slug": "eternis",
+      "asin": "B0F4JD1MG2",
+      "titulo": "Eternis",
+      "subtitulo": "O Preço da Imortalidade",
+      "nota": "3,7",
+      "avaliacoes": 12,
+      "sinopse": "Daniel levava uma vida pacata — invisível até para si mesmo. Professor de escola pública, rotina previsível, nenhuma ambição grandiosa.",
+      "url": "https://www.amazon.com.br/dp/B0F4JD1MG2",
+      "capa": "assets/img/books/eternis-640.jpg"
+    },
+    {
+      "slug": "duas-da-manha",
+      "asin": "B0H38YBXHY",
+      "titulo": "duas da manhã",
+      "subtitulo": "desabafos de quem devia estar dormindo",
+      "nota": null,
+      "avaliacoes": null,
+      "sinopse": "ninguém me ensinou a lidar com os quarenta anos, com a régua que os outros colocaram na minha mão, ou com a solidão que aparece até em mesa cheia.",
+      "url": "https://www.amazon.com.br/dp/B0H38YBXHY",
+      "capa": "assets/img/books/duas-da-manha-640.jpg"
+    },
+    {
+      "slug": "mente-soberana",
+      "asin": "B0HBVCP9P3",
+      "titulo": "mente soberana",
+      "subtitulo": "o guia definitivo para retomar as rédeas da sua vida",
+      "nota": null,
+      "avaliacoes": null,
+      "sinopse": "você não escolhe o que sente. mas escolhe o que faz com isso. e é exatamente aí que tudo muda.",
+      "url": "https://www.amazon.com.br/dp/B0HBVCP9P3",
+      "capa": "assets/img/books/mente-soberana-640.jpg"
+    },
+    {
+      "slug": "manifestacao",
+      "asin": "B0GWXWDJLX",
+      "titulo": "Manifestação e Lei da Atração",
+      "subtitulo": "Um Guia Prático para Transformar Intenção em Realidade",
+      "nota": null,
+      "avaliacoes": null,
+      "sinopse": "a manifestação e a lei da atração não são sobre mágica. são sobre consciência, direção e ação.",
+      "url": "https://www.amazon.com.br/dp/B0GWXWDJLX",
+      "capa": "assets/img/books/manifestacao-640.jpg"
+    },
+    {
+      "slug": "40-poemas-vol-7",
+      "asin": "B0DS2XS8XY",
+      "titulo": "40 Poemas escolhidos pelo autor",
+      "subtitulo": "Vol. VII",
+      "nota": "5,0",
+      "avaliacoes": 1,
+      "sinopse": "Já quis ser cientista, astrônomo, médico, advogado, astronauta e até hoje ainda não descobriu o que quer.",
+      "url": "https://www.amazon.com.br/dp/B0DS2XS8XY",
+      "capa": "assets/img/books/40-poemas-vol-7-640.jpg"
+    }
+  ]
+}

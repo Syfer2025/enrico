@@ -1,0 +1,20 @@
+---
+titulo: "dia 29"
+data: "2023-03-03"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/dia2b291-0f6686c5.webp"
+url_original: "http://enricopierro.com.br/2023/03/03/dia-29/"
+---
+
+*O final só existe, quando você desiste.*
+
+*—  Matt Oliveira.*
+
+       Não dá, eu tentei e é sério isso. Eu fiquei na penumbra dos meus dias procurando o botão que desligava isso tudo. Que desligava você e não achei. E olha a contradição: nessa busca de te apagar, eu te acendi! Acabei conhecendo uma pessoa que é parecida com você. Não só fisicamente, mas em inúmeros aspectos. Ele tem a tua intensidade, acho que é até pior do que você. E eu confesso que não foi totalmente sem querer, foi algo meio do subconsciente, saca? Eu vi as fotos em um aplicativo qualquer, dei um like pensando: meu Deus como ele é parecido com você! No final acabei me surpreendendo e descobrindo que ele é mais parecido do que eu pensava. Ainda não sei até que ponto isso é bom, ou se é bom *at all.*
+
+       Ainda estamos nos conhecendo, tudo é muito recente, mas não tem escapatória, essa intensidade de vocês é algo que me carrega como se eu estivesse sendo levado por uma avalanche. Quando eu me dou conta eu estou no sopé da montanha, arrasado, soterrado. Bom, foi o que aconteceu comigo quando se trata de você. Espero que dessa vez seja diferente. Ao invés da avalanche destruidora, seja apenas uma onda imensa que eu possa surfar livremente e chegar até a praia tranquilo. Ou em alto-mar, vai saber. O importante é chegar a algum lugar diferente de onde chegamos. E não se aplica só a esse novo guri não, se aplica a qualquer pessoa que passe pela minha vida, ou fique. 
+
+       Eu não posso fazer um novo começo com você e ainda nem decidi se eu gostaria disso mesmo ou não. Mas pelo menos vou tentar com essas pessoas novas que estão aparecendo na minha vida. Talvez elas tenham visto o que você nunca conseguiu ver direito: eu. 
+
+c.e.

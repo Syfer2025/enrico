@@ -1,0 +1,209 @@
+:root {
+  color-scheme: dark;
+
+  --font-text: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro",
+    "Helvetica Neue", system-ui, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro",
+    "Helvetica Neue", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+
+  --text-caption2-size: 0.6875rem;
+  --text-caption2-line: 0.8125rem;
+  --text-caption2-track: 0.0055em;
+
+  --text-caption1-size: 0.75rem;
+  --text-caption1-line: 1rem;
+  --text-caption1-track: 0em;
+
+  --text-footnote-size: 0.8125rem;
+  --text-footnote-line: 1.125rem;
+  --text-footnote-track: -0.0062em;
+
+  --text-subhead-size: 0.9375rem;
+  --text-subhead-line: 1.25rem;
+  --text-subhead-track: -0.016em;
+
+  --text-callout-size: 1rem;
+  --text-callout-line: 1.3125rem;
+  --text-callout-track: -0.02em;
+
+  --text-body-size: 1.0625rem;
+  --text-body-line: 1.375rem;
+  --text-body-track: -0.024em;
+
+  --text-title3-size: 1.25rem;
+  --text-title3-line: 1.5625rem;
+  --text-title3-track: 0.019em;
+
+  --text-title2-size: 1.375rem;
+  --text-title2-line: 1.75rem;
+  --text-title2-track: 0.016em;
+
+  --text-title1-size: 1.75rem;
+  --text-title1-line: 2.125rem;
+  --text-title1-track: 0.013em;
+
+  --text-largetitle-size: 2.125rem;
+  --text-largetitle-line: 2.5625rem;
+  --text-largetitle-track: 0.011em;
+
+  --text-display2-size: clamp(1.75rem, 1.15rem + 2.6vw, 3rem);
+  --text-display2-line: 1.08;
+  --text-display2-track: -0.018em;
+
+  --text-display1-size: clamp(2.75rem, 1.1rem + 6vw, 5.75rem);
+  --text-display1-line: 0.94;
+  --text-display1-track: -0.032em;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-heavy: 800;
+
+  --bg-base: #08090c;
+  --bg-elevated: #121419;
+  --bg-elevated-2: #1b1e25;
+
+  --bg-scrim: 4 5 7;
+
+  --label-primary: rgb(255 255 255);
+  --label-secondary: rgb(255 255 255 / 0.6);
+  --label-tertiary: rgb(255 255 255 / 0.3);
+  --label-quaternary: rgb(255 255 255 / 0.16);
+
+  --fill-primary: rgb(255 255 255 / 0.24);
+  --fill-secondary: rgb(255 255 255 / 0.18);
+  --fill-tertiary: rgb(255 255 255 / 0.12);
+  --fill-quaternary: rgb(255 255 255 / 0.08);
+
+  --separator: rgb(255 255 255 / 0.12);
+  --separator-opaque: #38383a;
+
+  --accent: rgb(255 178 50);
+  --accent-hover: #ffc15b;
+  --accent-pressed: #e0941a;
+  --accent-label: #0a0b06;
+
+  --focus-ring: var(--accent);
+
+  --material-blur-thin: 18px;
+  --material-blur-regular: 36px;
+  --material-blur-thick: 56px;
+  --material-thin: rgb(27 30 37 / 0.44);
+  --material-regular: rgb(27 30 37 / 0.66);
+  --material-thick: rgb(12 13 17 / 0.84);
+  --material-border: rgb(255 255 255 / 0.14);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-9: 4rem;
+  --space-10: 5rem;
+  --space-11: 6rem;
+  --space-12: 8rem;
+
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.32);
+  --shadow-md: 0 1px 2px rgb(0 0 0 / 0.28), 0 6px 16px rgb(0 0 0 / 0.34);
+  --shadow-lg: 0 2px 4px rgb(0 0 0 / 0.3), 0 16px 40px rgb(0 0 0 / 0.44);
+
+  --duration-fast: 140ms;
+  --duration-base: 220ms;
+
+  --duration-ambient: 900ms;
+  --duration-ambient-out: 1300ms;
+  --duration-slow: 360ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --content-max: 1320px;
+  --measure: 62ch;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --tap-min: 44px;
+  --header-h: 60px;
+
+  --safe-t: env(safe-area-inset-top, 0px);
+  --safe-r: env(safe-area-inset-right, 0px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-l: env(safe-area-inset-left, 0px);
+}
+
+@supports (corner-shape: squircle) {
+  :root {
+    --corner-shape: squircle;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --label-secondary: rgb(255 255 255 / 0.82);
+    --label-tertiary: rgb(255 255 255 / 0.6);
+    --label-quaternary: rgb(255 255 255 / 0.38);
+
+    --fill-primary: rgb(255 255 255 / 0.36);
+    --fill-secondary: rgb(255 255 255 / 0.28);
+    --fill-tertiary: rgb(255 255 255 / 0.2);
+    --fill-quaternary: rgb(255 255 255 / 0.14);
+
+    --separator: rgb(255 255 255 / 0.28);
+    --separator-opaque: #545456;
+    --material-border: rgb(255 255 255 / 0.32);
+
+    --material-thin: rgb(27 30 37 / 0.78);
+    --material-regular: rgb(27 30 37 / 0.9);
+    --material-thick: rgb(12 13 17 / 0.96);
+  }
+
+  [data-appearance="light"] {
+    --label-secondary: rgb(0 0 0 / 0.82);
+    --label-tertiary: rgb(0 0 0 / 0.6);
+    --label-quaternary: rgb(0 0 0 / 0.38);
+
+    --separator: rgb(0 0 0 / 0.36);
+    --separator-opaque: #8e8e93;
+    --material-border: rgb(0 0 0 / 0.28);
+  }
+}
+
+[data-appearance="light"] {
+  color-scheme: light;
+
+  --bg-base: #f6f6f8;
+  --bg-elevated: #ffffff;
+  --bg-elevated-2: #ececed;
+  --bg-scrim: 250 250 252;
+
+  --label-primary: rgb(0 0 0);
+  --label-secondary: rgb(60 60 67 / 0.6);
+  --label-tertiary: rgb(60 60 67 / 0.3);
+  --label-quaternary: rgb(60 60 67 / 0.18);
+
+  --fill-primary: rgb(120 120 128 / 0.2);
+  --fill-secondary: rgb(120 120 128 / 0.16);
+  --fill-tertiary: rgb(118 118 128 / 0.12);
+  --fill-quaternary: rgb(116 116 128 / 0.08);
+
+  --separator: rgb(60 60 67 / 0.18);
+  --separator-opaque: #c6c6c8;
+
+  --material-thin: rgb(255 255 255 / 0.5);
+  --material-regular: rgb(255 255 255 / 0.72);
+  --material-thick: rgb(255 255 255 / 0.9);
+  --material-border: rgb(0 0 0 / 0.1);
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.08);
+  --shadow-md: 0 1px 2px rgb(0 0 0 / 0.06), 0 6px 16px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 2px 4px rgb(0 0 0 / 0.06), 0 16px 40px rgb(0 0 0 / 0.14);
+}

@@ -1,0 +1,20 @@
+---
+titulo: "obrigado."
+data: "2024-11-16"
+categoria: "coluna"
+publicado: true
+capa: "/assets/img/acervo/saiu-2-4d0b4da9.webp"
+url_original: "http://enricopierro.com.br/2024/11/16/obrigado/"
+---
+
+hoje eu acordei e agradeci. fazia tempo que eu me esquecia de fazer isso. passo a vida corrido, mais pedindo do que agradecendo. sempre tão preocupado com tudo. com os boletos, com os problemas, as aflições. tão absorto em mim mesmo e em tudo o que a vida me traz de… complicado, que eu fico cego para todas as coisas boas que me foram trazidas. aí eu paro e penso: onde eu parei de agradecer?
+
+parece até besteira, mas quantas vezes eu não tenho acordado pelas manhãs já reclamando? seja com o despertador ou a previsão do tempo? com o vizinho barulhento ou o cachorro latindo? mentira, com o cachorro nunca. mas com o vizinho, eu já perdi as contas.
+
+onde foi que me tornei uma pessoa até ingrata com deus, com a vida, com o universo? tantas coisas boas acontecem comigo a todo o momento e eu nem mesmo percebo? quem dirá, então, agradeço. passo batido por coisas que poderiam muito bem mudar todo o meu dia e o meu humor e sigo reclamando como se tudo ao meu redor fosse realmente ruim. e não é. nunca foi. e tenho certeza de que nunca será.
+
+então eu mesmo te pergunto:  o quanto será que você tem agradecido e o quanto você tem reclamado? ou pedido? não posso responder por você, vou só pedir que você pare e pense. vai ver você tem até agradecido mais. e isso é ótimo! bom, eu não, confesso. e está na hora, inclusive, de eu mudar isso.
+
+hoje eu acordei e agradeci. e percebi como muita coisa mudou no meu dia. não que o tempo melhorou ou o sol brilhou mais forte, muito pelo contrário, o dia continuou nublado, mas eu não. foi como se eu tivesse acendido alguma luz que havia se apagado nos meus dias. então se talvez, você, tenha esquecido um pouco de agradecer, lembre-se de olhar todas as coisas legais que acontecem à sua volta o tempo inteiro. as pequenas e as grades. as médias. as que a gente vai passando o dia sem nem se dar conta.
+
+e se você olhar a sua volta e achar que o teu dia está muito nublado, lembre-se que a luz de verdade, o sol, o brilho, está sempre aceso em algum lugar dentro do teu próprio ser. agradeça por ter acordado. agradeça por estar vivo. agradeça por ter lido esse texto. agradeça porque amanhã é e sempre será um novo dia. ah, e eu já ia me esquecendo, se você chegou até aqui, obrigado por ter lido. eu sou o enrico pierro e te vejo aqui na próxima semana.

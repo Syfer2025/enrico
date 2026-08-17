@@ -1,0 +1,25 @@
+---
+titulo: "hoje eu saí comigo mesmo."
+data: "2026-01-01"
+categoria: "coluna"
+publicado: true
+capa: "/assets/img/acervo/imagem-do-whatsapp-de-2025-11-28-as-11-58-56-dcf-219daa57.webp"
+url_original: "http://enricopierro.com.br/2026/01/01/hoje-eu-sai-comigo-mesmo/"
+---
+
+não confunda estar sozinho de estar só. veja, eu gosto da minha companhia. eu aprendi isso. com o tempo eu percebi e entendi quem eu era. e fui me conhecendo. e isso foi incrível.
+
+tanta gente se sente desconfortável com a própria presença, que não consegue ficar sozinho. imagina que coisa horrível? se sentir incomodado em estar consigo mesmo? mas eu sou a minha própria companhia e isso também tem muito a ver com o amor-próprio e autoconhecimento.
+
+ a primeira coisa é se conhecer. você sabe, de verdade, quem é você? o que você gosta de verdade, quais são as coisas que te fazem bem, o que você gosta mesmo de fazer, o que te dá prazer e tudo o mais? a gente muitas vezes finge tanto ser tantas coisas para agradar aos outros, para ser aceito e amado, que em muitos momentos eu mesmo me esqueci quem eu era.
+
+ o amor-próprio é outra coisa importante. vejo tantas pessoas com baixa estima, mendigando migalhas de afeto por aí. em que momento nós começamos a nos destruir e rasgar nossa própria imagem? será que foram as redes sociais e essa imagem falsa que todo mundo fica vendendo por aí de felicidade e plenitude? já cansei de falar que ela não existe.
+ e precisamos nos amar com todas as nossas qualidade e defeitos. todo mundo também tem. somos tão incríveis e complexos quanto qualquer pessoa famosa. inclusive conheço algumas que são horríveis de perto e você nem imagina.ficar confortável com a própria companhia é uma delícia.
+
+poder aproveitar um cinema, um restaurante, um teatro ou um passei no parque na própria companhia é libertador! você é a pessoa que mais se conhece.
+
+no fundo, deveríamos nos bastar primeiro.sermos o suficientes para si mesmos, para depois pensarmos em termos alguém ao nosso lado.
+
+nos pouparíamos de muitos problemas e muitas migalhas afetivas que a gente recolhe por aí, achando que vidro é diamante.o dia em que você brilhar, de verdade, você não vai aceitar ninguém que brilhe menos do que você.
+
+quando você for a melhor pessoa do mundo, pra você mesmo, você nunca vai aceitar menos do que isso à sua volta. e bom passeio.

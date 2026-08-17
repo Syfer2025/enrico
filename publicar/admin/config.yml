@@ -1,0 +1,503 @@
+## Painel do site do Enrico Pierro
+##
+## ATENÇÃO: as quatro primeiras abas (Diário, Coluna, Textos, Outros) têm a
+## MESMA lista de campos, repetida. YAML não tem como espalhar uma lista dentro
+## de outra, então não dá para escrever uma vez só. Mexeu numa, mexa nas quatro.
+##
+## A barra lateral é organizada pelo que o Enrico FAZ, não por como os arquivos
+## estão guardados. Antes havia uma aba só, "Textos", com os 577 juntos e uma
+## caixinha de categoria no formulário — ou seja, para escrever o diário de hoje
+## ele precisaria pensar "vou criar um Texto com a categoria diário". Ninguém
+## pensa assim. Agora "Diário", "Coluna" e "Textos" são abas separadas, e clicar
+## em Novo dentro de uma delas já cria a coisa certa.
+##
+## Por baixo continua tudo na mesma pasta (conteudo/textos): as abas são vistas
+## filtradas do mesmo acervo, não pastas diferentes. Mudar a categoria de um
+## texto continua movendo ele de aba, sem mover arquivo.
+##
+## Os caminhos são a partir da raiz do projeto (a pasta que tem publicar/,
+## conteudo/ e ferramentas/), não a partir daqui.
+
+backend:
+  name: github
+  repo: Syfer2025/enrico
+  branch: main
+  ## Quando o repositório for transferido para a conta do Enrico, é esta linha
+  ## que muda — `repo:` passa a ser "conta-dele/enrico". Nada mais.
+  ##
+  ## SÓ GITHUB, sem serviço de terceiro. O Enrico entra com a conta do GitHub
+  ## dele — o que na prática é e-mail e senha, digitados na tela do GitHub.
+  ##
+  ## Não existe como ter uma tela de senha NOSSA usando só GitHub: conferir
+  ## senha exige código rodando num servidor, o Pages é estático e o Actions não
+  ## atende requisição. O painel também recusa o login direto pelo navegador
+  ## (`auth_type: pkce`) quando o backend é GitHub — está escrito no pacote dele,
+  ## na mensagem `github_pkce_unsupported`. Para GitLab e Gitea funcionaria.
+  ##
+  ## `auth_methods: [oauth]` esconde o botão de "entrar com token de acesso":
+  ## um caminho de entrada só, para ninguém se perder.
+  auth_methods: [oauth]
+
+## A cara do painel: logo do Enrico na tela de entrada, no lugar da do Sveltia,
+## e um atalho para ver o site publicado.
+logo_url: /assets/img/brand/logo-enrico-branco-1600.png
+site_url: https://enricopierro.com.br
+display_url: https://enricopierro.com.br
+
+## Onde as imagens enviadas pelo painel são gravadas...
+media_folder: publicar/assets/img/acervo
+## ...e como o site as enxerga depois (o publicar/ vira a raiz do domínio).
+public_folder: /assets/img/acervo
+
+## O idioma do painel não se configura aqui: o Sveltia segue o idioma do
+## navegador de quem entra. Em navegador em português, ele já abre em português.
+
+collections:
+  # ============================================================== ESCREVER ===
+  - name: diario
+    # Sem pré-visualização: o painel dela mostra os campos crus, sem
+    # relação com a cara do site, e ocupava metade da tela.
+    editor: { preview: false }
+    label: Diário
+    label_singular: texto do diário
+    description: um texto por dia, numerado. o mais recente aparece primeiro.
+    icon: today
+    folder: conteudo/textos
+    filter: { field: categoria, value: diario }
+    create: true
+    slug: "{{slug}}"
+    identifier_field: titulo
+    summary: "{{data | date('DD MMM YYYY')}}  ·  {{titulo}}"
+    thumbnail: capa
+    sortable_fields:
+      fields: [data, titulo]
+      default: { field: data, direction: descending }
+    fields:
+      - { name: categoria, widget: hidden, default: diario }
+      - { name: titulo, label: Título, widget: string, comment: "Aparece na lista de textos e no topo da leitura." }
+      # A CAPA É UM CAMPO, com upload próprio. Não é mais "a primeira foto do
+      # texto", que era como o site fazia antes: a foto ficava escrita dentro do
+      # texto, o campo aqui era enfeite, e trocar a capa no painel não trocava
+      # nada no site.
+      #
+      # Agora este campo manda. A foto que entra aqui aparece na lista, no
+      # cartão e no alto da leitura — e NÃO no meio do texto. Foto no meio do
+      # texto é outra coisa, e entra pelo botão Imagem do editor, embaixo.
+      - name: capa
+        label: Capa
+        widget: image
+        required: false
+        comment: Foto de abertura. Aparece na lista, no cartão e no alto da leitura.
+        hint: >-
+          Arraste um arquivo para cá ou clique para escolher uma foto do acervo.
+          Sem capa, o cartão do texto mostra apenas o título. Fotos no meio do
+          texto entram pelo botão de imagem do editor.
+      - name: enquadramento
+        label: Enquadramento da capa
+        widget: select
+        default: centro
+        required: false
+        comment: Parte da foto preservada no recorte.
+        hint: >-
+          O recorte é quadrado na lista e 3:2 no cartão. As duas molduras abaixo
+          mostram o resultado da opção escolhida.
+        options:
+          - { label: centro (padrão), value: centro }
+          - { label: topo, value: topo }
+          - { label: parte de baixo, value: fundo }
+          - { label: esquerda, value: esquerda }
+          - { label: direita, value: direita }
+      # Existe no arquivo, mas não é decisão de quem escreve: guarda de onde o
+      # texto veio, para redirecionar quem chegar por um link antigo.
+      # O texto vem logo depois do título, antes de qualquer campo de
+      # administração: é o que a pessoa veio fazer.
+      - name: body
+        label: Texto
+        widget: markdown
+        comment: Conteúdo do texto, como sai na leitura.
+        # Só o que a escrita do Enrico usa. O padrão traz 14 botões, incluindo
+        # código, tachado e seis níveis de título — ruído para quem escreve
+        # prosa, e cada botão a mais é uma decisão a mais na frente de quem só
+        # queria escrever.
+        buttons: [bold, italic, link, quote, bulleted-list, numbered-list]
+        # Atalhos de digitação continuam ligados: "> " vira citação, "- " vira
+        # lista, sem precisar tirar a mão do teclado.
+        use_markdown_shortcuts: true
+        hint: >-
+          Para inserir uma foto no meio do texto, arraste o arquivo para dentro
+          do editor ou use o botão de imagem da barra.
+      - name: data
+        label: Data
+        widget: datetime
+        comment: "Define a ordem da lista: mais recente primeiro."
+        format: "YYYY-MM-DD"
+        date_format: "DD/MM/YYYY"
+        time_format: false
+        default: "{{now}}"
+        hint: "Preenchida com a data de hoje."
+      - name: publicado
+        label: Publicado
+        widget: boolean
+        comment: Desligado, o texto não vai para o site.
+        default: true
+        hint: "Desligado equivale a rascunho."
+      - { name: url_original, widget: hidden }
+
+  - name: coluna
+    # Sem pré-visualização: o painel dela mostra os campos crus, sem
+    # relação com a cara do site, e ocupava metade da tela.
+    editor: { preview: false }
+    label: Coluna
+    label_singular: coluna
+    description: a coluna semanal, publicada em mais de 40 jornais e portais.
+    icon: newspaper
+    folder: conteudo/textos
+    filter: { field: categoria, value: coluna }
+    create: true
+    slug: "{{slug}}"
+    identifier_field: titulo
+    summary: "{{data | date('DD MMM YYYY')}}  ·  {{titulo}}"
+    thumbnail: capa
+    sortable_fields:
+      fields: [data, titulo]
+      default: { field: data, direction: descending }
+    fields:
+      - { name: categoria, widget: hidden, default: coluna }
+      - { name: titulo, label: Título, widget: string, comment: "Aparece na lista de textos e no topo da leitura." }
+      # A CAPA É UM CAMPO, com upload próprio. Não é mais "a primeira foto do
+      # texto", que era como o site fazia antes: a foto ficava escrita dentro do
+      # texto, o campo aqui era enfeite, e trocar a capa no painel não trocava
+      # nada no site.
+      #
+      # Agora este campo manda. A foto que entra aqui aparece na lista, no
+      # cartão e no alto da leitura — e NÃO no meio do texto. Foto no meio do
+      # texto é outra coisa, e entra pelo botão Imagem do editor, embaixo.
+      - name: capa
+        label: Capa
+        widget: image
+        required: false
+        comment: Foto de abertura. Aparece na lista, no cartão e no alto da leitura.
+        hint: >-
+          Arraste um arquivo para cá ou clique para escolher uma foto do acervo.
+          Sem capa, o cartão do texto mostra apenas o título. Fotos no meio do
+          texto entram pelo botão de imagem do editor.
+      - name: enquadramento
+        label: Enquadramento da capa
+        widget: select
+        default: centro
+        required: false
+        comment: Parte da foto preservada no recorte.
+        hint: >-
+          O recorte é quadrado na lista e 3:2 no cartão. As duas molduras abaixo
+          mostram o resultado da opção escolhida.
+        options:
+          - { label: centro (padrão), value: centro }
+          - { label: topo, value: topo }
+          - { label: parte de baixo, value: fundo }
+          - { label: esquerda, value: esquerda }
+          - { label: direita, value: direita }
+      # Existe no arquivo, mas não é decisão de quem escreve: guarda de onde o
+      # texto veio, para redirecionar quem chegar por um link antigo.
+      # O texto vem logo depois do título, antes de qualquer campo de
+      # administração: é o que a pessoa veio fazer.
+      - name: body
+        label: Texto
+        widget: markdown
+        comment: Conteúdo do texto, como sai na leitura.
+        # Só o que a escrita do Enrico usa. O padrão traz 14 botões, incluindo
+        # código, tachado e seis níveis de título — ruído para quem escreve
+        # prosa, e cada botão a mais é uma decisão a mais na frente de quem só
+        # queria escrever.
+        buttons: [bold, italic, link, quote, bulleted-list, numbered-list]
+        # Atalhos de digitação continuam ligados: "> " vira citação, "- " vira
+        # lista, sem precisar tirar a mão do teclado.
+        use_markdown_shortcuts: true
+        hint: >-
+          Para inserir uma foto no meio do texto, arraste o arquivo para dentro
+          do editor ou use o botão de imagem da barra.
+      - name: data
+        label: Data
+        widget: datetime
+        comment: "Define a ordem da lista: mais recente primeiro."
+        format: "YYYY-MM-DD"
+        date_format: "DD/MM/YYYY"
+        time_format: false
+        default: "{{now}}"
+        hint: "Preenchida com a data de hoje."
+      - name: publicado
+        label: Publicado
+        widget: boolean
+        comment: Desligado, o texto não vai para o site.
+        default: true
+        hint: "Desligado equivale a rascunho."
+      - { name: url_original, widget: hidden }
+
+  - name: textos
+    # Sem pré-visualização: o painel dela mostra os campos crus, sem
+    # relação com a cara do site, e ocupava metade da tela.
+    editor: { preview: false }
+    label: Textos
+    label_singular: texto
+    description: o acervo aberto — prosa curta, cartas e poesia.
+    icon: article
+    folder: conteudo/textos
+    filter: { field: categoria, value: textos }
+    create: true
+    slug: "{{slug}}"
+    identifier_field: titulo
+    summary: "{{data | date('DD MMM YYYY')}}  ·  {{titulo}}"
+    thumbnail: capa
+    sortable_fields:
+      fields: [data, titulo]
+      default: { field: data, direction: descending }
+    fields:
+      - { name: categoria, widget: hidden, default: textos }
+      - { name: titulo, label: Título, widget: string, comment: "Aparece na lista de textos e no topo da leitura." }
+      # A CAPA É UM CAMPO, com upload próprio. Não é mais "a primeira foto do
+      # texto", que era como o site fazia antes: a foto ficava escrita dentro do
+      # texto, o campo aqui era enfeite, e trocar a capa no painel não trocava
+      # nada no site.
+      #
+      # Agora este campo manda. A foto que entra aqui aparece na lista, no
+      # cartão e no alto da leitura — e NÃO no meio do texto. Foto no meio do
+      # texto é outra coisa, e entra pelo botão Imagem do editor, embaixo.
+      - name: capa
+        label: Capa
+        widget: image
+        required: false
+        comment: Foto de abertura. Aparece na lista, no cartão e no alto da leitura.
+        hint: >-
+          Arraste um arquivo para cá ou clique para escolher uma foto do acervo.
+          Sem capa, o cartão do texto mostra apenas o título. Fotos no meio do
+          texto entram pelo botão de imagem do editor.
+      - name: enquadramento
+        label: Enquadramento da capa
+        widget: select
+        default: centro
+        required: false
+        comment: Parte da foto preservada no recorte.
+        hint: >-
+          O recorte é quadrado na lista e 3:2 no cartão. As duas molduras abaixo
+          mostram o resultado da opção escolhida.
+        options:
+          - { label: centro (padrão), value: centro }
+          - { label: topo, value: topo }
+          - { label: parte de baixo, value: fundo }
+          - { label: esquerda, value: esquerda }
+          - { label: direita, value: direita }
+      # Existe no arquivo, mas não é decisão de quem escreve: guarda de onde o
+      # texto veio, para redirecionar quem chegar por um link antigo.
+      # O texto vem logo depois do título, antes de qualquer campo de
+      # administração: é o que a pessoa veio fazer.
+      - name: body
+        label: Texto
+        widget: markdown
+        comment: Conteúdo do texto, como sai na leitura.
+        # Só o que a escrita do Enrico usa. O padrão traz 14 botões, incluindo
+        # código, tachado e seis níveis de título — ruído para quem escreve
+        # prosa, e cada botão a mais é uma decisão a mais na frente de quem só
+        # queria escrever.
+        buttons: [bold, italic, link, quote, bulleted-list, numbered-list]
+        # Atalhos de digitação continuam ligados: "> " vira citação, "- " vira
+        # lista, sem precisar tirar a mão do teclado.
+        use_markdown_shortcuts: true
+        hint: >-
+          Para inserir uma foto no meio do texto, arraste o arquivo para dentro
+          do editor ou use o botão de imagem da barra.
+      - name: data
+        label: Data
+        widget: datetime
+        comment: "Define a ordem da lista: mais recente primeiro."
+        format: "YYYY-MM-DD"
+        date_format: "DD/MM/YYYY"
+        time_format: false
+        default: "{{now}}"
+        hint: "Preenchida com a data de hoje."
+      - name: publicado
+        label: Publicado
+        widget: boolean
+        comment: Desligado, o texto não vai para o site.
+        default: true
+        hint: "Desligado equivale a rascunho."
+      - { name: url_original, widget: hidden }
+
+  - name: outros
+    # Sem pré-visualização: o painel dela mostra os campos crus, sem
+    # relação com a cara do site, e ocupava metade da tela.
+    editor: { preview: false }
+    label: Outros
+    label_singular: texto
+    description: cartas de domingo, desabafos e o que não tem categoria.
+    icon: folder
+    folder: conteudo/textos
+    filter: { field: categoria, value: outros }
+    create: true
+    slug: "{{slug}}"
+    identifier_field: titulo
+    summary: "{{data | date('DD MMM YYYY')}}  ·  {{titulo}}"
+    thumbnail: capa
+    sortable_fields:
+      fields: [data, titulo]
+      default: { field: data, direction: descending }
+    fields:
+      - { name: categoria, widget: hidden, default: outros }
+      - { name: titulo, label: Título, widget: string, comment: "Aparece na lista de textos e no topo da leitura." }
+      # A CAPA É UM CAMPO, com upload próprio. Não é mais "a primeira foto do
+      # texto", que era como o site fazia antes: a foto ficava escrita dentro do
+      # texto, o campo aqui era enfeite, e trocar a capa no painel não trocava
+      # nada no site.
+      #
+      # Agora este campo manda. A foto que entra aqui aparece na lista, no
+      # cartão e no alto da leitura — e NÃO no meio do texto. Foto no meio do
+      # texto é outra coisa, e entra pelo botão Imagem do editor, embaixo.
+      - name: capa
+        label: Capa
+        widget: image
+        required: false
+        comment: Foto de abertura. Aparece na lista, no cartão e no alto da leitura.
+        hint: >-
+          Arraste um arquivo para cá ou clique para escolher uma foto do acervo.
+          Sem capa, o cartão do texto mostra apenas o título. Fotos no meio do
+          texto entram pelo botão de imagem do editor.
+      - name: enquadramento
+        label: Enquadramento da capa
+        widget: select
+        default: centro
+        required: false
+        comment: Parte da foto preservada no recorte.
+        hint: >-
+          O recorte é quadrado na lista e 3:2 no cartão. As duas molduras abaixo
+          mostram o resultado da opção escolhida.
+        options:
+          - { label: centro (padrão), value: centro }
+          - { label: topo, value: topo }
+          - { label: parte de baixo, value: fundo }
+          - { label: esquerda, value: esquerda }
+          - { label: direita, value: direita }
+      # Existe no arquivo, mas não é decisão de quem escreve: guarda de onde o
+      # texto veio, para redirecionar quem chegar por um link antigo.
+      # O texto vem logo depois do título, antes de qualquer campo de
+      # administração: é o que a pessoa veio fazer.
+      - name: body
+        label: Texto
+        widget: markdown
+        comment: Conteúdo do texto, como sai na leitura.
+        # Só o que a escrita do Enrico usa. O padrão traz 14 botões, incluindo
+        # código, tachado e seis níveis de título — ruído para quem escreve
+        # prosa, e cada botão a mais é uma decisão a mais na frente de quem só
+        # queria escrever.
+        buttons: [bold, italic, link, quote, bulleted-list, numbered-list]
+        # Atalhos de digitação continuam ligados: "> " vira citação, "- " vira
+        # lista, sem precisar tirar a mão do teclado.
+        use_markdown_shortcuts: true
+        hint: >-
+          Para inserir uma foto no meio do texto, arraste o arquivo para dentro
+          do editor ou use o botão de imagem da barra.
+      - name: data
+        label: Data
+        widget: datetime
+        comment: "Define a ordem da lista: mais recente primeiro."
+        format: "YYYY-MM-DD"
+        date_format: "DD/MM/YYYY"
+        time_format: false
+        default: "{{now}}"
+        hint: "Preenchida com a data de hoje."
+      - name: publicado
+        label: Publicado
+        widget: boolean
+        comment: Desligado, o texto não vai para o site.
+        default: true
+        hint: "Desligado equivale a rascunho."
+      - { name: url_original, widget: hidden }
+
+  # ================================================================ O SITE ===
+  - name: divisor_site
+    divider: true
+
+  - name: livros
+    # Sem pré-visualização: o painel dela mostra os campos crus, sem
+    # relação com a cara do site, e ocupava metade da tela.
+    editor: { preview: false }
+    label: Livros
+    label_singular: livro
+    description: os livros que aparecem no carrossel da página inicial.
+    icon: menu_book
+    folder: conteudo/livros
+    create: true
+    slug: "{{slug}}"
+    identifier_field: titulo
+    summary: "{{titulo}}"
+    thumbnail: capa
+    sortable_fields:
+      fields: [ordem, titulo]
+      default: { field: ordem, direction: ascending }
+    fields:
+      - { name: titulo, label: Título, widget: string, comment: "Aparece na lista de textos e no topo da leitura." }
+      - { name: subtitulo, label: Subtítulo, widget: string, required: false, comment: "Aparece sob o título no cartão do livro. Opcional." }
+      - { name: body, label: Sinopse, widget: text, comment: "Texto do cartão do livro, na página inicial." }
+      - { name: capa, label: Capa, widget: image, required: false, comment: "Imagem do carrossel de livros. Use a capa da Amazon, em boa resolução." }
+      - { name: url, label: Link da Amazon, widget: string, comment: "Destino do botão \"Ver na Amazon\"." }
+      - { name: nota, label: Nota, widget: string, required: false, comment: "Base do cálculo das estrelas do cartão.", hint: "Formato com vírgula, como na Amazon: 4,6" }
+      - { name: avaliacoes, label: Número de avaliações, widget: number, value_type: int, required: false, comment: "Número entre parênteses ao lado das estrelas." }
+      - { name: ordem, label: Posição no carrossel, widget: number, value_type: int, min: 1, comment: "Define a ordem dos livros na página inicial.", hint: "1 aparece primeiro." }
+      - { name: asin, label: Código ASIN da Amazon, widget: string, comment: "Identifica o livro na Amazon. Não aparece no site.", hint: "Código depois de /dp/ no endereço da Amazon. Ex.: B0DYPFP8FN" }
+
+  - name: episodios
+    # Sem pré-visualização: o painel dela mostra os campos crus, sem
+    # relação com a cara do site, e ocupava metade da tela.
+    editor: { preview: false }
+    label: Episódios
+    label_singular: episódio
+    description: os episódios do ABCPOD, do mais novo ao mais antigo.
+    icon: podcasts
+    folder: conteudo/episodios
+    create: true
+    slug: "t{{temporada}}e{{episodio}}"
+    identifier_field: convidado
+    summary: "{{publicado_em | date('DD MMM YYYY')}}  ·  T{{temporada}}E{{episodio}}  ·  {{convidado}}"
+    sortable_fields:
+      fields: [publicado_em, temporada, convidado]
+      default: { field: publicado_em, direction: descending }
+    fields:
+      - { name: convidado, label: Convidado, widget: string, comment: "Nome exibido no cartão do episódio." }
+      - { name: youtube_id, label: ID do vídeo no YouTube, widget: string, comment: "Define a miniatura e o destino do cartão.", hint: "Código depois de v= no endereço do YouTube. Ex.: kJhwhx_fOt8" }
+      - name: publicado_em
+        label: Publicado em
+        widget: datetime
+        comment: Ordena os episódios e aparece no cartão.
+        format: "YYYY-MM-DD"
+        date_format: "DD/MM/YYYY"
+        time_format: false
+        default: "{{now}}"
+      - { name: temporada, label: Temporada, widget: number, value_type: int, required: false, comment: "Agrupa o episódio nas abas de temporada.", hint: "Vazio: especial, fora de temporada." }
+      - { name: episodio, label: Número do episódio, widget: number, value_type: int, required: false, comment: "Forma o T01E01 do cartão." }
+      - { name: duracao_s, label: Duração em segundos, widget: number, value_type: int, required: false, comment: "Entra no total de horas do topo da página. Em segundos: 3376 = 56 min." }
+      - { name: visualizacoes, widget: hidden }
+
+  # ============================================ O QUE NÃO ESTÁ NO PAINEL ===
+  #
+  # As frases fixas da página inicial — o topo, a chamada do abcpod, a biografia
+  # e as listas de prêmios — NÃO têm aba aqui, de propósito.
+  #
+  # Elas mudam uma vez por ano, exigem cuidado com a marcação e não são o
+  # trabalho de quem escreve. Ter isso no painel só dava chance de esbarrar: o
+  # formulário tinha quatro blocos, dezoito campos e um nome ("Textos da página
+  # inicial") que parecia um segundo lugar para gerenciar textos, competindo com
+  # Diário, Coluna e Textos. Painel bom é painel curto: aqui ficou só o que o
+  # Enrico faz toda semana.
+  #
+  # ONDE ESSAS FRASES MORAM: conteudo/secoes.json, editado direto no arquivo.
+  # A marcação é simples (veja ferramentas/marcacao.py):
+  #
+  #     *obra*            título de livro, sai em itálico
+  #     **destaque**      negrito
+  #     [texto](destino)  link
+  #
+  # Depois de mexer:  python3 ferramentas/gen-secoes.py
+  #
+  # E o `ferramentas/varrer.py` confere esse arquivo a cada publicação: acusa
+  # HTML cru e texto de exemplo esquecido lá dentro.
+  #
+  # OS ÚLTIMOS TEXTOS DA HOME nunca tiveram campo nenhum, aqui ou lá: entram
+  # sozinhos, o último de cada categoria, por data. Quem escreve mexe em Diário,
+  # Coluna e Textos, e a home se atualiza na publicação seguinte.

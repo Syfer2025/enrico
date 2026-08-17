@@ -1,0 +1,20 @@
+---
+titulo: "crescer é perder o encanto e ainda sim continuar acreditando."
+data: "2026-02-03"
+categoria: "coluna"
+publicado: true
+capa: "/assets/img/acervo/imagem-do-whatsapp-de-2025-11-28-as-15-32-32-0c1-2adea60c.webp"
+url_original: "http://enricopierro.com.br/2026/02/03/crescer-e-perder-o-encanto-e-ainda-sim-continuar-acreditando/"
+---
+
+o encanto vai embora devagar. você vê suas certezas desmoronarem, as histórias que eram linha reta se tornarem labirinto, as pessoas em quem confiou tornarem-se estranhos e até você mesmo parecer outro. quando a gente cresce, a mágica de não saber tudo se transforma muitas vezes em desencanto. expectativas se quebram, sonhos se arrastam sob a poeira da vida adulta e a gente começa a carregar a frustração de quem acreditou demais. e não é que você tenha acreditado errado, é que o mundo é maior e mais complexo do que cabia no início. é que alguns planos se dissolvem, alguns amores se revelam passageiros, algumas causas geram mais perguntas do que respostas.
+
+mas crescer também é isso: continuar. continuar acreditando naquilo que sobreviveu. continuar se dispondo mesmo depois de se decepcionar. continuar lendo, criando, amando, mesmo quando o livro tem páginas riscadas, quando o quadro está trincado, quando o outro já provou que não quer ver. crescer é ir pra rua mesmo sabendo que pode chover, é colocar os pés no cimento frio da realidade e continuar.
+
+ entender a realidade dura é importante, mas desistir diante dela é outra coisa. você pode perder a promessa que viu no primeiro encontro, pode descobrir que a amizade não se sustenta na rotina, que a família também fere, que o sonho precisa de mais apoio do que você tinha imaginado. e aí vem o grande ponto: continuar. continuar quando não faz sentido interno, continuar quando o corpo pede pausa, continuar quando a cabeça diz que cansa. continuar porque acreditar mesmo quando tudo conspira contra é um ato de liberdade. é mostrar que você não vai deixar o mundo moldar seu limite. é erguer a própria mão em direção a uma vontade que persiste apesar das rachaduras.
+
+ e aí chega o momento em que você entende que acreditando mesmo sem garantias, você se expõe de novo. e aí você decide que vale. que a verdade dentro de você, aquela chama teimosa, ainda é mais forte que qualquer pulverização de esperança. então você continua acreditando. não porque tudo vai dar certo. mas porque o ato de continuar já é um gesto valioso. crescer é tocar o chão duro, olhar a tempestade nos olhos e escolher o recomeço mesmo sabendo que pode cair novamente.
+
+ você perde o encanto, mas não perde o que importa. você entende que acreditar não é ilusão, é escolha. não é sinal de fraqueza, é sinal de coragem. não é fechar os olhos pra dor, é escolher o caminho apesar dela. e quem ainda acredita depois de perder o encanto não vive no encanto — vive na potência. e a potência, essa sim, é poder puro.
+
+@enricopierroofc

@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+
+# ---------------------------------------------------------------- segredos --
+# O repositório é público, então nada de credencial pode entrar.
+#
+# Aqui só entram nomes que NÃO têm outro significado possível. A tentação é
+# escrever *senha* e *secret*, mas isso bloqueia conteúdo de verdade: o Enrico
+# tem um texto chamado "secret-place" e outros que falam de senha, e eles
+# sumiriam do site sem ninguém entender por quê. Regra silenciosa que apaga
+# conteúdo é pior que o risco que ela evita.
+#
+# A proteção de verdade não é por nome de arquivo, é por conteúdo:
+#     python3 ferramentas/conferir-segredos.py
+# que procura o formato das credenciais dentro dos arquivos, antes de subir.
+.env
+.env.*
+.netrc
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+
+# cache do importador de textos do WordPress
+bastidores/.cache-escrita.json
+
+# imagens de IA usadas durante o projeto: não geram o site nem vão para o ar
+bastidores/imagens-ia/
+
+# saída temporária
+tmp/

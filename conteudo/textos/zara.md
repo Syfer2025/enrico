@@ -1,0 +1,22 @@
+---
+titulo: "zara."
+data: "2025-11-26"
+categoria: "outros"
+publicado: true
+capa: "/assets/img/acervo/img-20250603-wa0155-1fa652cc.webp"
+url_original: "http://enricopierro.com.br/2025/11/26/zara/"
+---
+
+eu não esperava a sua chegada. fiquei sabendo que você existia em um sábado junino, aquela coisa que enquanto come um milho cozido direto da espiga vai mostrando as fotos dos filhos. e foi assim que o mundo, o meu mundo, começou a mudar.
+
+você chegou uma quinta-feira. e eu me assustei com o seu estado físico, com o olho que eu achava que já estava cega e infeccionado. me revoltei com o fato de que alguém havia deixado você ficar assim. não achava justo. uma pessoa que maltrata um animal tão amoroso, deve ter que acertas as contas com deus em algum momento, mas por mim poderia começar acertando agora, com os homens.
+
+o rabo nos meio das pernas, como se tentasse proteger o seu corpo tão frágil. o olhar de tristeza e desespero foi algo que me fez chorar. e fiquei assim por horas, enquanto você andava pelo terreno cheirando a reconhecendo um mundo totalmente novo. uma liberdade que nunca havia sido sua.
+
+tentei te fazer carinho mas a sua reação de medo me deixou ainda mais arrasado. será que você nunca recebeu afeto? mas eu sabia que era questão de tempo até você conhecer e aceitar todo o amor que temos guardado pra você.
+
+te oferecemos comida e deu pra ver o desespero, a ansiedade. fico imaginando tudo o que você passou nessa vida enquanto sinto novamente uma revolta inexplicável.
+
+eu sei que o caminho é longo, ainda tem muito pela frente. mas você tem progredido rápido. tem muita gente boa cuidando de você, agora. é zara, esse é o teu novo mundo, um mundo cheio de possibilidades, de amor, de brincadeiras. a comida nunca mais vai te faltar. nenhuma mão nunca mais será levantada contra você.
+
+eu não posso te prometer muitas coisas, você sabe, nem tudo depende de nós, mas eu prometo que faremos de tudo, todos os dias, pra te fazer feliz. seja bem-vinda zara, esse mundo nosso agora é todinho teu!

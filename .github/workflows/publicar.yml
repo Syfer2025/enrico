@@ -1,0 +1,119 @@
+# Publica o site sempre que o conteúdo mudar.
+#
+# O painel grava em conteudo/ e faz um commit. Este arquivo é o que acontece
+# depois: roda os geradores, monta o HTML e publica no GitHub Pages. É por isso
+# que salvar no painel leva um ou dois minutos para aparecer no site — o
+# trabalho que antes você fazia à mão, na sua máquina, acontece aqui.
+name: publicar
+
+on:
+  push:
+    branches: [main]
+    # Mexer só no LEIA-ME não precisa republicar o site.
+    paths-ignore:
+      - "LEIA-ME.md"
+      - "bastidores/**"
+  # Permite disparar à mão pela aba Actions, sem precisar alterar nada.
+  workflow_dispatch:
+
+# Permissão mínima: ler o repositório e publicar as páginas. Nada além disso —
+# esta rotina não precisa (e não deve) poder escrever no código.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Se dois textos forem salvos em seguida, a publicação mais nova cancela a
+# anterior em vez das duas brigarem pelo mesmo destino.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  montar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Duas dependências, e só duas: Pillow para medir e redimensionar
+      # imagem, e markdown para transformar o texto do painel em HTML. O resto
+      # é biblioteca padrão do Python, de propósito.
+      - name: instalar as dependências
+        run: python -m pip install --quiet pillow markdown
+
+      # Antes de qualquer coisa: o repositório é público, então nada de
+      # credencial pode ter entrado junto com o conteúdo.
+      - name: conferir se vazou credencial
+        run: python3 ferramentas/conferir-segredos.py
+
+      # Config do painel quebrada não deixa um campo torto: o painel não abre.
+      # Falhar aqui é melhor que publicar um painel morto.
+      - name: Conferir a configuração do painel
+        run: python3 ferramentas/conferir-painel.py
+
+      # Varredura do conteúdo e das ligações: arquivo apontado que não existe,
+      # HTML cru em campo do painel, campo obrigatório vazio, dependência do
+      # site antigo. Falha a publicação — é mais barato que descobrir na tela.
+      - name: Varredura geral
+        run: python3 ferramentas/varrer.py
+
+      - name: gerar as capas dos textos
+        run: python3 ferramentas/gerar-capas.py
+
+      # A ordem importa: gen-escrita.py lê a contagem que o
+      # gen-escrita-arquivo.py acabou de fechar.
+      - name: montar as páginas
+        run: |
+          python3 ferramentas/gen-books.py
+          python3 ferramentas/gen-episodios.py
+          python3 ferramentas/gen-secoes.py
+          python3 ferramentas/gen-escrita-arquivo.py
+          python3 ferramentas/gen-escrita.py
+          python3 ferramentas/gen-contato.py
+          python3 ferramentas/gen-busca.py
+          # Por último: injeta prévia de link, ícones e canonical em TODAS as
+          # páginas, inclusive a de contato que acabou de ser criada.
+          python3 ferramentas/gen-publicacao.py
+
+      # REDE DE PROTEÇÃO, depois de gerar: se um gerador falhar pela metade e
+      # deixar um caminho apontando para arquivo que não existe, é melhor a
+      # publicação parar aqui do que o site ir ao ar com imagem quebrada.
+      #
+      # É o MESMO varrer.py de cima, rodado de novo — de propósito. Antes aqui
+      # havia uma cópia da verificação escrita à mão neste arquivo, e ela
+      # envelheceu: o varrer.py aprendeu a descontar o prefixo do site
+      # (/enrico/), que o 404.html usa de propósito, e a cópia não. Resultado: a
+      # cópia acusava 7 arquivos faltando que existem, e a publicação falharia
+      # no primeiro envio — o site nunca teria subido.
+      #
+      # Uma verificação, um lugar. Duas cópias da mesma regra é uma que mente.
+      - name: conferir de novo, depois de gerar
+        run: python3 ferramentas/varrer.py
+
+      # `enablement: true` liga o GitHub Pages sozinho na primeira vez, usando a
+      # permissão `pages: write` que este robô já tem. Sem isto, alguém teria de
+      # entrar em Settings → Pages e escolher "GitHub Actions" à mão antes do
+      # primeiro envio — e, esquecendo, a publicação falha sem site nenhum.
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      # Só a pasta publicar/ vai para o ar. conteudo/, ferramentas/ e
+      # bastidores/ ficam no repositório mas não são servidos.
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: publicar
+
+  publicar:
+    needs: montar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,12 @@
+---
+titulo: "vontades."
+data: "2013-11-26"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/9e260-centralpark-ff41fac4.webp"
+url_original: "http://enricopierro.com.br/2013/11/26/vontades/"
+---
+
+Vontade de ir pra NY. Caminhar no parque. Vontade de ir pra Hong Kong, Tóquio ou Sydney. Vontade de ir pra qualquer lugar. Tenho dentro de mim mil vontades, das mais absurdas até as mais banais. O difícil não é ter, é realizar. É se movimentar e sair do plano das ideias e partir pro plano das ações. Hoje eu estou com vontades estranhas, fora do comum, fora de órbita. Vontade de ir para um Motel ou para Marte. Vontade de ficar ou ir de vez.
+
+![](/assets/img/acervo/9e260-centralpark-ff41fac4.webp)

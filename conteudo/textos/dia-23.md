@@ -1,0 +1,20 @@
+---
+titulo: "dia 23"
+data: "2018-04-10"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/dia2b221-e6079d27.webp"
+url_original: "http://enricopierro.com.br/2018/04/10/dia-23/"
+---
+
+Acho que tenho tudo que quero. Quando quero cerveja, bebo cerveja. Quando quero vodka, bebo vodka. Quando quero você, bebo vodka.
+
+—  Soulstripper.
+
+Acho que isso me assusta um pouco. Hoje é sábado e tenho um aniversário. Acordei com uma terrível enxaqueca, mas não vou entrar em detalhes sobre isso. O que me assusta é que eu comecei a beber. Veja bem, eu nunca gostei do sabor do álcool. E não gostei quando provei aquela bebida que você sempre me dizia estar bebendo quando saía. Parecia bacana, via nas tuas fotos. A cor me atraía, mas eu não gostei do sabor, era um pouco amargo e eu prefiro coisas mais suaves. E bem… cá estou eu, em mais uma semana em que eu tomei algumas vezes esse mesmo drink, e cheguei no aniversário procurando você no cardápio. Não tinha.
+
+      Parece que estou te bebendo aos poucos, pra tentar te esquecer. Será que eu posso afogar você dentro de mim em álcool? Estou tentando, mas o que adianta? Você sempre estará no fundo do copo, da música, da rua, da mente. Não quero me tornar um alcoólatra e você nem valeria à pena, sejamos honestos. Mas eu preciso parar de ficar te procurando nas bebidas e bares da vida. Dizem que quando a gente para de procurar é que acha, e eu diria que, assim como a Florbela Espanca diz em seu poema “Amar!”: é preciso perder-me para me encontrar. Só preciso largar um pouco o copo, a mania, a saudade. Beber não vai me fazer te esquecer, só me faz te lembrar cada vez mais.
+
+       Bom sábado.
+
+c.e.

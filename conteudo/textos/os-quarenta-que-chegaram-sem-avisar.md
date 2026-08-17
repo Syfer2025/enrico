@@ -1,0 +1,33 @@
+---
+titulo: "os quarenta que chegaram sem avisar."
+data: "2026-07-19"
+categoria: "outros"
+publicado: true
+capa: "/assets/img/acervo/capa-608b063e.webp"
+url_original: "http://enricopierro.com.br/2026/07/19/os-quarenta-que-chegaram-sem-avisar/"
+---
+
+carta de domingo · 19 de julho
+
+oi.
+
+esse é o primeiro e-mail que eu te mando, e confesso que reescrevi esse comecinho umas quatro vezes antes de aceitar que ele nunca ia ficar pronto. caixa de entrada é um lugar mais íntimo que o site: lá você me visita quando quer, aqui sou eu que entro na sua casa, no meio das suas contas e dos seus boletos. então prometo me comportar como visita boa: chego domingo, trago um texto, não faço bagunça e vou embora antes de encher. o texto de hoje é sobre uma data que chegou pra mim faz pouco tempo e que, pelo visto, ainda não terminou de chegar.
+
+# os quarenta que chegaram sem avisar.
+
+ninguém me contou que ia doer assim, essa idade que chega numa quarta-feira qualquer, sem cerimônia, sem aviso prévio, e de repente eu estou diante do espelho tentando entender que homem é esse que envelheceu enquanto eu estava distraído com outras coisas. eu sabia que o dia ia chegar, todo mundo sabe, mas saber e sentir são coisas diferentes, e uma coisa é marcar no calendário, outra é acordar de fato dentro do número. no dia do aniversário em si eu estava bem, teve bolo, teve mensagem, teve gente querida por perto, e eu até me convenci de que tinha passado ileso. a ficha caiu depois, semanas depois, num momento completamente sem importância, escovando os dentes, quando eu me olhei no espelho por um segundo a mais do que o necessário e pensei: então é isso. é esse o rosto que os quarenta escolheram pra mim, e ele nem me consultou antes de mudar.
+
+não é o número que pesa, isso eu já entendi. o que pesa é a pergunta que ele carrega escondida atrás dele: cheguei onde eu devia ter chegado? e o pior é que eu nem sei responder direito, porque eu nunca soube exatamente onde era esse lugar. só sei que lá atrás, quando eu tinha vinte e poucos anos e a vida inteira parecia um horizonte distante, eu desenhei um mapa de onde eu estaria hoje. casa, carreira, corpo, paz. e hoje, olhando pra trás, o caminho que percorri não parece nem um pouco com aquele desenho. tem coisas que ficaram melhores do que o previsto, isso eu preciso admitir, porque o menino que desenhou aquele mapa não fazia ideia de que um dia ia existir uma chácara, uns cachorros, um amor que dá certo. mas tem coisas que ficaram tortas de um jeito que ele também não previu, e é nas tortas que o olho insiste em parar, como se o resto não contasse.
+
+o engraçado, se é que dá pra chamar de engraçado, é que eu passei anos ouvindo gente mais velha dizer que a idade era só um número, e eu acreditava, porque era conveniente acreditar. agora eu entendo que a frase até é verdadeira, mas ela esconde a parte importante: o número é só um número, mas a pergunta que vem junto dele é de verdade. e não adianta responder a pergunta com pressa, com uma frase pronta de otimismo, porque ela volta. ela sempre volta, geralmente de madrugada, geralmente quando eu estou cansado demais pra me defender dela.
+
+![](/assets/img/acervo/capa-608b063e.webp)
+
+
+às vezes eu me pego comparando a minha vida com a de gente que também fez quarenta, gente que parece ter chegado num lugar mais arrumado, mais certo, e aí a régua entra em ação de novo, sempre pronta pra me lembrar do que eu não fiz. mas tem um segundo em que eu consigo respirar diferente, e nesse segundo eu penso que talvez a vida não seja um mapa que se cumpre, e sim um desenho que se refaz sozinho enquanto a gente segue andando, e a gente só percebe a diferença entre o plano e o resultado quando para pra olhar. eu parei. estou olhando agora. dói um pouco, não vou fingir que não dói, mas tem uma coisa nova nesse olhar que eu não tinha aos vinte nem aos trinta: eu não estou mais com pressa de desviar. e talvez essa seja a primeira coisa que os quarenta trouxeram de bom: a coragem de olhar sem fugir, de encarar o desenho torto e reconhecer que, torto do jeito que está, ele ainda é meu, e ainda tem espaço em branco sobrando pra desenhar.
+
+se alguma coisa aí em cima mexeu com você, responde esse e-mail. não é figura de linguagem: eu leio tudo, e responder carta é metade do motivo de ela existir.
+
+e um aviso de bastidor: esse texto vai fazer parte de “duas da manhã”, meu próximo livro de desabafos. em breve eu conto mais, e quem recebe essa carta vai saber primeiro.
+
+rico

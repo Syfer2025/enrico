@@ -1,0 +1,26 @@
+---
+titulo: "um milímetro."
+data: "2026-03-31"
+categoria: "coluna"
+publicado: true
+capa: "/assets/img/acervo/um-milimetro-2-a54ac14b.webp"
+url_original: "http://enricopierro.com.br/2026/03/31/um-milimetro/"
+---
+
+eu não sei exatamente quando o ano começou a pesar. talvez tenha sido em janeiro mesmo, quando a gente percebe que o réveillon só trocou o calendário, mas deixou os boletos e eu perdi o meu pai. talvez tenha sido em março, quando a vida resolveu testar meus limites como quem brinca de puxar elástico: mais um pouco e estoura. ou pode ter sido naquele dia específico (sempre existe um) em que o corpo e o coração pedem um minuto de silêncio, mas o mundo não colabora.
+
+o fato é: 2025 não foi um ano leve. nem gentil. nem paciente. foi um ano que me pediu coisas que eu não tinha pra dar. forças que eu não sabia onde encontrar. respostas que eu não fazia ideia de como construir.
+
+e mesmo assim, no automático ou no milagre, eu fui. porque a gente sempre vai, né? cansado, mas vai. quebrado, mas vai. às vezes funcionando só na força da fé e na teimosia de não desistir, porque desistir, no fim das contas, nunca foi uma opção muito viável.
+
+eu terminei dias segurando o mundo com a ponta dos dedos. outros, segurando lágrimas no canto do olho. e alguns poucos, segurando risos que apareceram no meio do caos, como quem encontra uma moeda no chão e pensa: ok, talvez ainda tenha alguma coisa boa aqui.
+
+e é nessas pequenas coisas que percebo: a vida não precisa estar funcionando pra continuar. e nós também não. às vezes basta sobreviver ao dia. atravessar a noite. aceitar que não é bonito, não é poético e não é instagramável, mas é real.
+
+e talvez seja isso que eu mais levo deste ano: a noção de que a gente não precisa estar no auge, iluminado, pleno. às vezes só precisamos estar aqui. respirando. tropeçando. levantando mais uma vez, ainda que seja no improviso.
+
+o próximo ano não vai consertar nada por mágica. eu já fiz as pazes com isso. mas ele pode, quem sabe, trazer algum alívio. uma fresta. um respiro. e, se não trouxer, eu sei que eu vou dar um jeito, como sempre dei.
+
+porque no fim, mesmo cansado, mesmo machucado, mesmo com tudo fora do lugar… eu continuo acreditando. na vida, em deus, e nessa força estranha que aparece quando eu acho que acabou.
+
+e se tem uma coisa que eu aprendi, é que a gente nunca está tão no chão quanto pensa, sempre existe um milímetro que dá pra levantar dali. e se eu continuo, é também por quem já não está, porque carregar a memória é outra forma de seguir vivo.

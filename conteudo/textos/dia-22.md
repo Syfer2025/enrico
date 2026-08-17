@@ -1,0 +1,19 @@
+---
+titulo: "dia 22"
+data: "2017-11-29"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/dia2b211-328c94cd.webp"
+url_original: "http://enricopierro.com.br/2017/11/29/dia-22/"
+---
+
+Dia 22
+
+Vem para ficar. Se não for para ficar, nem vale a pena tentar e nem se aproximar.
+
+—  Matt Oliveira.
+       E eu teria ido na tua direção. Seguido teu caminho barulhento e abraçado os teus sonhos. Não deixaria os meus de lado, nem seria necessário, acho que meu coração e minha vida se tornaram grandes o suficiente para abraçar ambos. E teria seguido esse caminho por muito tempo, talvez por toda uma vida. Uma pena, que no decorrer das coisas até hoje, nunca saberemos. Hoje faz 21 dias seguidos que te escrevo e você recebeu de mim 18 deles. Apenas um teve uma resposta. Na verdade eu estou plenamente convencido que você já não os lia. Porque será? Será que de alguma forma isso te incomodava? Qual será a trava que te impede de seguir o teu próprio caminho quando ele cruza com o meu? Eu sei, dificilmente eles se cruzariam sozinhos, a gente não tem tanto em comum assim na esfera da diversão. Bem, até onde você sabe, né? Mas eu sei de pequenos segredos teus e também já te vi chorar. Lembra? Parados naquele mesmo posto onde nos conhecemos. Acho que se um dia eu for rico o suficiente eu compro aquele posto de gasolina, só pela história. Só para poder sentar ao lado da loja de conveniência e relembrar tantas coisas. E eu desenharia uma jaqueta amarela no chão. E talvez eu e você, ou um coração partido. Não que eu estivesse partido, eu acho que sempre fui inteiro, e nem parti, eu nunca parto, não de você. Não da tua memória silenciosa dentro de mim. Às vezes barulhenta. Às vezes triste.
+
+Sim, se você tivesse continuado a seguir o teu caminho, que eu sei que seria sempre coroado de sucesso, eu teria te acompanhado. E estaria ao teu lado o tempo em que você estivesse ao meu. Mas a vida não é uma linha reta, né? E acho que nos separamos em uma dessas curvas do destino. Parece título de novela, mas é só uma reflexão de um coração silencioso, que não sabe bem o que fazer com essas linhas e esse sentimento. Quem sabe você cruza na minha frente e eu te sigo ou você percebe a merda que você fez quando me deixou partir. E depois de conhecer tantos outros alguém você finalmente perceba que eu sou único e que você não vai encontrar dois iguais. Muito parecidos fisicamente, ok, isso você pode até achar, mas só, nunca vai passar disso. Quem sabe nessas curvas da vida a gente não se esbarra, se tropeça, se enfrenta, ou se ama. Mas por favor, se for cruzar comigo, então me derruba, pula em cima de mim e me arrasta na tua intensidade. Se for pra ser, então que sejamos inteiros, eu cansei da vida pela metade.
+
+c.e.

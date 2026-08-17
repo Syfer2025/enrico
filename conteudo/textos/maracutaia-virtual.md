@@ -1,0 +1,21 @@
+---
+titulo: "Maracutaia virtual."
+data: "2009-04-28"
+categoria: "textos"
+publicado: true
+capa: ""
+url_original: "http://enricopierro.com.br/2009/04/28/maracutaia-virtual/"
+---
+
+Ok, estamos flertando. Somos duas pessoas que estão se conhecendo. Agora vamos a um manual prático afim de simplificar as coisas.
+
+Você está flertando com mais alguém? Ok, só não preciso ficar sabendo, mesmo que seja meu melhor amigo. Seja discreto e todos ficam bem. Afinal de contas, não temos nada.
+Você já começou um relacionamento e achou que tudo seria incrível e então ele afundou? Você percebeu que talvez ele demorasse tempo demais falando ‘ahhhhhn’ no meio das frases e você ficava com uma vontade incontrolável de dar um tapa em suas costas para que a frase saísse por completo ou talvez ele mexe demais o café enquanto faz aquele barulho com a colherzinha e aquilo vai te dando uma cólera que a sua vontade suprema nesse instante é fazê-lo ficar com uma rosquinha na garganta igual a um desenho animado. Talvez morrer asfixiado. Você no suco de laranja ou ele na xícara de café com o amplificador metálico.
+As intenções? Qual é, não somos candidatos que temos que elencar quais serão as mudanças que iremos fazer no bairro, no centro, na favela que vai virar um amontoado de janelas verticais com roupas coloridas penduradas para fora e todos irão sorrir. Vamos ser os candidatos à vida. Sabe aquela que a gente foi deixando pra trás porque percebemos que era necessário tempo demais para ler os blogs, as dicas, escutar as músicas, o msn, os amigos, os rolinhos, as baladas e os temakis? Essa mesma. Sejamos partidários do livre arbítrio, do foda-se consciente de quem sabe para onde está indo, ou não, mas que vai mesmo assim. Sejamos livres mesmo quando estivermos amarrados a um pé de mesa qualquer.
+Mas vamos deixar com que as coisas simplesmente acontecam. Que eu mude de cidade e você de país. Que meus pais se separem e os teus se casem novamente. Que eu mude de endereço sem sair de casa porque a prefeitura quis assim. Vamos deixar que a juventude não passe e que nossos sonhos não morram, mas sejamos honestos e vamos deixar a vida acontecer. Você vai continuar praticando sexo casual com aquele teu amigo e eu vou continuar escrevendo sobre isso. Você vai continuar indo pra casa dos teus pais de final de semana e eu fugindo da casa dos meus. Iremos sair para jantar cada um no seu planeta e vamos nos esbarrar virtualmente em algum plano paralelo. Mas vamos deixar as intenções de lado. Os amores de dentro. As promessas de fora.
+
+Eu já falei que o príncipe encantado foi morto por uma dívida na boca de fumo que ele estava devendo dinheiro, então abre a porta da tua casa e corre atrás do dragão porque ele também vai casar e ter filhos e ir viajar com a princesa no feriado de tiradentes como uma promessa ‘in memoriam’. Você sabe, no final todo mundo vira amigo e faz sexo e a gente fica ali com todas as dívidas nas mãos pensando no quanto foi idiota em ficar guardando e agora todos dão risada na roda gigante e a gente tá aqui embaixo esperando na fila pra andar no pedalinho.
+A gente vai conversando e o papo é incrível mas isso não quer dizer que eu vou achar incrível a cara que você faz quando acorda. Não existe namorado de mesa de buteco, eles chamam-se amigos, assim como não existe amor como conto de fadas. A mágica mais real da tua vida é a do 
+Cris Angel e ele é ilusionisma então acorda que essa mágica não existe, ela só gera renda e talvez um ‘wow’ de quem assiste pela primeira vez, mas isso passa.
+Tudo deve nascer com o convívio e eu sou a favor da rotina como o maior teste que pode existir pra um relacionamento. Mas que ele comece assim. Esse lance de comecar como amigos e então nascer algo genial pra mim nada mais é que um suicídio de amizades. Você acha a pessoa incrível e então começam a namorar e descobre que ela na verdade é um pé no saco, odeia os pais e pretende fugir pra Mongólia com 32 anos porque leu numa revista que o mundo ia acabar em 2012 ou 2014 e pretende ser um guerreiro vesgo na próxima encarnação. Aquela rotina tão gostosa de ir descobrindo, pra mim ela sim, gera o verdadeiro amor.
+Então se você me perguntar: quais as tuas intenções contigo? Eu posso responder: Nenhuma.

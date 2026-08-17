@@ -1,0 +1,159 @@
+.contato {
+  padding-block: calc(var(--header-h) + var(--safe-t) + clamp(var(--space-7), 6vw, var(--space-9)))
+    clamp(var(--space-7), 6vw, var(--space-9));
+}
+
+.contato__inner {
+  display: grid;
+  gap: var(--space-7);
+}
+
+.contato__topo {
+  display: grid;
+  gap: var(--space-6);
+  align-items: end;
+}
+
+@media (width >= 900px) {
+  .contato__topo {
+
+    grid-template-columns: minmax(0, 1fr) 22rem;
+    gap: var(--space-7);
+  }
+}
+
+.contato__abertura {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-3);
+}
+
+.contato__eyebrow {
+  color: var(--accent);
+}
+
+.contato__intro {
+  max-width: 38ch;
+  color: var(--label-secondary);
+}
+
+.nao-quebra {
+  white-space: nowrap;
+}
+
+.contato__email {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  border: 1px solid var(--separator);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape, round);
+  background-color: var(--bg-elevated);
+}
+
+.contato__email-rotulo {
+  color: var(--label-tertiary);
+}
+
+.contato__email-endereco {
+  font-size: var(--text-title3-size);
+  line-height: 1.3;
+  font-weight: var(--weight-semibold);
+  color: var(--label-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  word-break: break-word;
+  transition: color 160ms ease;
+}
+
+.contato__email-endereco:hover {
+  color: var(--accent);
+}
+
+.contato__email-nota {
+  color: var(--label-tertiary);
+}
+
+.contato__pendente {
+  padding: var(--space-4);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-md);
+  corner-shape: var(--corner-shape, round);
+  background-color: rgb(255 178 50 / 0.08);
+  font-size: var(--text-subhead-size);
+  line-height: 1.5;
+  color: var(--label-primary);
+}
+
+.contato__pendente code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  color: var(--accent);
+}
+
+.contato-canais {
+  display: grid;
+  gap: var(--space-5);
+  padding: 0;
+  list-style: none;
+}
+
+@media (width >= 700px) {
+  .contato-canais {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+  }
+}
+
+.contato-canal {
+  display: grid;
+  gap: var(--space-2);
+  align-content: start;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--separator);
+}
+
+.contato-canal__linha {
+  color: var(--accent);
+  text-transform: lowercase;
+}
+
+.contato-canal__detalhe {
+  color: var(--label-secondary);
+}
+
+.contato__redes {
+  display: grid;
+  gap: var(--space-4);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--separator);
+}
+
+.contato__redes-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+}
+
+.contato__rede {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--separator);
+  border-radius: var(--radius-pill);
+  corner-shape: var(--corner-shape, round);
+  font-size: var(--text-footnote-size);
+  color: var(--label-secondary);
+  text-decoration: none;
+  transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease;
+}
+
+.contato__rede:hover,
+.contato__rede:focus-visible {
+  color: var(--accent-label);
+  border-color: var(--accent);
+  background-color: var(--accent);
+}

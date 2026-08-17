@@ -1,0 +1,14 @@
+---
+titulo: "romantismo e objetividade."
+data: "2012-07-23"
+categoria: "outros"
+publicado: true
+capa: "/assets/img/acervo/7c2eb-401964-389629444418432-361964540-n-007b2f64.webp"
+url_original: "http://enricopierro.com.br/2012/07/23/romantismo-e-objetividade/"
+---
+
+![](/assets/img/acervo/56c0b-529600-405908656123844-929214334-n-95de2f5a.webp)
+
+eu adoro o snoopy e ele parece que definiu duas coisas que eu tenho quase como um defeito, apesar de ter gente por aí que acha virtude. não meu caso. romantismo e objetividade. eu sou do tipo que fala que ‘ama mais que bolo de cenoura com cobertura extra de chocolate’, mas sou direto e objetivo demais que parece grosseria. eu tento ser diferente em inúmeros aspectos. mas é sempre tão difícil. e o romantismo, então? você manda, se derrete, morre de amores e no final recebe algo como: ‘uhum’. você se chateia por ser assim, guarda dentro de você como se fosse uma sementinha pequena. prontinha pra fazer brotar mas com medo do solo. minhas virtudes e meus defeitos. mas no final das contas é minha essência e cada vez que eu leio essas duas tirinhas eu solto um: ‘owwwwn’. e que assim seja. (L)
+
+c.e.

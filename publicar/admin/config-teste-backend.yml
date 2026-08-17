@@ -1,0 +1,14 @@
+## Só o backend, para o painel de teste (admin/teste.html).
+##
+## O teste.html carrega DOIS arquivos de configuração: o config.yml de verdade
+## e este, nesta ordem. O que vem depois vence, então só o backend muda — as
+## coleções, os campos e as explicações são exatamente os do painel real.
+##
+## Era uma cópia inteira do config.yml antes. Cópia envelhece: mexer nos campos
+## de um lado e não do outro faz o teste aprovar uma tela que não existe mais,
+## que é o defeito que este painel de teste veio consertar.
+##
+## `test-repo` é um repositório de mentira que vive só na memória do navegador:
+## entra sem login, sem escolher pasta, e não grava nada em lugar nenhum.
+backend:
+  name: test-repo

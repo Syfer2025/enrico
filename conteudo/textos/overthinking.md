@@ -1,0 +1,12 @@
+---
+titulo: "overthinking."
+data: "2012-08-03"
+categoria: "textos"
+publicado: true
+capa: "/assets/img/acervo/55a76-tumblr-m5ryws4qmi1qzr04eo1-500-3cc9197d.webp"
+url_original: "http://enricopierro.com.br/2012/08/03/overthinking/"
+---
+
+uma homenagem para quem, assim como eu, pensa demais. e sofre por isso. dorme mal, acorda bem antes do despertador. e faz merda, muita merda. meus pensamentos nunca me canalizam para aonde eu quero ir. sempre me canalizam para um lado errado, grotesco, ciumento, possessivo. isso me faz sofrer e faz quem eu amo sofrer também. me sinto meio idiota na maioria das vezes. penso na tese e na antítese. mas eu sou assim. mato um leão por dia tentando ser diferente. e às vezes, eu sinto como na foto. parece que minha cabeça vai explodir. aí eu durmo.
+
+c.e.

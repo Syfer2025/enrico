@@ -1,0 +1,22 @@
+---
+titulo: "enquanto você se abandona o mundo continua."
+data: "2025-09-29"
+categoria: "coluna"
+publicado: true
+capa: "/assets/img/acervo/enquanto-voce-se-abandona-o-mundo-continua-3-2b80ac04.webp"
+url_original: "http://enricopierro.com.br/2025/09/29/enquanto-voce-se-abandona-o-mundo-continua/"
+---
+
+você continua tentando dar conta de tudo. responde sorrindo, organiza a rotina, resolve o que precisa ser resolvido, escuta o problema dos outros, entrega o que te pedem. por fora, parece estável. por dentro, você não lembra mais o que sente. não porque não sente nada, mas porque não sobra espaço pra sentir. tá tudo ocupado. cheio de função, cheio de pressão, cheio de expectativa. e você foi ficando pequeno no meio disso tudo. foi esquecendo de si.
+
+o problema é que ninguém percebe. e nem vai perceber. porque você se tornou funcional. você aprendeu a esconder. a engolir o cansaço, a adiar o choro, a deixar pra depois o que você mesmo precisa. e o mundo, que adora eficiência, aplaude. quanto mais você se anula, mais dizem que você é forte, que você é maduro, que você dá conta. mas a verdade é que dar conta não significa estar bem. dar conta não significa estar inteiro. dar conta, às vezes, é só o que resta quando a gente já desistiu de ser cuidado.
+
+e enquanto você se abandona, o mundo não para. ninguém vai frear por sua causa. ninguém vai notar o seu limite se nem você respeita ele. o chefe vai continuar pedindo mais. a família vai continuar esperando. as pessoas ao redor vão seguir contando com você. porque foi assim que você ensinou o mundo a te ver: como alguém que está sempre disponível, mesmo quando não aguenta mais. e se você não mudar isso, ninguém vai mudar por você.
+
+é duro aceitar, mas é simples: ninguém vai te salvar. se você continuar se colocando por último, ninguém vai te puxar de volta. é você quem precisa interromper esse ciclo. e não precisa ser com grandes decisões. às vezes, é só dormir mais cedo. é só parar de responder todo mundo. é só dizer “não quero”, “não posso”, “não agora”. é só se ouvir. porque, se continuar nesse ritmo, você não vai durar. e aí, quando desabar, vai perceber que passou a vida sendo tudo pra todo mundo e nada pra si.
+
+você não foi feito pra sustentar o mundo. e também não precisa pedir desculpa por querer se cuidar. é agora que você precisa se escolher. porque se você não voltar pra si, ninguém volta por você.
+
+@enricopierroofc
+
+você também pode ler esse texto no nosso parceiro SpingRV: [https://www.spingrv.com/2025/09/enquanto-voce-se-abandona-o-mundo.html](https://www.spingrv.com/2025/09/enquanto-voce-se-abandona-o-mundo.html)

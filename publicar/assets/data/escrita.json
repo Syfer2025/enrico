@@ -1,0 +1,58 @@
+{
+  "fonte": "bastidores/acervo-completo.json",
+  "arquivo": "escrita.html",
+  "total": 577,
+  "criterio": "o texto mais recente de cada categoria principal (diário, coluna, textos)",
+  "categorias": [
+    {
+      "slug": "diario",
+      "rotulo": "diário",
+      "total": 196,
+      "url": "escrita.html#esc-diario"
+    },
+    {
+      "slug": "coluna",
+      "rotulo": "coluna",
+      "total": 108,
+      "url": "escrita.html#esc-coluna"
+    },
+    {
+      "slug": "textos",
+      "rotulo": "textos",
+      "total": 235,
+      "url": "escrita.html#esc-textos"
+    },
+    {
+      "slug": "outros",
+      "rotulo": "outros",
+      "total": 38,
+      "url": "escrita.html#esc-outros"
+    }
+  ],
+  "recentes": [
+    {
+      "titulo": "dia 193/365.",
+      "data": "2026-08-05",
+      "slug": "dia-193-365",
+      "categoria": "diário",
+      "url": "escrita.html#dia-193-365",
+      "capa": "/assets/img/acervo/dia-193-981855c2.webp"
+    },
+    {
+      "titulo": "o que precisa morrer em você.",
+      "data": "2026-04-04",
+      "slug": "o-que-precisa-morrer-em-voce",
+      "categoria": "coluna",
+      "url": "escrita.html#o-que-precisa-morrer-em-voce",
+      "capa": "/assets/img/acervo/o-que-precisa-morrer-em-voce-2-e59cc896.webp"
+    },
+    {
+      "titulo": "brasilidades.",
+      "data": "2026-03-05",
+      "slug": "brasilidades",
+      "categoria": "textos",
+      "url": "escrita.html#brasilidades",
+      "capa": "/assets/img/acervo/brasilidades-27a8b40e.webp"
+    }
+  ]
+}
