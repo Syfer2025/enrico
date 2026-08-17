@@ -166,6 +166,10 @@
   color: #1db954;
 }
 
+.hero__cta--instagram svg {
+  color: #e1306c;
+}
+
 .hero__cta:hover {
   color: var(--label-secondary);
   text-decoration: underline;

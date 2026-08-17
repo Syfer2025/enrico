@@ -454,24 +454,19 @@
 }
 
 .esc-card__marca {
+
+  justify-self: center;
   font-family: var(--font-display);
-  font-size: var(--text-title3-size);
-  line-height: 1.2;
-  letter-spacing: var(--text-title3-track);
+  font-size: clamp(3rem, 7vw, 5rem);
+  line-height: 0.7;
   font-weight: var(--weight-semibold);
   color: var(--accent);
-
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
-  overflow: hidden;
+  opacity: 0.22;
+  user-select: none;
 }
 
 .esc-card--media .esc-card__marca {
-  font-size: var(--text-subhead-size);
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
 }
 
 .esc-card__body {

@@ -348,10 +348,11 @@ def card(reg, tamanho):
         corpo = f'''<span class="esc-card__title">{e(reg['titulo'])}</span>
                   <time class="t-footnote esc-card__date tabular" datetime="{reg['data']}">{data_curta(reg['data'])}</time>'''
     else:
-        media = f'''<span class="esc-card__media esc-card__media--tipo">
-                  <span class="esc-card__marca">{e(reg['titulo'])}</span>
+        media = '''<span class="esc-card__media esc-card__media--tipo">
+                  <span class="esc-card__marca" aria-hidden="true">”</span>
                 </span>'''
-        corpo = f'''<time class="t-footnote esc-card__date tabular" datetime="{reg['data']}">{data_curta(reg['data'])}</time>'''
+        corpo = f'''<span class="esc-card__title">{e(reg['titulo'])}</span>
+                  <time class="t-footnote esc-card__date tabular" datetime="{reg['data']}">{data_curta(reg['data'])}</time>'''
 
     return f'''              <li class="esc-card esc-card--{tamanho}">
                 <a class="esc-card__link" href="#{reg['slug']}" data-slug="{reg['slug']}" data-titulo="{e(reg['titulo'])}" data-data="{reg['data']}">
@@ -605,9 +606,9 @@ def pagina(grupos, total):
             />
             <img
               src="assets/img/hero/enrico-escrita-hero-960.jpg"
-              alt="Enrico Pierro sorrindo de óculos, escrevendo em um livro."
-              width="819"
-              height="1024"
+              alt="Enrico Pierro sorrindo de óculos, assinando um livro aberto sobre a mesa."
+              width="960"
+              height="1200"
               decoding="async"
               fetchpriority="high"
             />
