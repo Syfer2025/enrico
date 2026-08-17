@@ -327,7 +327,7 @@
 
 .ep-audio__frame {
   border-radius: var(--radius-lg);
-  corner-shape: var(--corner-shape, round);
+  clip-path: inset(0 round var(--radius-lg));
 
   background-color: #121212;
   overflow: hidden;
@@ -340,10 +340,6 @@
   height: 352px;
   border: 0;
   background-color: #121212;
-
-  margin: -10px;
-  width: calc(100% + 20px);
-  height: 372px;
 }
 
 .ep-archive {
