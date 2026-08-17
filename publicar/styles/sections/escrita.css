@@ -132,7 +132,7 @@
   font-weight: var(--weight-semibold);
   letter-spacing: 0.12em;
   font-size: var(--text-caption1-size);
-  text-transform: uppercase;
+
 }
 
 .writing-post__title {

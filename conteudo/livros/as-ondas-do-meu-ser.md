@@ -9,4 +9,4 @@ nota: "5,0"
 avaliacoes: 1
 ---
 
-Você já se sentiu à deriva, como se estivesse navegando em um oceano de incertezas?
+você já se sentiu à deriva, como se estivesse navegando em um oceano de incertezas?

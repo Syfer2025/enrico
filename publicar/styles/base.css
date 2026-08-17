@@ -176,7 +176,6 @@ a {
   line-height: var(--text-caption1-line);
   letter-spacing: 0.16em;
   font-weight: var(--weight-medium);
-  text-transform: uppercase;
 }
 
 .measure {

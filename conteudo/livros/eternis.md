@@ -9,4 +9,4 @@ nota: "3,7"
 avaliacoes: 12
 ---
 
-Daniel levava uma vida pacata — invisível até para si mesmo. Professor de escola pública, rotina previsível, nenhuma ambição grandiosa.
+daniel levava uma vida pacata — invisível até para si mesmo. Professor de escola pública, rotina previsível, nenhuma ambição grandiosa.

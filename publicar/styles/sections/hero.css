@@ -485,7 +485,7 @@
   font-family: var(--font-mono);
   font-size: var(--text-caption2-size);
   letter-spacing: 0.14em;
-  text-transform: uppercase;
+
   color: var(--label-secondary);
 }
 

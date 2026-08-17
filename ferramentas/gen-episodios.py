@@ -248,7 +248,7 @@ def pagina():
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Episódios do abcpod — Enrico Pierro</title>
+    <title>episódios do abcpod — enrico pierro</title>
     <meta
       name="description"
       content="Todos os {total} episódios do abcpod, o podcast de Enrico Pierro: {temporadas} temporadas no YouTube e a versão em áudio no Spotify."

@@ -9,4 +9,4 @@ nota: "5,0"
 avaliacoes: 1
 ---
 
-Já quis ser cientista, astrônomo, médico, advogado, astronauta e até hoje ainda não descobriu o que quer.
+já quis ser cientista, astrônomo, médico, advogado, astronauta e até hoje ainda não descobriu o que quer.

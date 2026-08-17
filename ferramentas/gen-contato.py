@@ -16,21 +16,21 @@ SITE = PROJETO / "publicar"
 
 CANAIS = [
     {
-        "titulo": "Imprensa",
+        "titulo": "imprensa",
         "linha": "entrevistas, participações e pedidos de material",
-        "detalhe": "Fotos em alta resolução, biografia e capas dos livros estão "
+        "detalhe": "fotos em alta resolução, biografia e capas dos livros estão "
                    "disponíveis para veículos — peça por e-mail e mando na hora.",
     },
     {
-        "titulo": "Eventos e palestras",
+        "titulo": "eventos e palestras",
         "linha": "feiras, festivais, escolas e empresas",
-        "detalhe": "Para convites, o e-mail é o caminho mais rápido. Vale incluir "
+        "detalhe": "para convites, o e-mail é o caminho mais rápido. vale incluir "
                    "data, cidade e formato do evento na primeira mensagem.",
     },
     {
-        "titulo": "Parcerias",
+        "titulo": "parcerias",
         "linha": "editoras, marcas e o abcpod",
-        "detalhe": "Propostas de parceria, publicidade no podcast e convites para "
+        "detalhe": "propostas de parceria, publicidade no podcast e convites para "
                    "episódio também entram pelo e-mail.",
     },
 ]
@@ -89,7 +89,7 @@ def main() -> int:
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Contato e imprensa — Enrico Pierro</title>
+    <title>contato e imprensa — enrico pierro</title>
     <meta name="theme-color" content="#08090C" />
 
     <link rel="stylesheet" href="styles/tokens.css" />
@@ -113,7 +113,7 @@ def main() -> int:
               <p class="t-eyebrow contato__eyebrow">contato</p>
               <h1 class="t-display-2" id="contato-titulo">como falar com o enrico</h1>
               <p class="t-body contato__intro">
-                Para imprensa, eventos, palestras e parcerias, o
+                para imprensa, eventos, palestras e parcerias, o
                 <span class="nao-quebra">e-mail</span> é o caminho mais direto.
               </p>
             </div>

@@ -9,4 +9,4 @@ nota: "5,0"
 avaliacoes: 1
 ---
 
-A vida é um oceano de desafios e descobertas, com suas calmarias e tempestades.
+a vida é um oceano de desafios e descobertas, com suas calmarias e tempestades.

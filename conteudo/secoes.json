@@ -1,17 +1,17 @@
 {
   "hero": {
-    "sobrelinha": "ESCRITOR & COMUNICADOR",
+    "sobrelinha": "escritor & comunicador",
     "titulo": "enrico pierro",
     "descricao": "autor de *as marés do meu ser*, *ondas do meu ser* e *amores que tropeçam*, e apresentador do [abcpod](#mural)."
   },
   "abcpod": {
     "marca": "abcpod",
-    "subtitulo": "O PODCAST",
+    "subtitulo": "o podcast",
     "chamada": "as conversas completas do abcpod — encontros, diálogos e reflexões sobre a vida e a cultura, apresentados por enrico pierro.",
     "botao": "Ver os episódios"
   },
   "quem_e": {
-    "nome": "Enrico Pierro",
+    "nome": "enrico pierro",
     "linha_fina": "textos em minúsculas que traduzem o cotidiano em sentimentos",
     "paragrafos": [
       "enrico pierro é escritor, colunista e comunicador. autor de livros como *as marés do meu ser*, *ondas do meu ser* e *amores que tropeçam*, vem consolidando uma trajetória marcada por uma escrita intimista, reflexiva e ao mesmo tempo acessível, que dialoga com milhares de leitores em todo o brasil.",
@@ -23,7 +23,7 @@
   },
   "reconhecimento": [
     {
-      "titulo": "Prêmios internacionais e nacionais",
+      "titulo": "prêmios internacionais e nacionais",
       "itens": [
         {
           "nome": "Prix Parisian de Littérature et des Arts",
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "titulo": "Antologias e participações",
+      "titulo": "antologias e participações",
       "itens": [
         {
           "nome": "*Raízes — Brasil e Angola*",

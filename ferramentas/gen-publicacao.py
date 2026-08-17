@@ -18,28 +18,26 @@ SITE = PROJETO / "publicar"
 
 PAGINAS = {
     "index.html": {
-        "titulo": "Enrico Pierro — escritor, colunista e comunicador",
-        "descricao": "Escritor, colunista e comunicador. Autor de as marés do meu "
-                     "ser, as ondas do meu ser e amores que tropeçam, e apresentador "
-                     "do abcpod.",
+        "titulo": "enrico pierro — escritor, colunista e comunicador",
+        "descricao": None,
         "prioridade": "1.0",
     },
     "escrita.html": {
-        "titulo": "A escrita — Enrico Pierro",
-        "descricao": "Os 577 textos de Enrico Pierro: a coluna semanal, o diário e "
+        "titulo": "a escrita — enrico pierro",
+        "descricao": "os 577 textos de enrico pierro: a coluna semanal, o diário e "
                      "o acervo aberto de prosa e poesia, para ler de ponta a ponta.",
         "prioridade": "0.9",
     },
     "episodios.html": {
-        "titulo": "Os episódios do abcpod — Enrico Pierro",
-        "descricao": "Os 67 episódios do abcpod, o podcast de Enrico Pierro: "
+        "titulo": "os episódios do abcpod — enrico pierro",
+        "descricao": "os 67 episódios do abcpod, o podcast de enrico pierro: "
                      "conversas com nomes da cultura e do cotidiano, em vídeo e "
                      "em áudio.",
         "prioridade": "0.9",
     },
     "contato.html": {
-        "titulo": "Contato e imprensa — Enrico Pierro",
-        "descricao": "Como falar com Enrico Pierro: imprensa, eventos, palestras "
+        "titulo": "contato e imprensa — enrico pierro",
+        "descricao": "como falar com enrico pierro: imprensa, eventos, palestras "
                      "e parcerias.",
         "prioridade": "0.8",
     },
@@ -57,9 +55,11 @@ def cabecalho(pagina: str, dados: dict, cfg: dict) -> str:
     imagem = base + cfg["og_imagem"]
     no_ar = bool(cfg.get("no_ar"))
 
+    descricao = dados["descricao"] or cfg["descricao"]
+
     linhas = [
         MARCA_INICIO,
-        f'    <meta name="description" content="{e(dados["descricao"])}" />',
+        f'    <meta name="description" content="{e(descricao)}" />',
     ]
 
     if no_ar:
@@ -79,7 +79,7 @@ def cabecalho(pagina: str, dados: dict, cfg: dict) -> str:
         '    <meta property="og:type" content="website" />',
         f'    <meta property="og:site_name" content="{e(cfg["titulo"])}" />',
         f'    <meta property="og:title" content="{e(dados["titulo"])}" />',
-        f'    <meta property="og:description" content="{e(dados["descricao"])}" />',
+        f'    <meta property="og:description" content="{e(descricao)}" />',
         f'    <meta property="og:url" content="{e(endereco)}" />',
         f'    <meta property="og:image" content="{e(imagem)}" />',
         '    <meta property="og:image:width" content="1200" />',
@@ -216,7 +216,7 @@ def pagina_404(cfg: dict) -> Path:
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Página não encontrada — Enrico Pierro</title>
+    <title>página não encontrada — enrico pierro</title>
     <meta name="robots" content="noindex" />
     <link rel="icon" href="{prefixo}/favicon.ico" sizes="any" />
     <link rel="stylesheet" href="{prefixo}/styles/tokens.css" />
@@ -251,7 +251,7 @@ def pagina_404(cfg: dict) -> Path:
       <p class="erro__numero">404</p>
       <h1 class="t-display-2">esta página não existe</h1>
       <p class="t-body erro__texto">
-        O endereço pode ter mudado, ou o link que te trouxe até aqui pode estar
+        o endereço pode ter mudado, ou o link que te trouxe até aqui pode estar
         com um erro de digitação.
       </p>
       <div class="erro__acoes">

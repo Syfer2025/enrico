@@ -516,7 +516,7 @@ def pagina(grupos, total):
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>A escrita — Enrico Pierro</title>
+    <title>a escrita — enrico pierro</title>
     <meta
       name="description"
       content="Todos os {total} textos do enricopierro.com.br — a coluna, o acervo de textos e o diário — para ler aqui, sem sair do site."
@@ -561,7 +561,7 @@ def pagina(grupos, total):
       -->
       <section class="hero hero--escrita" id="hero" aria-labelledby="esc-titulo">
         <div class="hero__intro">
-          <span class="t-eyebrow hero__eyebrow">ACERVO LITERÁRIO</span>
+          <span class="t-eyebrow hero__eyebrow">acervo literário</span>
           <h1 class="t-display-1 hero__headline" id="esc-titulo">todos os textos</h1>
           <p class="hero__sub">
             a coleção completa de colunas, reflexões e páginas do diário, reunidas em um só lugar.

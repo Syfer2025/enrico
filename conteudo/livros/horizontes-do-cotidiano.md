@@ -9,4 +9,4 @@ nota: "5,0"
 avaliacoes: 1
 ---
 
-O cotidiano é repleto de momentos que, à primeira vista, podem parecer comuns, mas que carregam em si a essência de grandes lições.
+o cotidiano é repleto de momentos que, à primeira vista, podem parecer comuns, mas que carregam em si a essência de grandes lições.
