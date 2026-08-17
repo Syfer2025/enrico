@@ -182,7 +182,15 @@
 
 @media (width >= 1040px) {
   .ep-hero .container {
-    padding-inline-end: 47%;
+    --ep-hero-col: min(100%, clamp(30rem, 42vw, 38rem));
+  }
+
+  .ep-hero .container > * {
+    max-width: var(--ep-hero-col);
+  }
+
+  .ep-hero .container > .ep-hero__standfirst {
+    max-width: min(46ch, var(--ep-hero-col));
   }
 
   .ep-mosaic {

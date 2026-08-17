@@ -76,10 +76,6 @@
   color: var(--accent);
 }
 
-.contato__email-nota {
-  color: var(--label-tertiary);
-}
-
 .contato__pendente {
   padding: var(--space-4);
   border: 1px solid var(--accent);

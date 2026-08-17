@@ -2,7 +2,7 @@
   position: relative;
   isolation: isolate;
   overflow: clip;
-  min-height: 100svh;
+  min-height: min(100svh, 56rem);
   display: grid;
   align-content: space-between;
   gap: var(--space-6);

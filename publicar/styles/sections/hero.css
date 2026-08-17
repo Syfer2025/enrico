@@ -51,14 +51,20 @@
 }
 
 @media (width >= 900px) {
+
   .hero__photo {
     position: absolute;
     inset: 0 0 auto auto;
     z-index: 0;
-    width: var(--hero-photo-w);
+    width: auto;
+    max-width: var(--hero-photo-w);
     height: 100%;
+    aspect-ratio: 4 / 5;
     padding: 0;
     pointer-events: none;
+
+    mask-image: linear-gradient(to right, transparent 0%, #000 45%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 45%);
   }
 
   .hero__photo img {
@@ -69,12 +75,8 @@
     object-position: right top;
     transform: none;
 
-    mask-image: linear-gradient(to right, transparent 0%, #000 45%),
-      linear-gradient(to bottom, #000 85%, transparent 98%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 45%),
-      linear-gradient(to bottom, #000 85%, transparent 98%);
-
-    mask-composite: intersect;
+    mask-image: linear-gradient(to bottom, #000 85%, transparent 98%);
+    -webkit-mask-image: linear-gradient(to bottom, #000 85%, transparent 98%);
   }
 }
 

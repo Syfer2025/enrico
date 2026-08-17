@@ -52,7 +52,6 @@ def bloco_do_email(email: str) -> str:
         return f"""          <div class="contato__email">
             <p class="t-eyebrow contato__email-rotulo">e-mail</p>
             <a class="contato__email-endereco" href="mailto:{e}">{e}</a>
-            <p class="t-footnote contato__email-nota">resposta em até dois dias úteis.</p>
           </div>"""
     return """          <p class="contato__pendente" role="status">
             <strong>Falta o e-mail de contato.</strong> Preencha
