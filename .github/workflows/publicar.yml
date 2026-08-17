@@ -94,13 +94,16 @@ jobs:
       - name: conferir de novo, depois de gerar
         run: python3 ferramentas/varrer.py
 
-      # `enablement: true` liga o GitHub Pages sozinho na primeira vez, usando a
-      # permissão `pages: write` que este robô já tem. Sem isto, alguém teria de
-      # entrar em Settings → Pages e escolher "GitHub Actions" à mão antes do
-      # primeiro envio — e, esquecendo, a publicação falha sem site nenhum.
+      # NÃO usar `enablement: true` aqui. Testado: o robô não consegue CRIAR o
+      # site do Pages — a resposta é "Resource not accessible by integration",
+      # porque criar exige permissão de administração do repositório, e este robô
+      # tem só `pages: write`. A criação é feita uma vez, com a credencial de
+      # quem é dono do repositório:
+      #
+      #     gh api -X POST repos/OWNER/REPO/pages -f build_type=workflow
+      #
+      # Depois de existir, este passo só lê a configuração e segue.
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       # Só a pasta publicar/ vai para o ar. conteudo/, ferramentas/ e
       # bastidores/ ficam no repositório mas não são servidos.
