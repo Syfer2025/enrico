@@ -288,9 +288,9 @@ def pagina():
         <nav class="site-nav" id="menu-principal" aria-label="Principal">
           <ul class="site-nav__list">
             <li><a class="site-nav__link" href="index.html">Início</a></li>
+            <li><a class="site-nav__link" href="index.html#quem-e">Quem é</a></li>
             <li><a class="site-nav__link" href="index.html#escrita">Escrita</a></li>
             <li><a class="site-nav__link" href="episodios.html" aria-current="page">ABCPOD</a></li>
-            <li><a class="site-nav__link" href="index.html#quem-e">Quem é</a></li>
             <li><a class="site-nav__link" href="contato.html">Contato</a></li>
           </ul>
         </nav>

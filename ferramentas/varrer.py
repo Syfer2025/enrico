@@ -229,9 +229,9 @@ def main() -> int:
     erros += bloco("3. HTML cru em campo que o painel edita", c["tags"], "ERRO")
     erros += bloco("4. campo obrigatório vazio", c["vazios"], "ERRO")
     erros += bloco("5. capa que não existe no disco", c["faltando"], "ERRO")
+    erros += bloco("6. caminho absoluto em página do site", absolutas, "ERRO")
     avisos = 0
-    avisos += bloco("6. texto de exemplo esquecido", c["exemplos"], "aviso")
-    avisos += bloco("7. caminho absoluto em página do site", absolutas, "aviso")
+    avisos += bloco("7. texto de exemplo esquecido", c["exemplos"], "aviso")
     erros += bloco("8. dependência do site antigo", antigo, "ERRO")
 
     print(f"total: {erros} erro(s), {avisos} aviso(s)")

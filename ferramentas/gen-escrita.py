@@ -13,6 +13,7 @@ import urllib.request
 
 from PIL import Image
 
+import leitor
 from conteudo import ler_colecao
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent / "publicar"
@@ -47,6 +48,9 @@ RESERVA = {
 
 MARCA_INICIO = "<!-- ESCRITA:INICIO (gerado por ferramentas/gen-escrita.py) -->"
 MARCA_FIM = "<!-- ESCRITA:FIM -->"
+
+LEITOR_INICIO = "<!-- LEITOR:INICIO (gerado por ferramentas/gen-escrita.py) -->"
+LEITOR_FIM = "<!-- LEITOR:FIM -->"
 
 CAPA = re.compile(r'<img[^>]+src="([^"]+)"|!\[[^\]]*\]\(([^)\s]+)\)', re.IGNORECASE)
 
@@ -109,13 +113,9 @@ def carrega():
 
 
 def dimensoes(caminho):
-    """(largura, altura) em pixels, pelo sips — que lê qualquer formato do macOS."""
-    saida = subprocess.run(
-        ["sips", "-g", "pixelWidth", "-g", "pixelHeight", str(caminho)],
-        capture_output=True, text=True, check=True,
-    ).stdout
-    achado = dict(re.findall(r"(pixelWidth|pixelHeight):\s*(\d+)", saida))
-    return int(achado["pixelWidth"]), int(achado["pixelHeight"])
+    """(largura, altura) em pixels, com Pillow."""
+    with Image.open(caminho) as imagem:
+        return imagem.size
 
 
 def baixa_original(url, slug):
@@ -210,13 +210,10 @@ def thumb(url, local):
             'aria-hidden="true"></span>'
         )
 
-    u = html.escape(url)
+    print(f"  aviso: sem capa preparada, cartão tipográfico ({url})")
     return (
-        '<span class="writing-post__thumb">'
-        f'<img src="{u}?w=480" srcset="{u}?w=480 480w, {u}?w=960 960w" '
-        f'sizes="{SIZES_CAPA}" alt="" width="480" height="360" '
-        'loading="lazy" decoding="async" />'
-        "</span>"
+        '<span class="writing-post__thumb writing-post__thumb--tipo" '
+        'aria-hidden="true"></span>'
     )
 
 
@@ -239,7 +236,7 @@ def bloco(total, recentes):
     itens = "\n".join(item(*p) for p in recentes)
     return f'''{MARCA_INICIO}
       <section class="writing" id="escrita" aria-labelledby="escrita-titulo"
-               data-module="esc-reading">
+               data-module="esc-leitor" data-src="assets/data/textos">
         <div class="container">
           <div class="writing__head">
             <p class="t-eyebrow writing__eyebrow">Escrita</p>
@@ -310,7 +307,17 @@ if __name__ == "__main__":
             "cole os dois marcadores no lugar onde a seção deve entrar."
         )
     i, f = s.index(MARCA_INICIO), s.index(MARCA_FIM) + len(MARCA_FIM)
-    idx.write_text(s[:i] + bloco(total, recentes) + s[f:], encoding="utf-8")
+    s = s[:i] + bloco(total, recentes) + s[f:]
+
+    if LEITOR_INICIO not in s:
+        raise SystemExit(
+            f"marcador {LEITOR_INICIO} não encontrado no index.html — "
+            "cole os dois marcadores no fim do <body>, onde a janela deve entrar."
+        )
+    i, f = s.index(LEITOR_INICIO), s.index(LEITOR_FIM) + len(LEITOR_FIM)
+    s = s[:i] + LEITOR_INICIO + "\n" + leitor.MARCACAO + "\n    " + LEITOR_FIM + s[f:]
+
+    idx.write_text(s, encoding="utf-8")
 
     print(
         f"{len(recentes)} textos mais recentes de {total} "
