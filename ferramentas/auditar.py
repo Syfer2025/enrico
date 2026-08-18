@@ -16,7 +16,6 @@ PAGINAS = [
     "escrita.html",
     "episodios.html",
     "contato.html",
-    "newsletter.html",
     "newsletter-confirme.html",
     "newsletter-confirmado.html",
     "newsletter-cancelado.html",

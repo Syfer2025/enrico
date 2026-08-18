@@ -166,12 +166,6 @@
 .newsletter__direto {
   display: grid;
   gap: var(--space-4);
-  justify-items: start;
-}
-
-.newsletter__direto-linha {
-  color: var(--label-secondary);
-  line-height: 1.6;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -219,8 +213,4 @@
   flex-wrap: wrap;
   gap: var(--space-3);
   margin-top: var(--space-2);
-}
-
-.np .newsletter__caixa {
-  max-width: 30rem;
 }

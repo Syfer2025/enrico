@@ -41,12 +41,6 @@ PAGINAS = {
                      "e parcerias.",
         "prioridade": "0.8",
     },
-    "newsletter.html": {
-        "titulo": "receber os textos por e-mail — enrico pierro",
-        "descricao": "os textos de enrico pierro por e-mail, no dia em que "
-                     "saem: o diário, a coluna e o que mais ele escrever.",
-        "prioridade": "0.7",
-    },
 }
 
 MARCA_INICIO = "<!-- PUBLICACAO:INICIO (gerado por ferramentas/gen-publicacao.py) -->"

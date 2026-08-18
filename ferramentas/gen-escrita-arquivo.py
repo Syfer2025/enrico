@@ -538,7 +538,6 @@ def pagina(grupos, total):
     <link rel="stylesheet" href="styles/sections/escrita-arquivo.css" />
     <link rel="stylesheet" href="styles/sections/leitor.css" />
     <link rel="stylesheet" href="styles/sections/busca.css" />
-    <link rel="stylesheet" href="styles/sections/newsletter.css" />
 
     <script type="module" src="scripts/main.js"></script>
   </head>
@@ -677,8 +676,6 @@ def pagina(grupos, total):
       </div>
 
 {leitor.MARCACAO}
-
-{moldura.convite()}
     </main>
 
     {moldura.rodape()}

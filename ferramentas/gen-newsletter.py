@@ -16,10 +16,6 @@ PROJETO = Path(__file__).resolve().parent.parent
 SITE = PROJETO / "publicar"
 HOME = SITE / "index.html"
 
-CAIXA_INICIO = "<!-- CAIXA:INICIO"
-CAIXA_FIM = "<!-- CAIXA:FIM -->"
-
-
 def trocar(texto: str, padrao: str, novo: str, onde: str) -> str:
     """Troca o miolo do primeiro trecho que casar. Falha alto se não achar."""
     achado = re.search(padrao, texto, re.S)
@@ -43,7 +39,7 @@ def link_de_email(endereco: str) -> str:
     return f"mailto:{endereco}?subject={assunto}&body={corpo}"
 
 
-def configurar_home(endpoint: str, mailto: str) -> str:
+def configurar_home(endpoint: str, mailto: str, contato: str) -> str:
     """Escreve o modo e os endereços na seção do index.html. Devolve o modo."""
     s = HOME.read_text(encoding="utf-8")
     modo = "formulario" if endpoint else "email"
@@ -63,28 +59,19 @@ def configurar_home(endpoint: str, mailto: str) -> str:
     )
     s = trocar(
         s,
-        r'newsletter__direto-botao"\s+href="([^"]*)"',
+        r'newsletter__botao"\s+href="([^"]*)"',
         html.escape(mailto, quote=True),
         "href do botão de e-mail",
+    )
+    s = trocar(
+        s,
+        r'data-para="([^"]*)"',
+        html.escape(contato, quote=True),
+        "data-para do botão de e-mail",
     )
 
     HOME.write_text(s, encoding="utf-8")
     return modo
-
-
-def caixa_da_home() -> str:
-    """A caixa do formulário, copiada da home já configurada."""
-    s = HOME.read_text(encoding="utf-8")
-    try:
-        i = s.rindex("\n", 0, s.index(CAIXA_INICIO)) + 1
-        f = s.index(CAIXA_FIM) + len(CAIXA_FIM)
-    except ValueError:
-        raise SystemExit(
-            "erro: os marcadores CAIXA:INICIO/CAIXA:FIM não estão no index.html.\n"
-            "       Sem eles a página newsletter.html não tem de onde copiar o "
-            "formulário."
-        ) from None
-    return s[i:f]
 
 
 def pagina(
@@ -94,10 +81,7 @@ def pagina(
     eyebrow: str,
     titulo: str,
     paragrafos: list[str],
-    corpo_extra: str = "",
     acoes: list[tuple[str, str, str]] | None = None,
-    modo: str = "email",
-    fora_do_indice: bool = True,
 ) -> Path:
     """Uma página de uma mensagem só: sobrelinha, título, texto e saída."""
     e = html.escape
@@ -113,18 +97,13 @@ def pagina(
         )
         botoes = f'\n            <div class="np__acoes">\n{itens}\n            </div>'
 
-    robots = (
-        '\n    <meta name="robots" content="noindex, nofollow" />'
-        if fora_do_indice
-        else ""
-    )
-
     conteudo = f"""<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>{e(titulo_aba)}</title>{robots}
+    <title>{e(titulo_aba)}</title>
+    <meta name="robots" content="noindex, nofollow" />
     <meta name="theme-color" content="#08090C" />
 
     <link rel="stylesheet" href="styles/tokens.css" />
@@ -138,22 +117,16 @@ def pagina(
   <body>
     <a class="skip-link" href="#conteudo">pular para o conteúdo</a>
 
-    {moldura.cabecalho("newsletter.html")}
+    {moldura.cabecalho("newsletter-resposta")}
 
     <main id="conteudo">
-      <section
-        class="np"
-        data-module="newsletter"
-        data-modo="{modo}"
-        aria-labelledby="np-titulo"
-      >
+      <section class="np" aria-labelledby="np-titulo">
         <div class="container np__inner">
           <div class="np__texto">
             <p class="t-eyebrow np__eyebrow">{e(eyebrow)}</p>
             <h1 class="t-display-2 np__titulo" id="np-titulo">{e(titulo)}</h1>
 {texto}{botoes}
           </div>
-{corpo_extra}
         </div>
       </section>
     </main>
@@ -181,32 +154,9 @@ def main() -> int:
         )
 
     mailto = link_de_email(contato) if contato else ""
-    modo = configurar_home(endpoint, mailto)
-    caixa = caixa_da_home()
+    modo = configurar_home(endpoint, mailto, contato)
 
     escritas = [HOME]
-
-    escritas.append(
-        pagina(
-            arquivo="newsletter.html",
-            titulo_aba="receber os textos por e-mail — enrico pierro",
-            eyebrow="newsletter",
-            titulo="os textos, por e-mail",
-            paragrafos=[
-                "o diário, a coluna e os textos novos chegam no seu "
-                '<span class="nao-quebra">e-mail</span> no dia em que saem. '
-                "não há resumo semanal, indicação de terceiro nem propaganda: "
-                "o que sai daqui é texto dele.",
-                "a inscrição tem duas etapas. depois de digitar o endereço, "
-                "chega um e-mail pedindo confirmação — é o clique nele que põe "
-                "você na lista. serve para que ninguém inscreva outra pessoa "
-                "sem que ela saiba.",
-            ],
-            corpo_extra=caixa,
-            modo=modo,
-            fora_do_indice=False,
-        )
-    )
 
     escritas.append(
         pagina(
@@ -273,7 +223,7 @@ def main() -> int:
                 "contato chega até ele por outro caminho.",
             ],
             acoes=[
-                ("tentar de novo", "newsletter.html", "btn--accent"),
+                ("tentar de novo", "index.html#receber", "btn--accent"),
                 ("falar por e-mail", "contato.html", "btn--light"),
             ],
         )
@@ -292,7 +242,7 @@ def main() -> int:
                 "esquecido numa caixa de entrada não valha para sempre.",
                 "inscrever-se de novo resolve: um link novo sai na hora.",
             ],
-            acoes=[("voltar à inscrição", "newsletter.html", "btn--accent")],
+            acoes=[("voltar à inscrição", "index.html#receber", "btn--accent")],
         )
     )
 
@@ -306,8 +256,6 @@ def main() -> int:
         print("  conteudo/site.json.")
     for p in escritas:
         print(f"  {p.relative_to(PROJETO)}")
-    print("\n  lembre-se de rodar gen-publicacao.py depois — é ele que põe a")
-    print("  prévia de link e o canonical na newsletter.html.")
     return 0
 
 
