@@ -16,37 +16,9 @@ function pareceEmail(valor) {
 }
 
 export function initNewsletter(secao) {
-  if (secao.dataset.modo === "formulario") {
-    initFormulario(secao);
-  } else {
-    initDireto(secao);
-  }
-}
 
-function linkDeEmail(destino, email) {
-  const assunto = encodeURIComponent("quero receber os textos");
-  const ultimaLinha = pareceEmail(email)
-    ? `meu e-mail é: ${email}`
-    : "meu endereço é este mesmo de onde estou escrevendo.";
-  const corpo = encodeURIComponent(
-    ["oi, enrico.", "", "quero entrar na lista para receber seus textos por e-mail.", "", ultimaLinha].join(
-      "\n",
-    ),
-  );
-  return `mailto:${destino}?subject=${assunto}&body=${corpo}`;
-}
-
-function initDireto(secao) {
-  const bloco = secao.querySelector(".newsletter__direto");
-  const entrada = bloco?.querySelector(".newsletter__entrada");
-  const botao = bloco?.querySelector(".newsletter__botao");
-  const destino = botao?.dataset.para;
-
-  if (!bloco || !entrada || !botao || !destino) return;
-
-  botao.addEventListener("click", () => {
-    botao.href = linkDeEmail(destino, entrada.value.trim());
-  });
+  if (secao.dataset.modo !== "formulario") return;
+  initFormulario(secao);
 }
 
 function initFormulario(secao) {

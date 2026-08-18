@@ -7,7 +7,6 @@ import html
 import re
 import sys
 from pathlib import Path
-from urllib.parse import quote
 
 import moldura
 from conteudo import ler_json
@@ -28,19 +27,8 @@ def trocar(texto: str, padrao: str, novo: str, onde: str) -> str:
     return texto[:inicio] + novo + texto[fim:]
 
 
-def link_de_email(endereco: str) -> str:
-    """O `mailto:` do modo sem serviço, com assunto e corpo já escritos."""
-    assunto = quote("quero receber os textos")
-    corpo = quote(
-        "oi, enrico.\n\n"
-        "quero entrar na lista para receber seus textos por e-mail.\n\n"
-        "meu endereço é este mesmo de onde estou escrevendo.\n"
-    )
-    return f"mailto:{endereco}?subject={assunto}&body={corpo}"
-
-
-def configurar_home(endpoint: str, mailto: str, contato: str) -> str:
-    """Escreve o modo e os endereços na seção do index.html. Devolve o modo."""
+def configurar_home(endpoint: str) -> str:
+    """Escreve o modo e o endereço do serviço na seção do index.html."""
     s = HOME.read_text(encoding="utf-8")
     modo = "formulario" if endpoint else "email"
 
@@ -56,18 +44,6 @@ def configurar_home(endpoint: str, mailto: str, contato: str) -> str:
         r'class="newsletter__form"[^>]*?data-endpoint="([^"]*)"',
         html.escape(endpoint),
         "data-endpoint do formulário",
-    )
-    s = trocar(
-        s,
-        r'newsletter__botao"\s+href="([^"]*)"',
-        html.escape(mailto, quote=True),
-        "href do botão de e-mail",
-    )
-    s = trocar(
-        s,
-        r'data-para="([^"]*)"',
-        html.escape(contato, quote=True),
-        "data-para do botão de e-mail",
     )
 
     HOME.write_text(s, encoding="utf-8")
@@ -143,18 +119,8 @@ def pagina(
 def main() -> int:
     cfg = ler_json("site.json")
     endpoint = (cfg.get("newsletter_endpoint") or "").strip().rstrip("/")
-    contato = (cfg.get("email_contato") or "").strip()
 
-    if not endpoint and not contato:
-        raise SystemExit(
-            "erro: sem newsletter_endpoint E sem email_contato no site.json.\n"
-            "       Nesse estado a seção não teria como receber inscrição\n"
-            "       nenhuma — nem pelo serviço, nem por e-mail. Preencha um dos\n"
-            "       dois em conteudo/site.json e rode de novo."
-        )
-
-    mailto = link_de_email(contato) if contato else ""
-    modo = configurar_home(endpoint, mailto, contato)
+    modo = configurar_home(endpoint)
 
     escritas = [HOME]
 
@@ -250,7 +216,7 @@ def main() -> int:
     if modo == "formulario":
         print(f"  serviço: {endpoint}/inscrever")
     else:
-        print(f"  sem serviço no ar — o convite abre um e-mail para {contato}")
+        print("  sem serviço no ar — o botão fica sem função de propósito")
         print("  para ligar a inscrição de verdade: publique o Worker (veja")
         print("  newsletter/LEIA-ME.md) e preencha newsletter_endpoint no")
         print("  conteudo/site.json.")
