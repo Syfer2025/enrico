@@ -100,6 +100,21 @@ jobs:
       - name: conferir de novo, depois de gerar
         run: python3 ferramentas/varrer.py
 
+      # POR ÚLTIMO, depois de gerar e de conferir: tira os comentários do que
+      # vai ser servido. São ~2.000 linhas explicando decisão de layout,
+      # medida de contraste e defeito já corrigido — material de quem mantém o
+      # projeto, que não tem por que ser baixado por quem só quer ler um
+      # texto. Rende uns 150 KB a menos.
+      #
+      # Mexe apenas na cópia que este robô acabou de montar. Os arquivos do
+      # repositório e do disco continuam comentados, e é lá que se trabalha.
+      #
+      # Depois deste passo nenhum gerador roda — é por isso que ele pode vir
+      # aqui, e não antes: os marcadores que os geradores procuram já não são
+      # necessários (mesmo assim o enxugar.py os preserva, por segurança).
+      - name: enxugar o que vai para o ar
+        run: python3 ferramentas/enxugar.py
+
       # NÃO usar `enablement: true` aqui. Testado: o robô não consegue CRIAR o
       # site do Pages — a resposta é "Resource not accessible by integration",
       # porque criar exige permissão de administração do repositório, e este robô
