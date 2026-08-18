@@ -28,7 +28,8 @@
 .hero--escrita .hero__photo {
   margin: 0;
   order: 1;
-  padding-inline: max(var(--gutter), var(--safe-l), var(--safe-r));
+
+  padding-inline: 0;
 }
 
 .hero--escrita .hero__photo picture {
@@ -75,40 +76,65 @@
 }
 
 .esc-stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-5) clamp(var(--space-7), 5vw, var(--space-9));
+  display: grid;
+
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  column-gap: var(--space-4);
+  margin-top: var(--space-6);
   padding-block: var(--space-4);
+  border-block: 1px solid var(--separator);
+  text-align: center;
   position: relative;
   z-index: 2;
 }
 
+.esc-stats__item:not(:first-child) {
+  border-inline-start: 1px solid var(--separator);
+  padding-inline-start: var(--space-4);
+}
+
 .esc-stats__label {
   color: var(--label-secondary);
+
+  font-size: var(--text-caption1-size);
 }
 
 .esc-stats__value {
   margin-top: var(--space-1);
   font-family: var(--font-display);
-  font-size: var(--text-largetitle-size);
+
+  font-size: clamp(1.25rem, 5vw, var(--text-largetitle-size));
   line-height: 1.05;
   letter-spacing: var(--text-largetitle-track);
   font-weight: var(--weight-bold);
   color: var(--label-primary);
+  text-wrap: nowrap;
 }
 
-.esc-stats__label {
-  color: var(--label-secondary);
-}
+@media (width >= 700px) {
+  .esc-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-5) clamp(var(--space-7), 5vw, var(--space-9));
+    justify-content: flex-start;
+    margin-top: 0;
+    border-block: 0;
+    text-align: start;
+  }
 
-.esc-stats__value {
-  margin-top: var(--space-1);
-  font-family: var(--font-display);
-  font-size: var(--text-largetitle-size);
-  line-height: 1.05;
-  letter-spacing: var(--text-largetitle-track);
-  font-weight: var(--weight-bold);
-  color: var(--label-primary);
+  .esc-stats__item:not(:first-child) {
+    border-inline-start: 0;
+    padding-inline-start: 0;
+  }
+
+  .esc-stats__label {
+    font-size: var(--text-footnote-size);
+  }
+
+  .esc-stats__value {
+    font-size: var(--text-largetitle-size);
+  }
 }
 
 .esc-app {

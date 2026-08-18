@@ -131,12 +131,11 @@ def main() -> int:
             eyebrow="newsletter",
             titulo="falta um clique",
             paragrafos=[
-                "um e-mail acabou de sair para o endereço que você digitou. "
-                "abra e confirme, e é só isso — sem essa confirmação o "
-                "endereço não entra na lista.",
-                "não chegou em alguns minutos? o primeiro e-mail de um "
-                "remetente novo às vezes cai no spam. vale olhar lá antes de "
-                "tentar de novo.",
+                "acabei de mandar um e-mail para o endereço que você "
+                "digitou. abra e confirme — sem esse clique o endereço não "
+                "entra na lista.",
+                "não chegou em alguns minutos? procure no spam — o primeiro "
+                "e-mail de um remetente novo costuma cair lá.",
             ],
             acoes=[("ler os textos enquanto isso", "escrita.html", "btn--light")],
         )
@@ -149,9 +148,10 @@ def main() -> int:
             eyebrow="newsletter",
             titulo="pronto, você está na lista",
             paragrafos=[
-                "o próximo texto chega no seu e-mail no dia em que sair.",
-                "no fim de qualquer mensagem há um link para sair da lista. "
-                "ele funciona de primeira, sem pedir motivo e sem formulário.",
+                "o próximo texto que eu publicar chega no seu e-mail no "
+                "mesmo dia.",
+                "em qualquer mensagem há um link para sair da lista, e um "
+                "clique resolve.",
             ],
             acoes=[("ler os textos agora", "escrita.html", "btn--accent")],
         )
@@ -164,11 +164,10 @@ def main() -> int:
             eyebrow="newsletter",
             titulo="você saiu da lista",
             paragrafos=[
-                "o endereço foi apagado. não ficou guardado marcado como "
-                "cancelado: foi apagado mesmo, e não há mais nada aqui ligado "
-                "a ele.",
-                "se um dia quiser voltar, é só se inscrever de novo — e os "
-                "textos continuam abertos no site, sem inscrição nenhuma.",
+                "seu endereço foi apagado da lista. não guardo cópia.",
+                "se um dia quiser voltar, é só se inscrever de novo. os "
+                "textos continuam abertos aqui no site, sem inscrição "
+                "nenhuma.",
             ],
             acoes=[("ler os textos", "escrita.html", "btn--light")],
         )
@@ -181,12 +180,10 @@ def main() -> int:
             eyebrow="newsletter",
             titulo="não deu para inscrever agora",
             paragrafos=[
-                "pode ser o endereço com um erro de digitação, ou tentativas "
-                "demais em pouco tempo — o serviço limita isso para que o "
-                "formulário não seja usado para mandar e-mail a quem não pediu.",
-                "esperar um minuto e tentar de novo resolve os dois casos. se o "
-                "endereço estiver certo e continuar assim, o e-mail da página de "
-                "contato chega até ele por outro caminho.",
+                "pode ser um erro de digitação no endereço, ou tentativas "
+                "demais em pouco tempo.",
+                "espere um minuto e tente de novo. se continuar, me escreva "
+                "pelo e-mail da página de contato.",
             ],
             acoes=[
                 ("tentar de novo", "index.html#receber", "btn--accent"),
@@ -203,9 +200,7 @@ def main() -> int:
             titulo="esse link não vale mais",
             paragrafos=[
                 "cada link de confirmação serve uma vez e vale por 48 horas. "
-                "se este já foi usado ou passou do prazo, não dá para "
-                "aproveitá-lo — é assim de propósito, para que um link antigo "
-                "esquecido numa caixa de entrada não valha para sempre.",
+                "este já foi usado, ou passou do prazo.",
                 "inscrever-se de novo resolve: um link novo sai na hora.",
             ],
             acoes=[("voltar à inscrição", "index.html#receber", "btn--accent")],

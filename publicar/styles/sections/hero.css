@@ -27,7 +27,7 @@
   margin: 0;
 
   order: 1;
-  padding-inline: max(var(--gutter), var(--safe-l), var(--safe-r));
+  padding-inline: 0;
 }
 
 .hero__photo picture {

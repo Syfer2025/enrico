@@ -65,10 +65,17 @@
 }
 
 .ep-hero__ctas {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: var(--space-3);
   margin-top: clamp(var(--space-6), 5vw, var(--space-8));
+}
+
+@media (width >= 520px) {
+  .ep-hero__ctas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
 }
 
 .ep-hero__ctas .btn__icon {

@@ -14,27 +14,6 @@ from conteudo import ler_json
 PROJETO = Path(__file__).resolve().parent.parent
 SITE = PROJETO / "publicar"
 
-CANAIS = [
-    {
-        "titulo": "imprensa",
-        "linha": "entrevistas, participações e pedidos de material",
-        "detalhe": "fotos em alta resolução, biografia e capas dos livros estão "
-                   "disponíveis para veículos — peça por e-mail e mando na hora.",
-    },
-    {
-        "titulo": "eventos e palestras",
-        "linha": "feiras, festivais, escolas e empresas",
-        "detalhe": "para convites, o e-mail é o caminho mais rápido. vale incluir "
-                   "data, cidade e formato do evento na primeira mensagem.",
-    },
-    {
-        "titulo": "parcerias",
-        "linha": "editoras, marcas e o abcpod",
-        "detalhe": "propostas de parceria, publicidade no podcast e convites para "
-                   "episódio também entram pelo e-mail.",
-    },
-]
-
 REDES = [
     ("Instagram", "https://www.instagram.com/enricopierroofc/"),
     ("YouTube", "https://www.youtube.com/@enricopierroofc"),
@@ -67,15 +46,6 @@ def main() -> int:
 
     cabecalho = moldura.cabecalho("contato.html")
     rodape = moldura.rodape()
-
-    canais = "\n".join(
-        f"""          <li class="contato-canal">
-            <h2 class="t-title-3 contato-canal__titulo">{html.escape(c['titulo'])}</h2>
-            <p class="t-footnote contato-canal__linha">{html.escape(c['linha'])}</p>
-            <p class="t-body contato-canal__detalhe">{html.escape(c['detalhe'])}</p>
-          </li>"""
-        for c in CANAIS
-    )
 
     redes = "\n".join(
         f'            <li><a class="contato__rede" href="{u}" target="_blank" '
@@ -112,17 +82,14 @@ def main() -> int:
               <p class="t-eyebrow contato__eyebrow">contato</p>
               <h1 class="t-display-2" id="contato-titulo">como falar com o enrico</h1>
               <p class="t-body contato__intro">
-                para imprensa, eventos, palestras e parcerias, o
-                <span class="nao-quebra">e-mail</span> é o caminho mais direto.
+                para contatos comerciais — parcerias, eventos, palestras e
+                imprensa —, o caminho é o
+                <span class="nao-quebra">e-mail</span> abaixo.
               </p>
             </div>
 
 {bloco_do_email(email)}
           </div>
-
-          <ul class="contato-canais">
-{canais}
-          </ul>
 
           <div class="contato__redes">
             <h2 class="t-title-3">nas redes</h2>
@@ -142,7 +109,7 @@ def main() -> int:
     destino = SITE / "contato.html"
     destino.write_text(pagina, encoding="utf-8")
 
-    print(f"contato.html gerado — {len(CANAIS)} canais, {len(REDES)} redes")
+    print(f"contato.html gerado — {len(REDES)} redes")
     if email:
         print(f"  e-mail: {email}")
     else:

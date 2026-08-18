@@ -58,6 +58,8 @@
   background-color: var(--label-primary);
   color: var(--bg-base);
   box-shadow: var(--shadow-md);
+
+  border: 1px solid transparent;
 }
 
 .btn--light:hover {
