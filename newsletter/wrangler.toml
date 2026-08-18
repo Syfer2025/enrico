@@ -1,0 +1,44 @@
+# wrangler.toml — a configuração do serviço da newsletter.
+#
+# O que está aqui é PÚBLICO: o repositório é público, e este arquivo vai nele.
+# Chave de API e segredo NÃO entram aqui — vão por `wrangler secret put`, que
+# guarda no Cloudflare e nunca escreve no disco. O passo a passo está no
+# LEIA-ME.md desta pasta.
+
+name = "enrico-newsletter"
+main = "worker.js"
+compatibility_date = "2026-08-18"
+
+# Sem observabilidade paga: o `wrangler tail` mostra o log ao vivo de graça.
+[observability]
+enabled = true
+
+[vars]
+# Onde o site está. É daqui que saem os links dos e-mails e para onde os
+# cliques de confirmar/cancelar são redirecionados. Trocar quando o domínio
+# próprio entrar no ar — junto com o `dominio` do conteudo/site.json.
+SITE = "https://syfer2025.github.io/enrico"
+
+# O endereço DESTE serviço. Entra nos links de confirmação e de saída da lista,
+# então precisa ser o endereço público do Worker. Sai do `wrangler deploy`.
+ENDPOINT = "PREENCHER-DEPOIS-DO-PRIMEIRO-DEPLOY"
+
+# Quem aparece como remetente. O domínio precisa estar verificado no provedor
+# de entrega — sem isso o e-mail vai para spam ou é recusado.
+REMETENTE = "enrico pierro <textos@enricopierro.com.br>"
+
+# Quem pode chamar o /inscrever pelo navegador. Lista fechada, e não `*`: com
+# `*`, qualquer página na internet monta um formulário e usa este serviço para
+# mandar e-mail em nome do Enrico.
+ORIGENS = "https://syfer2025.github.io,https://enricopierro.com.br,https://www.enricopierro.com.br"
+
+# "brevo" ou "resend". Começa em Brevo porque o plano gratuito dele é maior
+# (300 e-mails/dia contra 100) — mais fôlego de graça antes de qualquer
+# assinatura entrar em jogo. Os números estão no LEIA-ME.md.
+PROVEDOR = "brevo"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "enrico-newsletter"
+# Sai do `wrangler d1 create`. É identificador, não segredo.
+database_id = "PREENCHER-COM-A-SAIDA-DO-d1-create"

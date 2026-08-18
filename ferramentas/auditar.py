@@ -11,7 +11,28 @@ from pathlib import Path
 
 PROJETO = Path(__file__).resolve().parent.parent
 SITE = PROJETO / "publicar"
-PAGINAS = ["index.html", "escrita.html", "episodios.html", "contato.html", "404.html"]
+PAGINAS = [
+    "index.html",
+    "escrita.html",
+    "episodios.html",
+    "contato.html",
+    "newsletter.html",
+    "newsletter-confirme.html",
+    "newsletter-confirmado.html",
+    "newsletter-cancelado.html",
+    "newsletter-nao-deu.html",
+    "newsletter-link-invalido.html",
+    "404.html",
+]
+
+FORA_DO_INDICE_OK = {
+    "404.html",
+    "newsletter-confirme.html",
+    "newsletter-confirmado.html",
+    "newsletter-cancelado.html",
+    "newsletter-nao-deu.html",
+    "newsletter-link-invalido.html",
+}
 
 INTERATIVOS = {"a", "button"}
 
@@ -113,7 +134,7 @@ def achados_de(s: str, pagina: str = "") -> list[tuple[str, str]]:
         r.append(("ERRO", "<html> sem lang — leitor de tela lê com a pronúncia errada"))
     fora_do_indice = "noindex" in s
 
-    if fora_do_indice and pagina != "404.html":
+    if fora_do_indice and pagina not in FORA_DO_INDICE_OK:
         r.append(("AVISO", "noindex — a página é invisível para o Google "
                            "(esperado enquanto site.json tiver no_ar: false)"))
     if not fora_do_indice:

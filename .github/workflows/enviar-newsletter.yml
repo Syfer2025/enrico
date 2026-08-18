@@ -1,0 +1,125 @@
+# Manda um texto para a lista da newsletter.
+#
+# POR QUE À MÃO, E NÃO A CADA PUBLICAÇÃO
+#
+# Publicar é barato e reversível: um texto sai com erro de digitação, o Enrico
+# corrige e publica de novo. E-mail não volta. Se o envio fosse disparado por
+# cada publicação, a correção de uma vírgula mandaria o texto uma segunda vez
+# para a lista inteira — e a terceira vez que isso acontecesse, a lista já
+# estaria menor.
+#
+# Então o envio é um botão: aba Actions → "enviar newsletter" → Run workflow.
+#
+# COMO USAR
+#
+#   slug           o nome do arquivo do texto, sem .md — é o que aparece no
+#                  endereço: escrita.html#dia-193-365 → dia-193-365
+#   destino_teste  se preenchido, manda SÓ para esse endereço e não registra
+#                  nada. É para ver o e-mail antes de mandar para todos, e vale
+#                  a pena sempre: não existe outro jeito de ver como ele chega.
+#
+# O Worker manda algumas dezenas por chamada e responde quantas faltam; este
+# arquivo chama de novo até zerar. Interromper no meio não duplica nada — quem
+# já recebeu está registrado.
+
+name: enviar newsletter
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "slug do texto (ex.: dia-193-365)"
+        required: true
+        type: string
+      destino_teste:
+        description: "manda só para este endereço (deixe vazio para enviar à lista)"
+        required: false
+        type: string
+
+# Este fluxo não mexe no repositório: só fala com o Worker.
+permissions: {}
+
+# Dois envios ao mesmo tempo dividiriam a lista em dois lotes concorrentes. Um
+# de cada vez, e sem cancelar o que já está mandando e-mail no meio do caminho.
+concurrency:
+  group: newsletter
+  cancel-in-progress: false
+
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: conferir os segredos
+        env:
+          ENDPOINT: ${{ secrets.NEWSLETTER_ENDPOINT }}
+          SEGREDO: ${{ secrets.NEWSLETTER_SEGREDO }}
+        run: |
+          if [ -z "$ENDPOINT" ] || [ -z "$SEGREDO" ]; then
+            echo "::error::faltam os segredos NEWSLETTER_ENDPOINT e/ou NEWSLETTER_SEGREDO"
+            echo "Settings → Secrets and variables → Actions → New repository secret"
+            exit 1
+          fi
+
+      - name: enviar
+        env:
+          ENDPOINT: ${{ secrets.NEWSLETTER_ENDPOINT }}
+          SEGREDO: ${{ secrets.NEWSLETTER_SEGREDO }}
+          SLUG: ${{ inputs.slug }}
+          TESTE: ${{ inputs.destino_teste }}
+        run: |
+          set -euo pipefail
+
+          corpo=$(jq -nc --arg slug "$SLUG" --arg teste "$TESTE" \
+            'if $teste == "" then {slug: $slug} else {slug: $slug, destino_teste: $teste} end')
+
+          if [ -n "$TESTE" ]; then
+            echo "envio de TESTE do texto '$SLUG' para $TESTE"
+            resposta=$(curl -sS -X POST "$ENDPOINT/enviar" \
+              -H "authorization: Bearer $SEGREDO" \
+              -H "content-type: application/json" \
+              -d "$corpo")
+            echo "$resposta" | jq .
+            exit 0
+          fi
+
+          echo "enviando o texto '$SLUG' para a lista"
+          volta=1
+          while : ; do
+            resposta=$(curl -sS -X POST "$ENDPOINT/enviar" \
+              -H "authorization: Bearer $SEGREDO" \
+              -H "content-type: application/json" \
+              -d "$corpo")
+
+            if ! echo "$resposta" | jq -e . > /dev/null 2>&1; then
+              echo "::error::o serviço respondeu algo que não é JSON:"
+              echo "$resposta"
+              exit 1
+            fi
+            if echo "$resposta" | jq -e '.erro' > /dev/null; then
+              echo "::error::$(echo "$resposta" | jq -r '.erro')"
+              exit 1
+            fi
+
+            enviados=$(echo "$resposta" | jq -r '.enviados')
+            restantes=$(echo "$resposta" | jq -r '.restantes')
+            echo "  chamada $volta: $enviados enviados, $restantes na fila"
+
+            falhas=$(echo "$resposta" | jq -r '.falhas | length')
+            if [ "$falhas" != "0" ]; then
+              echo "::warning::$falhas endereço(s) falharam nesta chamada:"
+              echo "$resposta" | jq -r '.falhas[] | "    \(.email): \(.erro)"'
+            fi
+
+            [ "$restantes" = "0" ] && break
+
+            # Nada avançou e ainda há fila: insistir só repetiria a falha.
+            if [ "$enviados" = "0" ]; then
+              echo "::error::a fila não andou — pare e olhe as falhas acima"
+              exit 1
+            fi
+
+            volta=$((volta + 1))
+            sleep 5
+          done
+
+          echo "pronto: o texto '$SLUG' foi para toda a lista"

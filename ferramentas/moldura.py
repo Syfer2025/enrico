@@ -1,4 +1,4 @@
-"""moldura.py — o cabeçalho e o rodapé do site, lidos de um lugar só."""
+"""moldura.py — o cabeçalho, o rodapé e o convite da newsletter, lidos de um"""
 
 from __future__ import annotations
 
@@ -36,6 +36,12 @@ def cabecalho(atual: str | None = None) -> str:
             count=1,
         )
     return html
+
+
+def convite() -> str:
+    """A seção da newsletter, copiada da home."""
+    s = FONTE.read_text(encoding="utf-8")
+    return _pedaco(s, "<!-- CONVITE:INICIO", "<!-- CONVITE:FIM -->")
 
 
 def rodape() -> str:

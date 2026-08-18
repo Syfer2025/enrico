@@ -13,6 +13,10 @@ on:
     # servido, são as fontes das imagens e o histórico da importação.
     paths-ignore:
       - "bastidores/**"
+      # O código do serviço de newsletter não é servido pelo site: ele roda no
+      # Cloudflare, e é publicado por `wrangler deploy`. Mexer nele não muda
+      # uma linha do que vai para o ar.
+      - "newsletter/**"
   # Permite disparar à mão pela aba Actions, sem precisar alterar nada.
   workflow_dispatch:
 
@@ -75,8 +79,10 @@ jobs:
           python3 ferramentas/gen-escrita.py
           python3 ferramentas/gen-contato.py
           python3 ferramentas/gen-busca.py
+          python3 ferramentas/gen-newsletter.py
           # Por último: injeta prévia de link, ícones e canonical em TODAS as
-          # páginas, inclusive a de contato que acabou de ser criada.
+          # páginas, inclusive a de contato e a da newsletter, que acabaram de
+          # ser criadas.
           python3 ferramentas/gen-publicacao.py
 
       # REDE DE PROTEÇÃO, depois de gerar: se um gerador falhar pela metade e

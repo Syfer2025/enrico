@@ -7,5 +7,6 @@
   "og_imagem": "/assets/img/og/capa.jpg",
   "email_contato": "enrico1830@gmail.com",
   "telefone_contato": "",
-  "dominio_final": "https://enricopierro.com.br"
+  "dominio_final": "https://enricopierro.com.br",
+  "newsletter_endpoint": ""
 }

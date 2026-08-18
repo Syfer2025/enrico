@@ -1,0 +1,226 @@
+.newsletter {
+  padding-block: clamp(var(--space-9), 9vw, var(--space-11));
+  background-color: var(--bg-elevated);
+  border-top: 1px solid var(--separator);
+}
+
+.newsletter__inner {
+  display: grid;
+  gap: var(--space-7);
+  align-items: start;
+}
+
+@media (width >= 900px) {
+  .newsletter__inner {
+    grid-template-columns: minmax(0, 1.15fr) minmax(20rem, 0.85fr);
+    gap: var(--space-9);
+    align-items: center;
+  }
+}
+
+.newsletter__convite {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.newsletter__eyebrow {
+  color: var(--accent);
+}
+
+.newsletter__titulo {
+  max-width: 22ch;
+  text-wrap: balance;
+}
+
+.newsletter__linha {
+  max-width: 46ch;
+  line-height: 1.6;
+  color: var(--label-secondary);
+}
+
+.newsletter__caixa {
+  padding: var(--space-5);
+  background-color: var(--bg-elevated-2);
+  border: 1px solid var(--separator);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape, round);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (width >= 700px) {
+  .newsletter__caixa {
+    padding: var(--space-6);
+  }
+}
+
+[data-modo="formulario"] .newsletter__direto,
+[data-modo="email"] .newsletter__form {
+  display: none;
+}
+
+.newsletter__form {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.newsletter__campo {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.newsletter__rotulo {
+  color: var(--label-secondary);
+}
+
+.newsletter__entrada {
+
+  min-height: var(--tap-min);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--fill-quaternary);
+  color: var(--label-primary);
+  border: 1px solid var(--separator);
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape, round);
+  font-size: var(--text-body-size);
+
+  transition: border-color var(--duration-fast) var(--ease-out),
+    background-color var(--duration-fast) var(--ease-out);
+}
+
+.newsletter__entrada::placeholder {
+  color: var(--label-tertiary);
+}
+
+.newsletter__entrada:hover:enabled {
+  border-color: var(--fill-secondary);
+}
+
+.newsletter__entrada:disabled {
+  color: var(--label-secondary);
+  border-color: transparent;
+  cursor: default;
+}
+
+.newsletter__entrada:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+  border-color: transparent;
+  background-color: var(--fill-tertiary);
+}
+
+.newsletter__entrada[aria-invalid="true"] {
+  border-color: var(--erro);
+}
+
+.newsletter__botao {
+  justify-content: center;
+  width: 100%;
+}
+
+@media (width >= 520px) {
+  .newsletter__botao {
+    justify-self: start;
+    width: auto;
+  }
+}
+
+.newsletter__isca {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.newsletter__aviso {
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape, round);
+  font-size: var(--text-subhead-size);
+  line-height: 1.45;
+  letter-spacing: var(--text-subhead-track);
+  background-color: var(--fill-quaternary);
+  color: var(--label-primary);
+  border-inline-start: 2px solid var(--label-tertiary);
+}
+
+.newsletter__aviso[data-tipo="ok"] {
+  border-inline-start-color: var(--accent);
+}
+
+.newsletter__aviso[data-tipo="erro"] {
+  border-inline-start-color: var(--erro);
+}
+
+.newsletter__aviso a {
+  color: var(--accent);
+}
+
+.newsletter__nota {
+  color: var(--label-secondary);
+  max-width: 44ch;
+}
+
+.newsletter__direto {
+  display: grid;
+  gap: var(--space-4);
+  justify-items: start;
+}
+
+.newsletter__direto-linha {
+  color: var(--label-secondary);
+  line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .newsletter__entrada {
+    transition: none;
+  }
+}
+
+.np {
+
+  padding-block: calc(var(--header-h) + var(--safe-t) + clamp(var(--space-8), 8vw, var(--space-10)))
+    clamp(var(--space-8), 8vw, var(--space-10));
+
+  min-height: 68svh;
+}
+
+.np__inner {
+  display: grid;
+  gap: var(--space-8);
+  align-content: start;
+}
+
+.np__texto {
+  display: grid;
+  gap: var(--space-4);
+  max-width: var(--measure);
+}
+
+.np__eyebrow {
+  color: var(--accent);
+}
+
+.np__titulo {
+  max-width: 24ch;
+  text-wrap: balance;
+}
+
+.np__paragrafo {
+  line-height: 1.6;
+  color: var(--label-secondary);
+}
+
+.np__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.np .newsletter__caixa {
+  max-width: 30rem;
+}

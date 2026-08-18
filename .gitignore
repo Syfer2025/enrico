@@ -32,6 +32,13 @@ bastidores/imagens-geradas/
 # saída temporária
 tmp/
 
+# ------------------------------------------------- ferramenta da newsletter --
+# O `wrangler` (que publica o serviço da newsletter) cria estas duas pastas
+# dentro do projeto na primeira vez que roda. São cache e dependência da
+# ferramenta, não do projeto: o worker.js não importa nada de npm.
+.wrangler/
+node_modules/
+
 # ---------------------------------------------------- documentação interna --
 # A documentação do projeto fica só na máquina de quem trabalha nele. Ela conta
 # como cada decisão foi tomada, em que ordem, e o que deu errado no caminho —

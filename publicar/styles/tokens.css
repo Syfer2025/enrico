@@ -85,6 +85,8 @@
   --accent-pressed: #e0941a;
   --accent-label: #0a0b06;
 
+  --erro: rgb(255 69 58);
+
   --focus-ring: var(--accent);
 
   --material-blur-thin: 18px;
@@ -156,6 +158,8 @@
     --fill-secondary: rgb(255 255 255 / 0.28);
     --fill-tertiary: rgb(255 255 255 / 0.2);
     --fill-quaternary: rgb(255 255 255 / 0.14);
+
+    --erro: rgb(255 107 96);
 
     --separator: rgb(255 255 255 / 0.28);
     --separator-opaque: #545456;
