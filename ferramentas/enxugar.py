@@ -132,11 +132,13 @@ def sem_comentario_js(fonte: str) -> str:
     return "".join(saida)
 
 
-def sem_comentario_html(fonte: str) -> str:
-    """Tira <!-- --> de HTML, menos os marcadores dos geradores."""
+def sem_comentario_html(fonte: str, marcadores: bool = True) -> str:
+    """Tira <!-- --> de HTML. Com `marcadores`, os alvos de gerador ficam."""
 
     def troca(achado: re.Match[str]) -> str:
-        return achado.group(0) if MARCADOR.search(achado.group(0)) else ""
+        if marcadores and MARCADOR.search(achado.group(0)):
+            return achado.group(0)
+        return ""
 
     return re.sub(r"<!--.*?-->", troca, fonte, flags=re.S)
 
@@ -157,6 +159,7 @@ TRATADORES = {
 
 def main() -> int:
     conferir = "--conferir" in sys.argv
+    tudo = "--tudo" in sys.argv
     antes = depois = 0
     mexidos = 0
 
@@ -168,7 +171,11 @@ def main() -> int:
             continue
 
         original = arquivo.read_text(encoding="utf-8")
-        novo = arrumar_vazio(TRATADORES[arquivo.suffix](original))
+        if arquivo.suffix == ".html":
+            limpo = sem_comentario_html(original, marcadores=not tudo)
+        else:
+            limpo = TRATADORES[arquivo.suffix](original)
+        novo = arrumar_vazio(limpo)
         antes += len(original)
         depois += len(novo)
         if novo != original:

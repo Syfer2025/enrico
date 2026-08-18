@@ -110,10 +110,11 @@ jobs:
       # repositório e do disco continuam comentados, e é lá que se trabalha.
       #
       # Depois deste passo nenhum gerador roda — é por isso que ele pode vir
-      # aqui, e não antes: os marcadores que os geradores procuram já não são
-      # necessários (mesmo assim o enxugar.py os preserva, por segurança).
+      # aqui, e não antes, e é por isso que o `--tudo` pode levar também os
+      # marcadores de gerador: no site pronto eles não servem a nada. Rodado à
+      # mão, sem a opção, o enxugar.py os preserva.
       - name: enxugar o que vai para o ar
-        run: python3 ferramentas/enxugar.py
+        run: python3 ferramentas/enxugar.py --tudo
 
       # NÃO usar `enablement: true` aqui. Testado: o robô não consegue CRIAR o
       # site do Pages — a resposta é "Resource not accessible by integration",
