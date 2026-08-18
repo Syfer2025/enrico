@@ -204,22 +204,26 @@
 
   .photo-wall {
     min-height: 0;
+
+    padding-top: var(--grid-top);
   }
 
   .photo-wall__grid {
 
     position: relative;
     inset: auto;
-    height: calc(var(--row-h) * 2);
+
+    height: calc(var(--row-h) * 3);
     overflow: hidden;
 
-    mask-image: linear-gradient(to bottom, transparent 0%, #000 14%, #000 62%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 14%, #000 62%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 68%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 68%, transparent 100%);
   }
 
   .photo-wall__scrim {
-    inset: 0 0 auto 0;
-    height: calc(var(--row-h) * 2);
+
+    inset: var(--grid-top) 0 auto 0;
+    height: calc(var(--row-h) * 3);
     background-image: linear-gradient(
       to bottom,
       rgb(var(--bg-scrim) / 0.5) 0%,
