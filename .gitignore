@@ -47,3 +47,18 @@ node_modules/
 # ferramentas/, e o painel se explica na própria tela.
 LEIA-ME.md
 bastidores/documentacao/
+
+# ------------------------------------------------- material de origem --------
+# Fonte das imagens e registro da importação do WordPress. Nada disto é
+# servido, nada disto é lido pela publicação — o fluxo do .github/workflows
+# roda os geradores sobre conteudo/, e mais nada. Fica na máquina de quem
+# trabalha no projeto, junto com a documentação, pela mesma razão: é material
+# de trabalho, não é o site.
+#
+# Os arquivos de origem também carregam metadado embutido (credenciais de
+# conteúdo, perfil de cor, software de edição) que nada tem a ver com quem
+# visita o repositório. As versões servidas em publicar/assets/img/ saem da
+# conversão para webp, que não leva metadado nenhum adiante.
+bastidores/originais/
+bastidores/acervo-completo.json
+bastidores/acervo-mapa.json
