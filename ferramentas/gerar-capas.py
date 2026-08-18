@@ -19,6 +19,10 @@ DESTINO = SITE / "assets/img/acervo/capas"
 LARGURAS = (160, 320, 640, 960)
 QUALIDADE = 82
 
+LARGURA_MINIMA_DO_CARTAO = 320
+
+TOLERANCIA_DE_AMPLIACAO = 0.6
+
 PRIMEIRA_IMAGEM = re.compile(r'<img[^>]+src="([^"]+)"|!\[[^\]]*\]\(([^)\s]+)\)')
 
 
@@ -59,7 +63,12 @@ def main() -> int:
                     imagem = imagem.convert("RGB")
                 for largura in LARGURAS:
                     if largura > imagem.width:
-                        continue
+                        cabe_ampliando = (
+                            largura == LARGURA_MINIMA_DO_CARTAO
+                            and imagem.width >= largura * TOLERANCIA_DE_AMPLIACAO
+                        )
+                        if not cabe_ampliando:
+                            continue
                     destino = DESTINO / f"{texto['slug']}-{largura}.webp"
                     esperados.add(destino.name)
                     if (
