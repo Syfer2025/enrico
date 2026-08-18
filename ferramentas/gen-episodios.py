@@ -132,7 +132,7 @@ def card(vid, temporada, ep, nome, data, segundos, _views):
                      nome acessível do link é a soma de todo o conteúdo, e o
                      selo de duração é aria-hidden porque é redundante com esta
                      linha. -->
-                <span class="visually-hidden">— {duracao_falada(segundos)}, assistir no YouTube</span>
+                <span class="visually-hidden">, {duracao_falada(segundos)}, assistir no YouTube</span>
               </a>
             </li>'''
 
@@ -248,7 +248,7 @@ def pagina():
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>episódios do abcpod — enrico pierro</title>
+    <title>episódios do abcpod · enrico pierro</title>
     <meta
       name="description"
       content="Todos os {total} episódios do abcpod, o podcast de Enrico Pierro: {temporadas} temporadas no YouTube e a versão em áudio no Spotify."
@@ -342,7 +342,7 @@ def pagina():
             </span>
             <h2 class="t-title-2 ep-audio__title" id="ep-audio-titulo">ouvir em áudio</h2>
             <p class="t-body ep-audio__text">
-              o catálogo em áudio toca aqui mesmo, direto do spotify — a lista
+              o catálogo em áudio toca aqui mesmo, direto do spotify. a lista
               abaixo é a do próprio show e sempre traz o episódio mais novo.
             </p>
             <a class="ep-audio__link" href="{SHOW_SPOTIFY}" target="_blank" rel="noopener">
@@ -360,7 +360,7 @@ def pagina():
               src="{EMBED_SPOTIFY}"
               width="100%"
               height="352"
-              title="ABCPOD no Spotify — lista de episódios"
+              title="ABCPOD no Spotify, lista de episódios"
               loading="lazy"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             ></iframe>

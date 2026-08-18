@@ -127,14 +127,14 @@ def main() -> int:
     escritas.append(
         pagina(
             arquivo="newsletter-confirme.html",
-            titulo_aba="falta um clique — enrico pierro",
+            titulo_aba="falta um clique · enrico pierro",
             eyebrow="newsletter",
             titulo="falta um clique",
             paragrafos=[
                 "acabei de mandar um e-mail para o endereço que você "
-                "digitou. abra e confirme — sem esse clique o endereço não "
+                "digitou. abra e confirme. sem esse clique o endereço não "
                 "entra na lista.",
-                "não chegou em alguns minutos? procure no spam — o primeiro "
+                "não chegou em alguns minutos? procure no spam. o primeiro "
                 "e-mail de um remetente novo costuma cair lá.",
             ],
             acoes=[("ler os textos enquanto isso", "escrita.html", "btn--light")],
@@ -144,7 +144,7 @@ def main() -> int:
     escritas.append(
         pagina(
             arquivo="newsletter-confirmado.html",
-            titulo_aba="você está na lista — enrico pierro",
+            titulo_aba="você está na lista · enrico pierro",
             eyebrow="newsletter",
             titulo="pronto, você está na lista",
             paragrafos=[
@@ -160,7 +160,7 @@ def main() -> int:
     escritas.append(
         pagina(
             arquivo="newsletter-cancelado.html",
-            titulo_aba="você saiu da lista — enrico pierro",
+            titulo_aba="você saiu da lista · enrico pierro",
             eyebrow="newsletter",
             titulo="você saiu da lista",
             paragrafos=[
@@ -176,7 +176,7 @@ def main() -> int:
     escritas.append(
         pagina(
             arquivo="newsletter-nao-deu.html",
-            titulo_aba="não deu para inscrever — enrico pierro",
+            titulo_aba="não deu para inscrever · enrico pierro",
             eyebrow="newsletter",
             titulo="não deu para inscrever agora",
             paragrafos=[
@@ -195,7 +195,7 @@ def main() -> int:
     escritas.append(
         pagina(
             arquivo="newsletter-link-invalido.html",
-            titulo_aba="esse link não vale mais — enrico pierro",
+            titulo_aba="esse link não vale mais · enrico pierro",
             eyebrow="newsletter",
             titulo="esse link não vale mais",
             paragrafos=[

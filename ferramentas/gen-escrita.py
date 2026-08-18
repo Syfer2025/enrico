@@ -245,8 +245,8 @@ def bloco(total, recentes):
             </h2>
             <p class="writing__standfirst">
               {total} publicações abertas para leitura em
-              <a class="writing__link" href="escrita.html">a escrita</a> — a
-              coluna da semana, o acervo de textos e o diário do dia.
+              <a class="writing__link" href="escrita.html">a escrita</a>: a
+              coluna da semana, o acervo de textos e o diário.
             </p>
           </div>
 

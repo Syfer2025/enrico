@@ -18,25 +18,25 @@ SITE = PROJETO / "publicar"
 
 PAGINAS = {
     "index.html": {
-        "titulo": "enrico pierro — escritor, colunista e comunicador",
+        "titulo": "enrico pierro · escritor, colunista e comunicador",
         "descricao": None,
         "prioridade": "1.0",
     },
     "escrita.html": {
-        "titulo": "a escrita — enrico pierro",
+        "titulo": "a escrita · enrico pierro",
         "descricao": "os 577 textos de enrico pierro: a coluna semanal, o diário e "
                      "o acervo aberto de prosa e poesia, para ler de ponta a ponta.",
         "prioridade": "0.9",
     },
     "episodios.html": {
-        "titulo": "os episódios do abcpod — enrico pierro",
+        "titulo": "os episódios do abcpod · enrico pierro",
         "descricao": "os 67 episódios do abcpod, o podcast de enrico pierro: "
                      "conversas com nomes da cultura e do cotidiano, em vídeo e "
                      "em áudio.",
         "prioridade": "0.9",
     },
     "contato.html": {
-        "titulo": "contato e imprensa — enrico pierro",
+        "titulo": "contato e imprensa · enrico pierro",
         "descricao": "como falar com enrico pierro: imprensa, eventos, palestras "
                      "e parcerias.",
         "prioridade": "0.8",
@@ -189,7 +189,7 @@ def redirecionamentos(cfg: dict) -> tuple[int, int]:
             '<html lang="pt-BR">\n'
             "  <head>\n"
             '    <meta charset="utf-8" />\n'
-            f'    <title>{html.escape(texto["titulo"])} — Enrico Pierro</title>\n'
+            f'    <title>{html.escape(texto["titulo"])} · Enrico Pierro</title>\n'
             f'    <link rel="canonical" href="{html.escape(destino_url)}" />\n'
             f'    <meta http-equiv="refresh" content="0; url={html.escape(destino_url)}" />\n'
             '    <meta name="robots" content="noindex, follow" />\n'
@@ -216,7 +216,7 @@ def pagina_404(cfg: dict) -> Path:
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>página não encontrada — enrico pierro</title>
+    <title>página não encontrada · enrico pierro</title>
     <meta name="robots" content="noindex" />
     <link rel="icon" href="{prefixo}/favicon.ico" sizes="any" />
     <link rel="stylesheet" href="{prefixo}/styles/tokens.css" />

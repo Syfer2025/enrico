@@ -30,6 +30,9 @@
   order: 1;
 
   padding-inline: 0;
+
+  mask-image: linear-gradient(to right, transparent 0%, #000 9%, #000 91%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 9%, #000 91%, transparent 100%);
 }
 
 .hero--escrita .hero__photo picture {
@@ -45,8 +48,8 @@
   object-fit: contain;
   object-position: center top;
   filter: contrast(1.02);
-  mask-image: linear-gradient(to bottom, #000 75%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, #000 75%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 6%, #000 75%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 6%, #000 75%, transparent 100%);
 }
 
 @media (width >= 900px) {

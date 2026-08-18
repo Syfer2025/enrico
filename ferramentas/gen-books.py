@@ -112,7 +112,7 @@ def card(slug, asin, titulo, sub, nota, av, sinopse, larg, alt):
               <a class="book-card__cta"
                  href="https://www.amazon.com.br/dp/{asin}" target="_blank" rel="noopener">
                 ver na Amazon<svg class="book-card__cta-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.25 10.75 8 6 12.75" /></svg>
-                <span class="visually-hidden">— {html.escape(titulo)}</span>
+                <span class="visually-hidden">, {html.escape(titulo)}</span>
               </a>
             </div>
           </li>'''

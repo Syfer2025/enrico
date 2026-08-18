@@ -58,7 +58,7 @@ def main() -> int:
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>contato e imprensa — enrico pierro</title>
+    <title>contato e imprensa · enrico pierro</title>
     <meta name="theme-color" content="#08090C" />
 
     <link rel="stylesheet" href="styles/tokens.css" />
@@ -82,8 +82,7 @@ def main() -> int:
               <p class="t-eyebrow contato__eyebrow">contato</p>
               <h1 class="t-display-2" id="contato-titulo">como falar com o enrico</h1>
               <p class="t-body contato__intro">
-                para contatos comerciais — parcerias, eventos, palestras e
-                imprensa —, o caminho é o
+                para parceria, evento, palestra ou imprensa, o caminho é o
                 <span class="nao-quebra">e-mail</span> abaixo.
               </p>
             </div>

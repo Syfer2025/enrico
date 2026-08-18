@@ -62,7 +62,7 @@ GRUPOS = [
     {
         "slug": "outros",
         "rotulo": "outros",
-        "linha": "o resto do acervo — cartas de domingo, desabafos e tudo o que não tem categoria.",
+        "linha": "o resto do acervo: cartas de domingo, desabafos e tudo o que não tem categoria.",
     },
 ]
 
@@ -516,7 +516,7 @@ def pagina(grupos, total):
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>a escrita — enrico pierro</title>
+    <title>a escrita · enrico pierro</title>
     <meta
       name="description"
       content="Todos os {total} textos do enricopierro.com.br — a coluna, o acervo de textos e o diário — para ler aqui, sem sair do site."
