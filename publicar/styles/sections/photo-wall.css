@@ -233,9 +233,27 @@
   }
 
   .photo-wall__content {
-    position: static;
+    position: relative;
     inset: auto;
-    padding-block: var(--space-6) var(--space-9);
+    z-index: 2;
+    margin-top: calc(var(--row-h) * 3 * -0.65);
+    padding-block: 0 var(--space-9);
+  }
+
+  .photo-wall__content::before {
+    content: "";
+    position: absolute;
+    inset: -1px 0 0 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 13%,
+      rgb(var(--bg-scrim) / 0.6) 20%,
+      var(--bg-base) 27%,
+      var(--bg-base) 100%
+    );
   }
 
   .wall-logo__img {
