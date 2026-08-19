@@ -16,7 +16,8 @@
 #
 # A chave renovada é gravada de volta no segredo do repositório, o que exige um
 # token com permissão de administrar segredos (SEGREDOS_TOKEN). Sem ele o fluxo
-# ainda busca os posts, mas avisa que a renovação não aconteceu.
+# ainda busca e publica os posts, mas termina em vermelho: a renovação estaria
+# acontecendo e sendo descartada, e isso só apareceria no dia 60, quebrado.
 
 name: instagram
 
@@ -91,17 +92,19 @@ jobs:
       # Guarda a chave nova no próprio segredo. Sem SEGREDOS_TOKEN este passo é
       # pulado e o aviso explica o que fazer — o fluxo não falha por isso.
       - name: guardar a chave renovada
+        id: guardar
         if: steps.renovar.outputs.renovada == 'sim'
         env:
           GH_TOKEN: ${{ secrets.SEGREDOS_TOKEN }}
           NOVA: ${{ steps.renovar.outputs.nova }}
         run: |
           if [ -z "${GH_TOKEN:-}" ]; then
-            # FALHA, e não aviso. Antes isto era um `::warning::` e seguia
-            # verde: a chave era renovada, usada, e esquecida — a integração
-            # morreria no dia 60 sem ninguém notar, e o autor teria de
-            # autorizar tudo de novo. Descoberta em silêncio no dia 60 é o pior
-            # momento possível. Falhando aqui, o GitHub manda e-mail hoje.
+            # Aqui só ANOTA a falta, e o job segue: este passo roda ANTES da
+            # busca, e morrer nele deixaria o site sem post nenhum — punindo a
+            # página por um segredo que falta nos bastidores. Os posts entram
+            # hoje; quem derruba a execução é o último passo, para o aviso
+            # chegar por e-mail sem custar o conteúdo.
+            echo "faltou=sim" >> "$GITHUB_OUTPUT"
             echo "::error::a chave foi renovada mas NÃO pôde ser guardada."
             echo "Falta o segredo SEGREDOS_TOKEN: um token pessoal do GitHub com"
             echo "permissão de escrever segredos NESTE repositório."
@@ -114,7 +117,7 @@ jobs:
             echo "  Permissions -> Repository -> Secrets: Read and write"
             echo "  Expiration: No expiration"
             echo "Depois guarde o valor como SEGREDOS_TOKEN nos segredos do repo."
-            exit 1
+            exit 0
           fi
           printf '%s' "$NOVA" | gh secret set INSTAGRAM_TOKEN --repo "$GITHUB_REPOSITORY"
           echo "segredo INSTAGRAM_TOKEN atualizado"
@@ -164,3 +167,19 @@ jobs:
           else
             echo "nada novo foi comitado; não há o que publicar"
           fi
+
+      - name: a chave está sendo jogada fora
+        # Último passo de propósito, DEPOIS de publicar: `publicar o site` roda
+        # sob `if: success()`, e falhar antes dele deixava o site na versão
+        # antiga. A execução termina em VERMELHO e o GitHub
+        # manda e-mail hoje, em vez de a integração morrer calada no dia 60 —
+        # quando o conserto já custaria pedir nova autorização ao autor.
+        if: always() && steps.guardar.outputs.faltou == 'sim'
+        run: |
+          echo "::error::a chave do Instagram é renovada a cada execução e"
+          echo "descartada em seguida, porque falta o segredo SEGREDOS_TOKEN."
+          echo "Os posts desta execução foram publicados normalmente."
+          echo "No dia 60 a chave guardada vence e a integração para."
+          echo "O conserto é uma vez e não envolve o autor: veja o passo"
+          echo "'guardar a chave renovada' acima, que traz o link e os campos."
+          exit 1
