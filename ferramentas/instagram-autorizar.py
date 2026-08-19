@@ -14,6 +14,7 @@ from pathlib import Path
 PROJETO = Path(__file__).resolve().parent.parent
 
 ID_PADRAO = "1091594863444165"
+ID_FACEBOOK = "1582552550335887"
 
 REDIRECIONAMENTOS = [
     "https://syfer2025.github.io/enrico/",
@@ -115,13 +116,24 @@ def main() -> int:
         user_id = str(quem.get("id") or curta.get("user_id") or "")
         usuario = quem.get("username", "?")
 
-    except (SystemExit, KeyError):
-        print("     (o caminho do Instagram recusou; indo pelo do Facebook)")
+    except (SystemExit, KeyError) as recusa:
+        print()
+        print("  O caminho do Instagram recusou. O que ele respondeu:")
+        for linha in str(recusa).splitlines():
+            print(f"    {linha}")
+        print()
+        print("  Quase sempre é um destes dois:")
+        print("   · a chave secreta é a do Facebook, e não a do Instagram")
+        print("     (são DIFERENTES; a do Instagram fica na página")
+        print("      'Configuração da API com login do Instagram')")
+        print("   · o endereço escolhido no começo não é o que estava no link")
+        print()
+        print("  Tentando pelo caminho do Facebook…")
 
         curta = buscar(
             "https://graph.facebook.com/v21.0/oauth/access_token",
             {
-                "client_id": app_id,
+                "client_id": ID_FACEBOOK,
                 "client_secret": segredo,
                 "redirect_uri": redirecionamento,
                 "code": codigo,
@@ -136,7 +148,7 @@ def main() -> int:
             "https://graph.facebook.com/v21.0/oauth/access_token",
             {
                 "grant_type": "fb_exchange_token",
-                "client_id": app_id,
+                "client_id": ID_FACEBOOK,
                 "client_secret": segredo,
                 "fb_exchange_token": chave_curta,
             },
