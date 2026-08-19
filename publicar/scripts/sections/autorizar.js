@@ -15,9 +15,9 @@ export function initAutorizar(secao) {
   const erro = url.searchParams.get("error_description") || url.searchParams.get("error");
 
   const TITULOS = new Map([
-    [painelOk, "pronto, deu certo"],
-    [painelSem, "esta página está esperando uma autorização"],
-    [painelErro, "a autorização não foi concluída"],
+    [painelOk, "pronto"],
+    [painelSem, "nada por aqui"],
+    [painelErro, "não deu"],
   ]);
 
   const mostrar = (qual) => {
@@ -41,7 +41,7 @@ export function initAutorizar(secao) {
   mostrar(painelOk);
 
   if (botaoZap) {
-    const texto = `código do instagram:\n\n${limpo}`;
+    const texto = `código do instagram\n\n${limpo}`;
 
     botaoZap.href = `https://wa.me/?text=${encodeURIComponent(texto)}`;
   }

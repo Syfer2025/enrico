@@ -17,7 +17,7 @@ PAGINA = """<!doctype html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>autorização do instagram · enrico pierro</title>
+    <title>instagram · enrico pierro</title>
     <meta name="robots" content="noindex, nofollow" />
     <meta name="theme-color" content="#08090C" />
 
@@ -46,20 +46,19 @@ PAGINA = """<!doctype html>
           <div class="np__texto">
             <p class="t-eyebrow np__eyebrow">instagram</p>
             <h1 class="t-display-2 np__titulo" id="np-titulo"
-                data-autorizar="titulo">autorização do instagram</h1>
+                data-autorizar="titulo">instagram</h1>
           </div>
 
           <div class="np__texto" data-autorizar="ok" hidden>
             <p class="t-body np__paragrafo">
-              agora falta só um passo: mandar o código abaixo para quem cuida do
-              site. depois disso você não precisa fazer mais nada.
+              copie o código e mande para quem te passou o link.
             </p>
 
             <p class="aut-codigo" data-autorizar="codigo"></p>
 
             <div class="np__acoes">
               <button class="btn btn--accent" type="button" data-autorizar="copiar">
-                <span class="btn__label">copiar o código</span>
+                <span class="btn__label">copiar</span>
               </button>
               <a class="btn btn--light" data-autorizar="whatsapp" href="https://wa.me/">
                 <span class="btn__label">mandar no whatsapp</span>
@@ -67,15 +66,14 @@ PAGINA = """<!doctype html>
             </div>
 
             <p class="t-caption-1 aut-nota">
-              o código vale uma hora e serve uma vez só. se passar do tempo, abra
-              o mesmo link de novo que ele gera outro.
+              vale por uma hora.
             </p>
           </div>
 
           <div class="np__texto" data-autorizar="sem" hidden>
             <p class="t-body np__paragrafo">
-              ela só faz sentido depois de você abrir o link de autorização que
-              recebeu. sozinha, não há nada aqui.
+              esta página só serve quando você chega nela pelo link de
+              autorização.
             </p>
             <div class="np__acoes">
               <a class="btn btn--light np__acao" href="index.html">
@@ -86,8 +84,7 @@ PAGINA = """<!doctype html>
 
           <div class="np__texto" data-autorizar="erro" hidden>
             <p class="t-body np__paragrafo">
-              pode ter sido um toque em "cancelar", ou a conta usada não ser a
-              certa. abrir o link de novo resolve.
+              abra o link outra vez.
             </p>
             <p class="t-caption-1 aut-nota" data-autorizar="motivo"></p>
             <div class="np__acoes">
