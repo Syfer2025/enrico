@@ -82,8 +82,6 @@ def main() -> int:
     codigo = codigo.split("#")[0].strip()
 
     print("\n1/3 trocando o código pela chave curta…")
-    chave = user_id = usuario = ""
-    dias = 0
 
     try:
         curta = postar(
@@ -96,89 +94,62 @@ def main() -> int:
                 "code": codigo,
             },
         )
-        print("     (caminho: login pelo Instagram)")
-        chave_curta = curta["access_token"]
-
-        print("2/3 trocando pela chave de longa duração…")
-        longa = buscar(
-            TROCA_LONGA,
-            {
-                "grant_type": "ig_exchange_token",
-                "client_secret": segredo,
-                "access_token": chave_curta,
-            },
-        )
-        chave = longa["access_token"]
-        dias = int(longa.get("expires_in", 0)) // 86400
-
-        print("3/3 conferindo de qual conta é…")
-        quem = buscar(PERFIL, {"fields": "id,username", "access_token": chave})
-        user_id = str(quem.get("id") or curta.get("user_id") or "")
-        usuario = quem.get("username", "?")
-
     except (SystemExit, KeyError) as recusa:
         print()
-        print("  O caminho do Instagram recusou. O que ele respondeu:")
+        print("  A Meta recusou. O que ela respondeu:")
         for linha in str(recusa).splitlines():
             print(f"    {linha}")
         print()
-        print("  Quase sempre é um destes dois:")
-        print("   · a chave secreta é a do Facebook, e não a do Instagram")
-        print("     (são DIFERENTES; a do Instagram fica na página")
-        print("      'Configuração da API com login do Instagram')")
-        print("   · o endereço escolhido no começo não é o que estava no link")
+        texto = str(recusa)
+        if "has been used" in texto:
+            print("  ESTE CÓDIGO JÁ FOI GASTO. Cada código serve uma vez só.")
+            print("  Precisa de um novo: mande o link de autorização outra vez.")
+        elif "Invalid authorization code" in texto or "expired" in texto:
+            print("  O código não vale mais — passou da hora, ou veio cortado.")
+            print("  Confira se você colou ele inteiro, sem faltar o começo.")
+        else:
+            print("  Confira, nesta ordem:")
+            print("   · a chave secreta é a DO INSTAGRAM, não a do Facebook")
+            print("     (página 'Configuração da API com login do Instagram')")
+            print("   · o endereço escolhido no começo é o que estava no link")
         print()
-        print("  Tentando pelo caminho do Facebook…")
+        print("  O código NÃO foi trocado. Nada foi gravado.")
+        raise SystemExit(1)
 
-        curta = buscar(
-            "https://graph.facebook.com/v21.0/oauth/access_token",
-            {
-                "client_id": ID_FACEBOOK,
-                "client_secret": segredo,
-                "redirect_uri": redirecionamento,
-                "code": codigo,
-            },
-        )
-        chave_curta = curta.get("access_token")
-        if not chave_curta:
-            raise SystemExit(f"erro: nenhum dos dois caminhos deu chave.\n  {curta}")
+    chave_curta = curta.get("access_token")
+    user_id = str(curta.get("user_id") or "")
+    if not chave_curta:
+        raise SystemExit(f"erro: a Meta respondeu sem chave.\n  {curta}")
 
-        print("2/3 trocando pela chave de longa duração…")
-        longa = buscar(
-            "https://graph.facebook.com/v21.0/oauth/access_token",
-            {
-                "grant_type": "fb_exchange_token",
-                "client_id": ID_FACEBOOK,
-                "client_secret": segredo,
-                "fb_exchange_token": chave_curta,
-            },
-        )
-        chave = longa.get("access_token", chave_curta)
-        dias = int(longa.get("expires_in", 0)) // 86400
+    parcial = PROJETO / "chave-instagram-parcial.txt"
+    parcial.write_text(
+        "Chave CURTA (vale cerca de 1 hora). Rede de segurança: se os passos\n"
+        "seguintes falharem, ela ainda pode ser trocada pela de 60 dias sem\n"
+        "precisar de nova autorização. Apague este arquivo quando terminar.\n\n"
+        f"{chave_curta}\n",
+        encoding="utf-8",
+    )
+    parcial.chmod(0o600)
+    print("     deu certo. Chave curta já guardada, por segurança.")
 
-        print("3/3 procurando a conta do Instagram nas Páginas…")
-        paginas = buscar(
-            "https://graph.facebook.com/v21.0/me/accounts",
-            {"fields": "name,instagram_business_account", "access_token": chave},
-        )
-        for pagina in paginas.get("data", []):
-            conta = pagina.get("instagram_business_account")
-            if conta:
-                user_id = str(conta["id"])
-                perfil = buscar(
-                    f"https://graph.facebook.com/v21.0/{user_id}",
-                    {"fields": "username", "access_token": chave},
-                )
-                usuario = perfil.get("username", "?")
-                print(f"     achei em: {pagina.get('name', '?')}")
-                break
+    print("2/3 trocando pela chave de longa duração…")
+    longa = buscar(
+        TROCA_LONGA,
+        {
+            "grant_type": "ig_exchange_token",
+            "client_secret": segredo,
+            "access_token": chave_curta,
+        },
+    )
+    chave = longa.get("access_token", chave_curta)
+    dias = int(longa.get("expires_in", 0)) // 86400
 
-        if not user_id:
-            raise SystemExit(
-                "erro: a autorização funcionou, mas nenhuma Página do Facebook\n"
-                "      tem conta do Instagram ligada. É isso que falta:\n"
-                "      no Instagram, Editar perfil -> Página -> ligar a uma Página."
-            )
+    print("3/3 conferindo de qual conta é…")
+    quem = buscar(PERFIL, {"fields": "id,username", "access_token": chave})
+    user_id = str(quem.get("id") or user_id)
+    usuario = quem.get("username", "?")
+
+    parcial.unlink()
 
     destino = PROJETO / "chave-instagram.txt"
     destino.write_text(
