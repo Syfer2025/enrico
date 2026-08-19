@@ -97,10 +97,24 @@ jobs:
           NOVA: ${{ steps.renovar.outputs.nova }}
         run: |
           if [ -z "${GH_TOKEN:-}" ]; then
-            echo "::warning::sem o segredo SEGREDOS_TOKEN, a chave renovada não"
-            echo "pode ser gravada de volta. Crie um token pessoal com permissão"
-            echo "de 'secrets: write' neste repositório, ou a chave vence em 60 dias."
-            exit 0
+            # FALHA, e não aviso. Antes isto era um `::warning::` e seguia
+            # verde: a chave era renovada, usada, e esquecida — a integração
+            # morreria no dia 60 sem ninguém notar, e o autor teria de
+            # autorizar tudo de novo. Descoberta em silêncio no dia 60 é o pior
+            # momento possível. Falhando aqui, o GitHub manda e-mail hoje.
+            echo "::error::a chave foi renovada mas NÃO pôde ser guardada."
+            echo "Falta o segredo SEGREDOS_TOKEN: um token pessoal do GitHub com"
+            echo "permissão de escrever segredos NESTE repositório."
+            echo ""
+            echo "Sem ele, a integração para em 60 dias e o autor precisa"
+            echo "autorizar outra vez. Com ele, nunca mais."
+            echo ""
+            echo "Criar em: https://github.com/settings/personal-access-tokens/new"
+            echo "  Repository access: apenas Syfer2025/enrico"
+            echo "  Permissions -> Repository -> Secrets: Read and write"
+            echo "  Expiration: No expiration"
+            echo "Depois guarde o valor como SEGREDOS_TOKEN nos segredos do repo."
+            exit 1
           fi
           printf '%s' "$NOVA" | gh secret set INSTAGRAM_TOKEN --repo "$GITHUB_REPOSITORY"
           echo "segredo INSTAGRAM_TOKEN atualizado"
