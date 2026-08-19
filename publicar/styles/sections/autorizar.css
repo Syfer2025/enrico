@@ -1,0 +1,23 @@
+.aut-codigo {
+  margin: var(--space-3) 0 0;
+  padding: var(--space-4);
+  background-color: var(--bg-elevated-2);
+  border: 1px solid var(--separator);
+  border-radius: var(--radius-md);
+  corner-shape: var(--corner-shape, round);
+
+  font-family: var(--font-mono);
+  font-size: var(--text-footnote-size);
+  line-height: 1.5;
+  color: var(--label-primary);
+
+  overflow-wrap: anywhere;
+
+  user-select: all;
+}
+
+.aut-nota {
+  margin-top: var(--space-4);
+  max-width: 46ch;
+  color: var(--label-secondary);
+}

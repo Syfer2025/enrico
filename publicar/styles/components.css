@@ -103,10 +103,6 @@
   background-color: var(--fill-quaternary);
 }
 
-.btn[hidden] {
-  display: none;
-}
-
 .btn:disabled,
 .btn[aria-disabled="true"] {
   cursor: not-allowed;

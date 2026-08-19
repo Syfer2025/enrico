@@ -8,6 +8,7 @@ import { initEscShelf } from "./sections/esc-shelf.js";
 import { initEscReading } from "./sections/esc-reading.js";
 import { initBusca } from "./sections/busca.js";
 import { initNewsletter } from "./sections/newsletter.js";
+import { initAutorizar } from "./sections/autorizar.js";
 import { initReveal } from "./reveal.js";
 
 const v = new URLSearchParams(location.search).get("escrita");
@@ -24,6 +25,7 @@ const MODULES = {
   "esc-reading": initEscReading,
   busca: initBusca,
   newsletter: initNewsletter,
+  autorizar: initAutorizar,
 };
 
 for (const element of document.querySelectorAll("[data-module]")) {

@@ -16,6 +16,7 @@ PAGINAS = [
     "escrita.html",
     "episodios.html",
     "contato.html",
+    "autorizar.html",
     "newsletter-confirme.html",
     "newsletter-confirmado.html",
     "newsletter-cancelado.html",
@@ -26,6 +27,7 @@ PAGINAS = [
 
 FORA_DO_INDICE_OK = {
     "404.html",
+    "autorizar.html",
     "newsletter-confirme.html",
     "newsletter-confirmado.html",
     "newsletter-cancelado.html",
