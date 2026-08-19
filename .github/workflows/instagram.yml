@@ -113,13 +113,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet -- conteudo/instagram.json publicar/assets/img/instagram; then
+          # `git add` ANTES de conferir. Na primeira execução o json e as
+          # imagens são arquivos NOVOS, e `git diff` não vê arquivo que o git
+          # ainda não conhece: ele dizia "nada a comitar" com seis posts
+          # baixados na pasta. Com eles no índice, `--cached` compara certo.
+          git add -A -- conteudo/instagram.json publicar/assets/img/instagram
+
+          if git diff --cached --quiet -- conteudo/instagram.json publicar/assets/img/instagram; then
             echo "nenhum post novo. nada a comitar."
             exit 0
           fi
 
           quantos=$(python3 -c "import json;print(len(json.load(open('conteudo/instagram.json'))['posts']))")
-          git add conteudo/instagram.json publicar/assets/img/instagram
           git commit -m "instagram: $quantos posts mais recentes
 
           Buscado pelo fluxo .github/workflows/instagram.yml. As imagens ficam
