@@ -133,21 +133,44 @@ def main() -> int:
     print("     deu certo. Chave curta já guardada, por segurança.")
 
     print("2/3 trocando pela chave de longa duração…")
-    longa = buscar(
-        TROCA_LONGA,
-        {
-            "grant_type": "ig_exchange_token",
-            "client_secret": segredo,
-            "access_token": chave_curta,
-        },
-    )
+    try:
+        longa = buscar(
+            TROCA_LONGA,
+            {
+                "grant_type": "ig_exchange_token",
+                "client_secret": segredo,
+                "access_token": chave_curta,
+            },
+        )
+    except (SystemExit, KeyError) as recusa:
+        print()
+        print("  A troca pela chave de 60 dias falhou:")
+        for linha in str(recusa).splitlines():
+            print(f"    {linha}")
+        print()
+        print("  MAS NÃO PRECISA PEDIR NADA AO AUTOR OUTRA VEZ.")
+        print("  A chave curta está salva e vale cerca de uma hora:")
+        print(f"    {parcial}")
+        print("  Me mostre o erro acima e eu concluo a partir dela.")
+        raise SystemExit(1)
+
     chave = longa.get("access_token", chave_curta)
     dias = int(longa.get("expires_in", 0)) // 86400
 
     print("3/3 conferindo de qual conta é…")
-    quem = buscar(PERFIL, {"fields": "id,username", "access_token": chave})
-    user_id = str(quem.get("id") or user_id)
-    usuario = quem.get("username", "?")
+    usuario = "?"
+    try:
+        quem = buscar(PERFIL, {"fields": "username", "access_token": chave})
+        usuario = quem.get("username", "?")
+        user_id = str(quem.get("user_id") or user_id)
+    except (SystemExit, KeyError):
+        print("     (não deu para ler o @; não faz falta, seguindo)")
+
+    if not user_id:
+        raise SystemExit(
+            "erro: a chave veio, mas sem o identificador da conta.\n"
+            f"      A chave está salva em {parcial} — me avise."
+        )
 
     parcial.unlink()
 
