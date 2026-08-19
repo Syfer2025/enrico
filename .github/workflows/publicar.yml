@@ -80,6 +80,10 @@ jobs:
           python3 ferramentas/gen-contato.py
           python3 ferramentas/gen-busca.py
           python3 ferramentas/gen-newsletter.py
+          # Monta a seção do Instagram a partir de conteudo/instagram.json.
+          # NÃO fala com a Meta: quem busca é o fluxo instagram.yml, que comita
+          # os posts. Sem esse arquivo a seção simplesmente não existe.
+          python3 ferramentas/gen-instagram.py
           # Por último: injeta prévia de link, ícones e canonical em TODAS as
           # páginas, inclusive a de contato e a da newsletter, que acabaram de
           # ser criadas.

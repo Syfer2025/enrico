@@ -1,0 +1,128 @@
+# Busca os posts novos do Instagram e renova a chave da Meta.
+#
+# POR QUE ISTO É UM FLUXO SEPARADO
+#
+# A publicação do site não fala com a Meta. Este fluxo baixa os posts, comita o
+# que mudou, e o commit dispara a publicação normal. Assim, se a API cair ou a
+# chave vencer, o site continua no ar com os últimos posts baixados — o que
+# quebra é a atualização, não a página.
+#
+# A CHAVE VENCE A CADA 60 DIAS
+#
+# A chave de longa duração da Meta expira em 60 dias, e só pode ser renovada
+# enquanto está válida. Por isso este fluxo roda de dois em dois dias mesmo que
+# não haja post novo: cada execução renova o prazo. Ficar 60 dias sem rodar
+# significa começar tudo de novo, com o Enrico autorizando outra vez.
+#
+# A chave renovada é gravada de volta no segredo do repositório, o que exige um
+# token com permissão de administrar segredos (SEGREDOS_TOKEN). Sem ele o fluxo
+# ainda busca os posts, mas avisa que a renovação não aconteceu.
+
+name: instagram
+
+on:
+  schedule:
+    # 09:10 UTC (06:10 em Brasília), dia sim dia não.
+    - cron: "10 9 */2 * *"
+  workflow_dispatch:
+
+# Precisa escrever no repositório: é ele que comita os posts baixados.
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: instalar as dependências
+        run: python -m pip install --quiet pillow
+
+      - name: conferir se a chave existe
+        env:
+          TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::falta o segredo INSTAGRAM_TOKEN."
+            echo "Settings → Secrets and variables → Actions → New repository secret"
+            exit 1
+          fi
+
+      # Renova ANTES de buscar: se a chave estiver perto do fim, a busca já vai
+      # com a nova. A resposta traz a chave e quantos segundos ela ainda vale.
+      - name: renovar a chave
+        id: renovar
+        env:
+          TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+        run: |
+          set -euo pipefail
+          resposta=$(curl -sS -G "https://graph.instagram.com/refresh_access_token" \
+            --data-urlencode "grant_type=ig_refresh_token" \
+            --data-urlencode "access_token=$TOKEN") || resposta=""
+
+          nova=$(echo "$resposta" | jq -r '.access_token // empty')
+          if [ -z "$nova" ]; then
+            echo "::warning::não deu para renovar a chave. A busca segue com a atual."
+            echo "resposta: $(echo "$resposta" | head -c 300)"
+            echo "renovada=nao" >> "$GITHUB_OUTPUT"
+          else
+            dias=$(( $(echo "$resposta" | jq -r '.expires_in // 0') / 86400 ))
+            echo "chave renovada, vale por ~$dias dias"
+            echo "::add-mask::$nova"
+            echo "nova=$nova" >> "$GITHUB_OUTPUT"
+            echo "renovada=sim" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Guarda a chave nova no próprio segredo. Sem SEGREDOS_TOKEN este passo é
+      # pulado e o aviso explica o que fazer — o fluxo não falha por isso.
+      - name: guardar a chave renovada
+        if: steps.renovar.outputs.renovada == 'sim'
+        env:
+          GH_TOKEN: ${{ secrets.SEGREDOS_TOKEN }}
+          NOVA: ${{ steps.renovar.outputs.nova }}
+        run: |
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "::warning::sem o segredo SEGREDOS_TOKEN, a chave renovada não"
+            echo "pode ser gravada de volta. Crie um token pessoal com permissão"
+            echo "de 'secrets: write' neste repositório, ou a chave vence em 60 dias."
+            exit 0
+          fi
+          printf '%s' "$NOVA" | gh secret set INSTAGRAM_TOKEN --repo "$GITHUB_REPOSITORY"
+          echo "segredo INSTAGRAM_TOKEN atualizado"
+
+      - name: buscar os posts
+        env:
+          INSTAGRAM_TOKEN: ${{ steps.renovar.outputs.nova || secrets.INSTAGRAM_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+        run: python3 ferramentas/gen-instagram.py --buscar
+
+      # Só comita se algo mudou de verdade. Post novo muda o json e traz imagem;
+      # sem post novo, nada aqui altera arquivo nenhum.
+      - name: comitar o que mudou
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet -- conteudo/instagram.json publicar/assets/img/instagram; then
+            echo "nenhum post novo. nada a comitar."
+            exit 0
+          fi
+
+          quantos=$(python3 -c "import json;print(len(json.load(open('conteudo/instagram.json'))['posts']))")
+          git add conteudo/instagram.json publicar/assets/img/instagram
+          git commit -m "instagram: $quantos posts mais recentes
+
+          Buscado pelo fluxo .github/workflows/instagram.yml. As imagens ficam
+          no repositório porque o endereço que a Meta devolve expira em horas."
+          git push
+          echo "commitado — a publicação do site começa agora"
