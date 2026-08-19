@@ -10,7 +10,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-REDIRECIONAMENTO = "https://syfer2025.github.io/enrico/"
+REDIRECIONAMENTO = "https://syfer2025.github.io/enrico/autorizar.html"
 
 TROCA_CURTA = "https://api.instagram.com/oauth/access_token"
 TROCA_LONGA = "https://graph.instagram.com/access_token"
@@ -51,9 +51,8 @@ def main() -> int:
     print("Tenha em mão: o ID do app do Instagram, a chave secreta do app, e o")
     print("`code` que apareceu no endereço depois de ele autorizar.")
     print()
-    print("O `code` fica na barra de endereço, assim:")
-    print(f"  {REDIRECIONAMENTO}?code=AQUELE_PEDACAO_COMPRIDO#_")
-    print("Copie só o que vem depois de `code=` e antes de `#_`, se houver.")
+    print("O `code` é o que a página de autorização mostrou na caixa, e o que")
+    print("ele mandou de volta no WhatsApp. Vale por uma hora e serve uma vez.")
     print()
 
     app_id = pedir("ID do app do Instagram: ")
