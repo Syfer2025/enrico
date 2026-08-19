@@ -35,12 +35,30 @@ CAMPOS = "id,caption,media_type,media_url,thumbnail_url,permalink,timestamp"
 
 def buscar(token: str, user_id: str, quantos: int) -> list[dict]:
     """Os posts mais recentes, pela API da Meta."""
-    endereco = (
-        f"https://graph.instagram.com/v21.0/{urllib.parse.quote(user_id)}/media"
-        f"?fields={CAMPOS}&limit={quantos}&access_token={urllib.parse.quote(token)}"
-    )
-    with urllib.request.urlopen(endereco, timeout=30) as r:
-        dados = json.loads(r.read().decode("utf-8"))
+    caminhos = [
+        f"https://graph.instagram.com/v21.0/{urllib.parse.quote(user_id)}/media",
+        f"https://graph.facebook.com/v21.0/{urllib.parse.quote(user_id)}/media",
+    ]
+    dados = None
+    erros = []
+    for base in caminhos:
+        endereco = (
+            f"{base}?fields={CAMPOS}&limit={quantos}"
+            f"&access_token={urllib.parse.quote(token)}"
+        )
+        try:
+            with urllib.request.urlopen(endereco, timeout=30) as r:
+                dados = json.loads(r.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as erro:
+            corpo = erro.read().decode("utf-8", "replace")[:200]
+            erros.append(f"{base.split('/')[2]}: {erro.code} {corpo}")
+
+    if dados is None:
+        raise SystemExit(
+            "erro: nenhum dos dois caminhos da Meta respondeu.\n  "
+            + "\n  ".join(erros)
+        )
 
     posts = []
     for item in dados.get("data", []):
