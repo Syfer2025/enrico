@@ -10,7 +10,10 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-REDIRECIONAMENTO = "https://syfer2025.github.io/enrico/autorizar.html"
+REDIRECIONAMENTOS = [
+    "https://syfer2025.github.io/enrico/",
+    "https://syfer2025.github.io/enrico/autorizar.html",
+]
 
 TROCA_CURTA = "https://api.instagram.com/oauth/access_token"
 TROCA_LONGA = "https://graph.instagram.com/access_token"
@@ -55,6 +58,16 @@ def main() -> int:
     print("ele mandou de volta no WhatsApp. Vale por uma hora e serve uma vez.")
     print()
 
+    print("Qual endereço estava no link que você mandou para ele?")
+    for i, r in enumerate(REDIRECIONAMENTOS, 1):
+        print(f"  {i}) {r}" + ("   (padrão, o que o painel gera)" if i == 1 else ""))
+    escolha = input("Número [1]: ").strip() or "1"
+    if escolha not in {"1", "2"}:
+        raise SystemExit("erro: escolha 1 ou 2. Nada foi feito.")
+    redirecionamento = REDIRECIONAMENTOS[int(escolha) - 1]
+    print(f"  usando: {redirecionamento}")
+    print()
+
     app_id = pedir("ID do app do Instagram: ")
     segredo = pedir("Chave secreta do app (não aparece na tela): ", secreto=True)
     codigo = pedir("O `code` da autorização: ")
@@ -72,7 +85,7 @@ def main() -> int:
                 "client_id": app_id,
                 "client_secret": segredo,
                 "grant_type": "authorization_code",
-                "redirect_uri": REDIRECIONAMENTO,
+                "redirect_uri": redirecionamento,
                 "code": codigo,
             },
         )
@@ -104,7 +117,7 @@ def main() -> int:
             {
                 "client_id": app_id,
                 "client_secret": segredo,
-                "redirect_uri": REDIRECIONAMENTO,
+                "redirect_uri": redirecionamento,
                 "code": codigo,
             },
         )
