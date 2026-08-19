@@ -308,3 +308,57 @@
   gap: var(--space-3);
   margin-top: var(--space-2);
 }
+
+.wall-plataformas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-2) var(--space-5);
+  margin: var(--space-5) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wall-plataforma {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: var(--tap-min);
+  padding-inline: var(--space-2);
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape, round);
+  color: var(--label-secondary);
+  font-family: var(--font-display);
+  font-size: var(--text-subhead-size);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--text-subhead-track);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.wall-plataforma svg {
+  inline-size: 1.15rem;
+  block-size: 1.15rem;
+  flex: none;
+}
+
+.wall-plataforma--youtube svg {
+  color: #ff0000;
+}
+
+.wall-plataforma--spotify svg {
+  color: #1db954;
+}
+
+.wall-plataforma:hover,
+.wall-plataforma:focus-visible {
+  color: var(--label-primary);
+}
+
+@media (width < 480px) {
+  .wall-plataformas {
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+}

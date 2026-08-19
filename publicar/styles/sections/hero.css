@@ -163,6 +163,70 @@
   color: #ff9900;
 }
 
+.hero__redes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero__rede {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  inline-size: var(--tap-min);
+  block-size: var(--tap-min);
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape, round);
+  color: var(--label-secondary);
+  transition: color var(--duration-fast) var(--ease-out),
+    background-color var(--duration-fast) var(--ease-out);
+}
+
+.hero__rede svg {
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+}
+
+.hero__rede:hover,
+.hero__rede:focus-visible {
+  background-color: var(--fill-quaternary);
+}
+
+.hero__rede--facebook:hover svg,
+.hero__rede--facebook:focus-visible svg {
+  color: #1877f2;
+}
+
+.hero__rede--instagram:hover svg,
+.hero__rede--instagram:focus-visible svg {
+  color: #e1306c;
+}
+
+.hero__rede--tiktok:hover svg,
+.hero__rede--tiktok:focus-visible svg {
+  color: #25f4ee;
+}
+
+.hero__rede--threads:hover svg,
+.hero__rede--threads:focus-visible svg {
+  color: var(--label-primary);
+}
+
+.hero__rede--x:hover svg,
+.hero__rede--x:focus-visible svg {
+  color: var(--label-primary);
+}
+
+.hero__rede--youtube:hover svg,
+.hero__rede--youtube:focus-visible svg {
+  color: #ff0000;
+}
+
 .hero__cta--youtube svg {
   color: #ff0000;
 }
