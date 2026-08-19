@@ -9,6 +9,11 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+from pathlib import Path
+
+PROJETO = Path(__file__).resolve().parent.parent
+
+ID_PADRAO = "1091594863444165"
 
 REDIRECIONAMENTOS = [
     "https://syfer2025.github.io/enrico/",
@@ -59,6 +64,7 @@ def main() -> int:
     print()
 
     print("Qual endereço estava no link que você mandou para ele?")
+    print("(se você usou o link que eu te passei, é o 1 — só aperte Enter)")
     for i, r in enumerate(REDIRECIONAMENTOS, 1):
         print(f"  {i}) {r}" + ("   (padrão, o que o painel gera)" if i == 1 else ""))
     escolha = input("Número [1]: ").strip() or "1"
@@ -68,7 +74,7 @@ def main() -> int:
     print(f"  usando: {redirecionamento}")
     print()
 
-    app_id = pedir("ID do app do Instagram: ")
+    app_id = input(f"ID do app do Instagram [{ID_PADRAO}]: ").strip() or ID_PADRAO
     segredo = pedir("Chave secreta do app (não aparece na tela): ", secreto=True)
     codigo = pedir("O `code` da autorização: ")
 
@@ -162,25 +168,27 @@ def main() -> int:
                 "      no Instagram, Editar perfil -> Página -> ligar a uma Página."
             )
 
+    destino = PROJETO / "chave-instagram.txt"
+    destino.write_text(
+        "Cole cada valor no GitHub e depois APAGUE este arquivo.\n"
+        "https://github.com/Syfer2025/enrico/settings/secrets/actions/new\n\n"
+        "Nome:  INSTAGRAM_TOKEN\n"
+        f"Valor: {chave}\n\n"
+        "Nome:  INSTAGRAM_USER_ID\n"
+        f"Valor: {user_id}\n",
+        encoding="utf-8",
+    )
+    destino.chmod(0o600)
+
     print()
     print("=" * 66)
-    print(f"  Funcionou. A conta é @{usuario}, e a chave vale {dias} dias.")
+    print(f"  Funcionou. A conta e @{usuario}, e a chave vale {dias} dias.")
     print("=" * 66)
     print()
-    print("Agora crie DOIS segredos no GitHub, em")
-    print("  Settings -> Secrets and variables -> Actions -> New repository secret")
+    print("A chave NAO aparece aqui, de proposito. Ela esta neste arquivo:")
+    print(f"  {destino}")
     print()
-    print("  Nome:  INSTAGRAM_TOKEN")
-    print(f"  Valor: {chave}")
-    print()
-    print("  Nome:  INSTAGRAM_USER_ID")
-    print(f"  Valor: {user_id}")
-    print()
-    print("Depois disso, na aba Actions, rode o fluxo `instagram` uma vez à mão.")
-    print("Ele busca os posts, comita, e a partir daí se atualiza sozinho.")
-    print()
-    print("Feche este terminal quando terminar: a chave está só aqui na tela,")
-    print("não foi gravada em arquivo nenhum.")
+    print("Abra o arquivo, cole os dois valores no GitHub, e apague o arquivo.")
     return 0
 
 
