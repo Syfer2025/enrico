@@ -51,7 +51,7 @@ PAGINA = """<!doctype html>
 
           <div class="np__texto" data-autorizar="ok" hidden>
             <p class="t-body np__paragrafo">
-              copie o código e mande para quem te passou o link.
+              copie o código e me mande de volta no whatsapp.
             </p>
 
             <p class="aut-codigo" data-autorizar="codigo"></p>
@@ -84,7 +84,7 @@ PAGINA = """<!doctype html>
 
           <div class="np__texto" data-autorizar="erro" hidden>
             <p class="t-body np__paragrafo">
-              abra o link outra vez.
+              abre o link que eu te mandei outra vez.
             </p>
             <p class="t-caption-1 aut-nota" data-autorizar="motivo"></p>
             <div class="np__acoes">

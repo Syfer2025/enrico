@@ -15,7 +15,7 @@ export function initAutorizar(secao) {
   const erro = url.searchParams.get("error_description") || url.searchParams.get("error");
 
   const TITULOS = new Map([
-    [painelOk, "pronto"],
+    [painelOk, "pronto, enrico"],
     [painelSem, "nada por aqui"],
     [painelErro, "não deu"],
   ]);
