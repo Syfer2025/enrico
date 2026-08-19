@@ -63,39 +63,92 @@ def main() -> int:
     codigo = codigo.split("#")[0].strip()
 
     print("\n1/3 trocando o código pela chave curta…")
-    curta = postar(
-        TROCA_CURTA,
-        {
-            "client_id": app_id,
-            "client_secret": segredo,
-            "grant_type": "authorization_code",
-            "redirect_uri": REDIRECIONAMENTO,
-            "code": codigo,
-        },
-    )
-    chave_curta = curta.get("access_token")
-    user_id = str(curta.get("user_id") or "")
-    if not chave_curta:
-        raise SystemExit(f"erro: a resposta não trouxe chave.\n  {curta}")
+    chave = user_id = usuario = ""
+    dias = 0
 
-    print("2/3 trocando pela chave de longa duração…")
-    longa = buscar(
-        TROCA_LONGA,
-        {
-            "grant_type": "ig_exchange_token",
-            "client_secret": segredo,
-            "access_token": chave_curta,
-        },
-    )
-    chave = longa.get("access_token")
-    dias = int(longa.get("expires_in", 0)) // 86400
-    if not chave:
-        raise SystemExit(f"erro: não veio a chave longa.\n  {longa}")
+    try:
+        curta = postar(
+            TROCA_CURTA,
+            {
+                "client_id": app_id,
+                "client_secret": segredo,
+                "grant_type": "authorization_code",
+                "redirect_uri": REDIRECIONAMENTO,
+                "code": codigo,
+            },
+        )
+        print("     (caminho: login pelo Instagram)")
+        chave_curta = curta["access_token"]
 
-    print("3/3 conferindo de qual conta é…")
-    quem = buscar(PERFIL, {"fields": "id,username", "access_token": chave})
-    user_id = str(quem.get("id") or user_id)
-    usuario = quem.get("username", "?")
+        print("2/3 trocando pela chave de longa duração…")
+        longa = buscar(
+            TROCA_LONGA,
+            {
+                "grant_type": "ig_exchange_token",
+                "client_secret": segredo,
+                "access_token": chave_curta,
+            },
+        )
+        chave = longa["access_token"]
+        dias = int(longa.get("expires_in", 0)) // 86400
+
+        print("3/3 conferindo de qual conta é…")
+        quem = buscar(PERFIL, {"fields": "id,username", "access_token": chave})
+        user_id = str(quem.get("id") or curta.get("user_id") or "")
+        usuario = quem.get("username", "?")
+
+    except (SystemExit, KeyError):
+        print("     (o caminho do Instagram recusou; indo pelo do Facebook)")
+
+        curta = buscar(
+            "https://graph.facebook.com/v21.0/oauth/access_token",
+            {
+                "client_id": app_id,
+                "client_secret": segredo,
+                "redirect_uri": REDIRECIONAMENTO,
+                "code": codigo,
+            },
+        )
+        chave_curta = curta.get("access_token")
+        if not chave_curta:
+            raise SystemExit(f"erro: nenhum dos dois caminhos deu chave.\n  {curta}")
+
+        print("2/3 trocando pela chave de longa duração…")
+        longa = buscar(
+            "https://graph.facebook.com/v21.0/oauth/access_token",
+            {
+                "grant_type": "fb_exchange_token",
+                "client_id": app_id,
+                "client_secret": segredo,
+                "fb_exchange_token": chave_curta,
+            },
+        )
+        chave = longa.get("access_token", chave_curta)
+        dias = int(longa.get("expires_in", 0)) // 86400
+
+        print("3/3 procurando a conta do Instagram nas Páginas…")
+        paginas = buscar(
+            "https://graph.facebook.com/v21.0/me/accounts",
+            {"fields": "name,instagram_business_account", "access_token": chave},
+        )
+        for pagina in paginas.get("data", []):
+            conta = pagina.get("instagram_business_account")
+            if conta:
+                user_id = str(conta["id"])
+                perfil = buscar(
+                    f"https://graph.facebook.com/v21.0/{user_id}",
+                    {"fields": "username", "access_token": chave},
+                )
+                usuario = perfil.get("username", "?")
+                print(f"     achei em: {pagina.get('name', '?')}")
+                break
+
+        if not user_id:
+            raise SystemExit(
+                "erro: a autorização funcionou, mas nenhuma Página do Facebook\n"
+                "      tem conta do Instagram ligada. É isso que falta:\n"
+                "      no Instagram, Editar perfil -> Página -> ligar a uma Página."
+            )
 
     print()
     print("=" * 66)
