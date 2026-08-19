@@ -26,9 +26,15 @@ on:
     - cron: "10 9 */2 * *"
   workflow_dispatch:
 
-# Precisa escrever no repositório: é ele que comita os posts baixados.
+# Escrever no repositório (comitar os posts) e disparar outro fluxo.
+#
+# O disparo é necessário, não é luxo: commit feito com o token padrão do Actions
+# NÃO aciona outros fluxos — o GitHub bloqueia isso para não criar laço infinito.
+# Sem chamar a publicação na mão, os posts ficavam comitados e o site continuava
+# com a versão antiga até alguém publicar por outro motivo.
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: instagram
@@ -130,4 +136,17 @@ jobs:
           Buscado pelo fluxo .github/workflows/instagram.yml. As imagens ficam
           no repositório porque o endereço que a Meta devolve expira em horas."
           git push
-          echo "commitado — a publicação do site começa agora"
+          echo "commitado"
+
+      # Chama a publicação na mão, pelo motivo explicado em `permissions`.
+      - name: publicar o site
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git log -1 --format=%s | grep -q "^instagram:"; then
+            gh workflow run publicar.yml --ref main
+            echo "publicação disparada"
+          else
+            echo "nada novo foi comitado; não há o que publicar"
+          fi
