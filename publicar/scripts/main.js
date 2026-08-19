@@ -11,6 +11,15 @@ import { initNewsletter } from "./sections/newsletter.js";
 import { initAutorizar } from "./sections/autorizar.js";
 import { initReveal } from "./reveal.js";
 
+const autorizacaoDaMeta = new URLSearchParams(location.search);
+if (
+  (autorizacaoDaMeta.has("code") || autorizacaoDaMeta.has("error")) &&
+  !location.pathname.endsWith("/autorizar.html")
+) {
+
+  location.replace(new URL(`autorizar.html${location.search}`, location.href));
+}
+
 const v = new URLSearchParams(location.search).get("escrita");
 if (v) document.querySelector(".writing")?.setAttribute("data-variant", v);
 

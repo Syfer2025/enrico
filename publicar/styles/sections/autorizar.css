@@ -21,3 +21,7 @@
   max-width: 46ch;
   color: var(--label-secondary);
 }
+
+[data-module="autorizar"] .np__inner {
+  gap: var(--space-6);
+}
